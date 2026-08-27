@@ -1,0 +1,90 @@
+{
+  "company": "Faber IA",
+  "agent_role": "Technical Architect",
+  "reference_year": 2025,
+  "platform": {
+    "name": "Atelier",
+    "type": "Retrieval-augmented generation (RAG) platform",
+    "components": [
+      "Document-ingestion pipeline (parsing, chunking, metadata extraction)",
+      "Vector store",
+      "Retrieval layer with hybrid (lexical + semantic) search",
+      "Orchestration layer (routes a query through retrieval, generation and post-processing)",
+      "Answer layer (grounded response with source citations and retrieval trace)"
+    ],
+    "containerisation": ["Kubernetes"],
+    "model_agnostic": true
+  },
+  "model_options": [
+    {
+      "type": "Sovereign European open-weight model",
+      "hosting": "Hosted by Faber IA on OuraneCloud",
+      "characteristics": [
+        "Fully sovereign",
+        "Fully auditable",
+        "Strong grounding/citation behaviour"
+      ],
+      "limitations": "Lower raw performance on the most complex generative tasks"
+    },
+    {
+      "type": "Top-tier proprietary models accessed via API",
+      "characteristics": [
+        "Higher performance on complex drafting/reasoning tasks"
+      ],
+      "notes": "Some of these are operated by non-European providers"
+    }
+  ],
+  "architecture_and_integration_capabilities": {
+    "api_design": "API-first (REST + webhook); documented APIs, can be embedded in existing work environments",
+    "health_interoperability": {
+      "fhir_hl7_connector": "Production for the main resources, with extended resource coverage on the roadmap",
+      "ins_support": true,
+      "framework_alignment": "Ségur / Mon espace santé–DMP",
+      "delivery_partner": "Ligeo Santé"
+    },
+    "sih_dpi_integration": "Standard connectors and, where needed, custom adapters",
+    "identity": {
+      "sso": ["SAML", "OIDC"],
+      "user_directories": ["LDAP", "Entra ID"]
+    }
+  },
+  "performance": {
+    "median_latency_s": 1.3,
+    "common_queries_p95_latency_s_below": 2.0,
+    "complex_multisource_queries_p95_latency_s_below": 2.5,
+    "scope": "Measured on comparable deployments on the sovereign HDS tier; common single-document queries are below 2 seconds at p95; complex multi-source synthesis queries may reach up to 2.5 seconds at p95",
+    "throughput": "Scales horizontally with additional inference capacity"
+  },
+  "hosting_options": [
+    {
+      "tier": "Sovereign HDS tier",
+      "provider": "OuraneCloud",
+      "characteristics": [
+        "SecNumCloud-qualified",
+        "HDS-certified",
+        "EU-only",
+        "Renewable-powered"
+      ],
+      "notes": "Reference tier for health data"
+    },
+    {
+      "tier": "High-availability premium tier",
+      "characteristics": [
+        "Additional redundancy",
+        "Dedicated inference capacity"
+      ],
+      "notes": "Stricter SLA and higher throughput, at higher cost and higher energy use"
+    },
+    {
+      "tier": "On-premise / hybrid",
+      "notes": "Deployment within the client's own datacentre, where the client provides the infrastructure"
+    }
+  ],
+  "availability_and_operations": {
+    "redundancy": "Active-active across two availability zones",
+    "availability_target_pct": 99.9,
+    "operation": "24/7",
+    "condition": "On the appropriate hosting tier",
+    "built_in": ["Monitoring", "Logging", "Observability"]
+  }
+}

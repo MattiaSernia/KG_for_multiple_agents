@@ -1,0 +1,79 @@
+{
+  "company": "Nexus Engineering S.r.l.",
+  "agent_role": "AI & Innovation Lead",
+  "reference_year": 2024,
+  "ai_research_and_development": {
+    "ai_team_size": 14,
+    "phd_researchers": 3,
+    "years_in_ai": 7,
+    "published_papers": 6,
+    "open_source_contributions": ["LangChain plugins", "RAG evaluation toolkit", "French NER model (HuggingFace)"]
+  },
+  "llm_expertise": {
+    "models_deployed_in_production": ["Mistral 7B", "LLaMA 3 8B", "CamemBERT", "Falcon 7B"],
+    "proprietary_models_experience": ["GPT-4 (Azure)", "Claude 3 (API)"],
+    "preferred_sovereign_model": "Mistral 7B Instruct",
+    "preferred_sovereign_model_justification": "EU-origin (Mistral AI, France), Apache 2.0 licence, strong French-language performance, self-hostable",
+    "fine_tuning_methods": ["LoRA", "QLoRA", "Full fine-tune on domain corpus"],
+    "quantisation_methods": ["INT8", "INT4 (GPTQ)", "GGUF"],
+    "average_accuracy_gain_from_fine_tuning_pct": 12
+  },
+  "rag_capabilities": {
+    "retrieval_strategies": ["Dense vector (semantic)", "BM25 sparse", "Hybrid (RRF fusion)"],
+    "chunking_strategies": ["Recursive text splitter", "Semantic chunking", "Document-aware splitting"],
+    "vector_stores_experience": ["Qdrant", "Weaviate", "pgvector", "FAISS"],
+    "typical_retrieval_precision_at_5": 0.87,
+    "typical_answer_relevance_score": 0.84,
+    "typical_hallucination_rate_pct": 2.1,
+    "context_window_tokens_max": 32768
+  },
+  "explainability_and_trust": {
+    "xai_methods": ["Source citation (RAG grounding)", "Chain-of-thought display", "SHAP for classification models", "LIME"],
+    "confidence_scoring": true,
+    "low_confidence_threshold": 0.65,
+    "low_confidence_action": "Display uncertainty warning and escalate to human supervisor",
+    "eu_ai_act_limited_risk_compliance": true,
+    "bias_testing_process": "Quarterly evaluation on demographically diverse test sets"
+  },
+  "use_cases_delivered": [
+    {
+      "domain": "Public administration",
+      "use_case": "Regulatory document Q&A assistant",
+      "users": 340,
+      "year": 2023
+    },
+    {
+      "domain": "Legal sector",
+      "use_case": "Contract review and clause extraction",
+      "users": 120,
+      "year": 2023
+    },
+    {
+      "domain": "Healthcare",
+      "use_case": "Clinical guideline assistant for practitioners",
+      "users": 800,
+      "year": 2024
+    },
+    {
+      "domain": "Smart city",
+      "use_case": "Multi-source data synthesis for urban planners",
+      "users": 55,
+      "year": 2024
+    }
+  ],
+  "innovation_pipeline": {
+    "current_research_topics": [
+      "Knowledge graphs for procedural reasoning",
+      "Multi-agent collaboration frameworks",
+      "Proactive regulatory change alerting"
+    ],
+    "trl_levels_active": [6, 7, 8],
+    "typical_v1_to_v2_months": 9
+  },
+  "known_ai_trade_offs": {
+    "explicability_vs_performance": "Sovereign open-weight models (Mistral 7B) achieve ~84% relevance vs ~92% for large proprietary models; accepted trade-off for compliance",
+    "online_learning_vs_gdpr": "Real-time learning from user data prohibited; offline quarterly fine-tuning on anonymised data is standard approach",
+    "model_size_vs_energy": "Mistral 7B with INT8 quantisation uses ~80% less energy than 70B models with comparable task performance",
+    "rag_vs_fine_tune": "RAG preferred for frequently updated knowledge bases; fine-tuning reserved for domain tone and format adaptation"
+  }
+}

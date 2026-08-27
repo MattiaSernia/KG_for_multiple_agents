@@ -1,0 +1,589 @@
+2026-06-26 01:34:25,032 | INFO | missing_keys: []
+2026-06-26 01:34:25,032 | INFO | unexpected_keys: []
+2026-06-26 01:34:25,032 | INFO | mismatched_keys: []
+2026-06-26 01:34:25,032 | INFO | error_msgs: []
+2026-06-26 01:34:25,032 | INFO | Model Parameters: 90.5M, Transformer: 82.1M, Coref head: 8.4M
+2026-06-26 01:34:25,035 | AGENT | User asked: Public Tender - Centre Hospitalier Régional de Belval (CHRB)
+
+Implementation of an AI assistance solution for hospital staff
+
+1. Context and objectives
+
+The Centre Hospitalier Régional de Belval (CHRB) is a public regional hospital serving the Belval region (approximately 1,200 beds and 4,500 staff across medical, care and medico-administrative functions). As part of its digital transformation and of the national Ségur du numérique en santé programme, CHRB wishes to improve the efficiency of its staff and the quality and safety of the care delivered to patients.
+
+Staff face a growing complexity of procedures, a multiplicity of information sources (care protocols, recommendations from the Haute Autorité de Santé (HAS), internal procedures, regulatory texts, business systems) and an increasing volume of administrative and documentation work that reduces the time available for patient care.
+
+In this context, CHRB wishes to procure, deploy and operate an artificial intelligence solution that assists staff in their daily activities - facilitating access to information, improving the quality of written outputs, and reducing processing and documentation times - while remaining strictly a non-decisional support tool.
+
+The present contract covers the design, implementation and deployment of such a solution.
+
+2. General description of the need
+
+The expected solution must provide hospital staff with an intelligent assistance tool, accessible from their work environment, capable of supporting them in their clinical-administrative activities. This assistance may notably cover:
+
+retrieval of information from internal procedures, care protocols and applicable regulation;
+
+assistance in drafting medical and administrative documents;
+
+support in handling dossiers (admissions, coding, medico-social pathways, etc.);
+
+support for the continuity of care between professionals, shifts and services.
+
+The solution must fit into the existing practices of staff and must not introduce a rupture in clinical or administrative workflows.
+
+3. Functional scope
+
+3.1 Information consultation assistance. The solution must let staff quickly access reliable, up-to-date information drawn from the authority's internal procedures, care protocols and HAS recommendations, applicable regulatory texts, and internal documents (guides, notes, reference frameworks, drug references). It must contextualise its answers to the staff member's request.
+
+3.2 Drafting assistance. The solution must assist the drafting of clinical and administrative content, notably discharge summaries and medical reports (comptes-rendus), medical correspondence and patient letters, administrative documents and dossier syntheses. Generated content must be adapted to the clinical/administrative context and conform to expected quality standards.
+
+3.3 Dossier-handling assistance. The solution must assist staff in analysing and handling dossiers by surfacing relevant information, recalling applicable rules, and suggesting actions or verifications. It must support medical coding (PMSI / ICD-10) for activity reporting (T2A). It must take the dossier context into account where available. No decision may be automated.
+
+3.4 Collaboration and continuity of care. The solution must facilitate the continuity of care between professionals and services by enabling relevant information sharing, an understanding of the context of an in-progress patient pathway, and an efficient resumption of handling by another professional.
+
+4. Regulatory and legal constraints
+
+4.1 Personal and health data protection. The titleholder must guarantee strict compliance with the GDPR. Health data is processed as special-category data (GDPR Art. 9) and medical confidentiality (secret médical) must be preserved. Data must be hosted exclusively within the European Union; no transfer of data outside the EU is authorised; sensitive data must be appropriately protected (encryption, pseudonymisation where relevant).
+
+4.2 Health-data hosting (HDS). The infrastructure hosting the solution must hold the French Hébergeur de Données de Santé (HDS) certification.
+
+4.3 Explainability and traceability. Recommendations or suggestions produced by the solution must be explainable. It must be possible, a posteriori, to understand the elements that led to an output (source grounding, audit trail), consistent with HAS guidance on the use of AI in healthcare.
+
+4.4 Medical responsibility. The solution must be designed as an assistance tool. No clinical or medico-administrative decision may be automated without explicit validation by a qualified professional. The solution must be positioned so as not to require medical-device qualification (CE marking / MDR); should any use case approach that threshold, the bidder must explicitly address the implications.
+
+5. Technical constraints
+
+5.1 Performance. The solution must provide response times compatible with daily clinical use. As an indication, a response time below 2 seconds is expected for common queries. A high level of answer relevance is expected.
+
+5.2 Availability. Continuity of care requires a high level of availability, including outside office hours (24/7 services). An availability target of the order of 99.9% is expected.
+
+5.3 Integration and interoperability. The solution must integrate with the existing hospital information system (SIH) and the electronic patient record (DPI). It must support health interoperability standards (HL7 / FHIR), the national health identifier (INS), and the national framework (Ségur du numérique en santé, Mon espace santé / DMP). API-type interfaces are expected, as is integration with user directories.
+
+6. Sovereignty constraints
+
+The authority attaches particular importance to data sovereignty. Hosting must be performed on SecNumCloud-qualified infrastructure or equivalent, and particular attention will be paid to dependency on non-European suppliers.
+
+7. Budget constraints
+
+The global budget allocated to the project is estimated at 900,000 over 5 years. The annual operating cost must remain controlled and compatible with the authority's budgetary capacity. The titleholder must propose an approach that optimises costs while guaranteeing the expected quality of service.
+
+8. Environmental constraints
+
+As part of its sustainable-development policy, CHRB wishes to limit the environmental footprint of its information systems. The titleholder must propose a solution that contributes to reducing energy consumption and relies, as far as possible, on low-carbon infrastructure.
+
+9. Deployment terms
+
+The project must be conducted progressively, with a pilot phase on a limited perimeter (one or two departments) followed by progressive generalisation to all services. Change-management support and staff training are expected.
+
+10. Evaluation criteria
+
+Offers will be evaluated against the following criteria: quality and relevance of the proposed solution; compliance with regulatory requirements; level of security; data sovereignty; quality of integration with the existing SIH/DPI; total cost of the solution; consideration of environmental issues; capacity for innovation.
+
+
+2026-06-26 01:34:25,035 | INFO | Tokenize 1 inputs...
+2026-06-26 01:34:25,128 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 01:34:31,323 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:34:36,629 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:34:41,523 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:34:48,582 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:34:57,562 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:34:58,342 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:35:12,160 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:35:17,102 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:35:19,290 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:35:30,563 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:35:34,872 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:35:47,711 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:35:54,616 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:03,410 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:06,837 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:08,761 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:13,648 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:24,034 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:24,759 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:25,427 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:27,722 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:28,356 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:28,984 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:31,006 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:36,199 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:38,447 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:42,376 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:43,018 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:43,625 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:46,938 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:49,751 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:52,149 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:57,488 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:58,118 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:36:58,751 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:37:04,799 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:37:05,550 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:37:08,613 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:37:09,241 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:37:10,065 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:37:12,723 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:37:18,389 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:37:21,329 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:37:26,566 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:37:32,767 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:37:35,949 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:37:53,052 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:37:53,059 | INFO | Tokenize 1 inputs...
+2026-06-26 01:37:53,147 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 01:37:55,615 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:37:56,253 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:37:56,902 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:37:57,548 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:38:00,385 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:38:01,409 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:38:18,830 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:38:22,629 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:38:23,284 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:38:31,177 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:38:31,991 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:38:32,861 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:38:38,641 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:38:39,259 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:38:43,971 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:38:47,623 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:38:49,436 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:38:50,060 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:38:56,504 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:38:59,116 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:39:04,598 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:39:11,785 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:39:15,578 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:39:18,867 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:39:25,215 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:39:25,876 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:39:29,330 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:39:35,035 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:39:35,662 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:39:39,242 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:39:42,203 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:39:42,942 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:39:47,505 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:39:50,775 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:39:56,229 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:40:05,369 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:40:08,823 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:40:11,557 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:40:16,553 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:40:20,613 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:40:24,843 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:40:27,185 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:40:45,052 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:40:48,679 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:40:55,741 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:40:56,645 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:41:11,238 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:43:18,457 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:43:18,457 | AGENT | Orchestrator Answer: {
+  "TechnicalArchitect Agent": "The client requires: response time below 2 seconds for common queries, high availability (at least 99.9%), integration with existing hospital information system (SIH) and electronic patient record (DPI), support for health interoperability standards (HL7, FHIR), and national health identifier (INS). The solution must also integrate with user directories and be hosted on SecNumCloud qualified infrastructure or equivalent. Given these requirements, what is the proposed technical architecture, including any necessary APIs, data formats, and system components, to ensure seamless integration and compliance with the specified standards and regulations?",
+  "SecurityCompliance Agent": "The tender requires strict GDPR compliance (EU-only data hosting, no transfer outside EU, encryption, and pseudonymisation of sensitive data where relevant), as well as compliance with other regulatory requirements such as French Hébergeur de Données de Santé (HDS) certification. The solution must also provide explainable recommendations or suggestions produced by the solution, with source grounding and audit trail. What security measures and compliance strategies can we implement to ensure the protection of personal and health data, and adherence to the relevant regulatory frameworks?",
+  "Legal Agent": "The client requires compliance with various regulatory requirements, including GDPR, French HDS certification, and national framework (S-GUR du numérique en santé, Mon Espace Santé, DMP). The solution must also ensure data sovereignty, with no dependency on non-European suppliers. What legal risks should we flag, and are we compliant with the relevant regulations? How can we guarantee strict compliance with GDPR and other applicable regulatory requirements?",
+  "Budget Agent": "The client's global budget is estimated at €900,000 over 5 years, with an annual operating cost that must remain controlled and compatible with the authority's budgetary capacity. Given our pricing model and current financial position, what is our projected margin on this contract, and are there cost-optimization strategies we can propose to ensure a competitive bid while maintaining profitability?",
+  "AIInnovation Agent": "The solution requires the use of AI in healthcare, with a focus on explainability, transparency, and compliance with regulatory requirements. What AI components and innovation strategy can we design to meet these requirements, including the use of large language models (LLMs), retrieval-augmented generation (RAG), and other relevant technologies?",
+  "CSRSustainability Agent": "The client requires a solution that reduces energy consumption and contributes to a reduced environmental footprint. The authority's information systems must also be limited to a reduced environmental footprint. What strategies can we implement to minimize the environmental impact of our solution, including the use of low-carbon infrastructure, green hosting partners, and digital sobriety practices?",
+  "ProjectCoordinator Agent": "The project must be conducted progressively, with a pilot phase on a limited perimeter of one or two departments, followed by progressive generalization to all services. What project management approach can we propose to ensure successful deployment, including change management support, training, and evaluation of the solution's quality and relevance?"
+}
+2026-06-26 01:43:18,543 | AGENT | TechnicalArchitect Agent received: The client requires: response time below 2 seconds for common queries, high availability (at least 99.9%), integration with existing hospital information system (SIH) and electronic patient record (DPI), support for health interoperability standards (HL7, FHIR), and national health identifier (INS). The solution must also integrate with user directories and be hosted on SecNumCloud qualified infrastructure or equivalent. Given these requirements, what is the proposed technical architecture, including any necessary APIs, data formats, and system components, to ensure seamless integration and compliance with the specified standards and regulations?
+2026-06-26 01:44:38,615 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:44:38,616 | AGENT | TechnicalArchitect Agent answered: Based on our company context at Faber IA, we propose a technical architecture that leverages our Atelier platform, a Retrieval-augmented generation (RAG) platform. The Atelier platform is designed to provide fast and accurate responses to queries, with a median latency of 1.3 seconds, which meets the client's requirement for response time below 2 seconds for common queries.
+
+For integration with the existing hospital information system (SIH) and electronic patient record (DPI), we will utilize our standard connectors and custom adapters as needed, ensuring seamless integration with these systems. Our platform supports health interoperability standards such as HL7 and FHIR, facilitating the exchange of healthcare data between different systems.
+
+To support the national health identifier (INS), we will ensure that our system can process and handle this identifier correctly, enabling efficient patient data management and retrieval. Additionally, we will integrate with user directories using our supported identity protocols, including SAML and OIDC, as well as LDAP and Entra ID for user directory integration.
+
+Our platform will be hosted on OuraneCloud's SecNumCloud-qualified infrastructure, which meets the required security standards. This infrastructure is also HDS-certified and EU-only, ensuring compliance with data sovereignty regulations.
+
+In terms of APIs, we will use RESTful APIs and webhooks to enable integration with other systems, providing a well-documented API for easy embedding in existing work environments. Our platform's containerization using Kubernetes ensures scalability and high availability, with active-active redundancy across two availability zones, targeting an availability of 99.9%.
+
+Our Atelier platform's architecture includes components such as the document-ingestion pipeline, vector store, retrieval layer, orchestration layer, and answer layer, which work together to provide accurate and relevant responses to queries while ensuring compliance with regulatory requirements.
+
+By leveraging our existing platform and capabilities, we can provide a comprehensive solution that meets the client's technical requirements while ensuring seamless integration and compliance with specified standards and regulations.
+2026-06-26 01:44:38,616 | INFO | Tokenize 1 inputs...
+2026-06-26 01:44:38,689 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 01:44:51,141 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:44:53,777 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:45:06,127 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:45:16,347 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:45:23,320 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:45:27,526 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:45:39,452 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:45:47,792 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:45:57,316 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:46:03,726 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:46:14,611 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:46:14,611 | AGENT | TechnicalArchitect Agent coherency answered: true
+2026-06-26 01:46:14,659 | AGENT | Orchestrator correct received: Based on our company context at Faber IA, we propose a technical architecture that leverages our Atelier platform, a Retrieval-augmented generation (RAG) platform. The Atelier platform is designed to provide fast and accurate responses to queries, with a median latency of 1.3 seconds, which meets the client's requirement for response time below 2 seconds for common queries.
+
+For integration with the existing hospital information system (SIH) and electronic patient record (DPI), we will utilize our standard connectors and custom adapters as needed, ensuring seamless integration with these systems. Our platform supports health interoperability standards such as HL7 and FHIR, facilitating the exchange of healthcare data between different systems.
+
+To support the national health identifier (INS), we will ensure that our system can process and handle this identifier correctly, enabling efficient patient data management and retrieval. Additionally, we will integrate with user directories using our supported identity protocols, including SAML and OIDC, as well as LDAP and Entra ID for user directory integration.
+
+Our platform will be hosted on OuraneCloud's SecNumCloud-qualified infrastructure, which meets the required security standards. This infrastructure is also HDS-certified and EU-only, ensuring compliance with data sovereignty regulations.
+
+In terms of APIs, we will use RESTful APIs and webhooks to enable integration with other systems, providing a well-documented API for easy embedding in existing work environments. Our platform's containerization using Kubernetes ensures scalability and high availability, with active-active redundancy across two availability zones, targeting an availability of 99.9%.
+
+Our Atelier platform's architecture includes components such as the document-ingestion pipeline, vector store, retrieval layer, orchestration layer, and answer layer, which work together to provide accurate and relevant responses to queries while ensuring compliance with regulatory requirements.
+
+By leveraging our existing platform and capabilities, we can provide a comprehensive solution that meets the client's technical requirements while ensuring seamless integration and compliance with specified standards and regulations.
+2026-06-26 01:46:16,085 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:46:16,086 | AGENT | Orchestrator correct answered: TRUE
+2026-06-26 01:46:16,174 | AGENT | SecurityCompliance Agent received: The tender requires strict GDPR compliance (EU-only data hosting, no transfer outside EU, encryption, and pseudonymisation of sensitive data where relevant), as well as compliance with other regulatory requirements such as French Hébergeur de Données de Santé (HDS) certification. The solution must also provide explainable recommendations or suggestions produced by the solution, with source grounding and audit trail. What security measures and compliance strategies can we implement to ensure the protection of personal and health data, and adherence to the relevant regulatory frameworks?
+2026-06-26 01:47:37,813 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:47:37,814 | AGENT | SecurityCompliance Agent answered: As Security & Compliance officer at Faber IA, I can confirm that our company has experience in delivering solutions that comply with GDPR and other regulatory requirements, particularly in the healthcare sector. 
+
+To ensure strict GDPR compliance, we will host all data exclusively within the European Union, as required by the tender. Our hosting partner, OuraneCloud, is SecNumCloud-qualified, which ensures a sovereign cloud infrastructure that meets the highest security standards.
+
+For data protection, we implement encryption in transit using TLS 1.3 and encryption at rest using AES-256. We also use pseudonymisation of sensitive data where relevant, as well as data minimisation and configurable retention. Our key management is handled through EU-based infrastructure, ensuring that all cryptographic keys are securely managed and protected.
+
+In addition to GDPR compliance, we hold the HDS certification, which is a French certification for health data hosting. This certification ensures that our solution meets the specific requirements for hosting and processing health data in France.
+
+To provide explainable recommendations or suggestions produced by our solution, we have implemented source grounding and audit trail capabilities. Our product, Atelier, is designed to provide transparent and explainable outputs, allowing users to understand the elements that led to a particular recommendation or suggestion. This is achieved through the use of audit logs and retrieval traces, which provide a clear record of all system activities.
+
+In terms of compliance strategies, we have a Data Protection Officer (DPO) appointed, who oversees our data protection practices and ensures that we comply with all relevant regulatory requirements. We also maintain a data processing register, which provides a detailed record of all personal and health data that we process. Our Data Processing Agreement (DPA) is aligned with GDPR Article 28, ensuring that all data processing activities are conducted in accordance with the highest standards of data protection.
+
+Overall, our solution is designed to provide robust security measures and compliance strategies to protect personal and health data, while also meeting the relevant regulatory frameworks, including GDPR and HDS certification.
+2026-06-26 01:47:37,814 | INFO | Tokenize 1 inputs...
+2026-06-26 01:47:37,891 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 01:47:53,719 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:47:55,710 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:48:02,479 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:48:05,596 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:48:10,113 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:48:16,276 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:48:21,493 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:48:27,406 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:48:33,399 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:48:41,829 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:48:45,450 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:48:52,784 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:48:59,876 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:49:04,117 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:49:11,007 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:49:17,507 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:49:28,189 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:49:28,189 | AGENT | SecurityCompliance Agent coherency answered: true
+2026-06-26 01:49:28,246 | AGENT | Orchestrator correct received: As Security & Compliance officer at Faber IA, I can confirm that our company has experience in delivering solutions that comply with GDPR and other regulatory requirements, particularly in the healthcare sector. 
+
+To ensure strict GDPR compliance, we will host all data exclusively within the European Union, as required by the tender. Our hosting partner, OuraneCloud, is SecNumCloud-qualified, which ensures a sovereign cloud infrastructure that meets the highest security standards.
+
+For data protection, we implement encryption in transit using TLS 1.3 and encryption at rest using AES-256. We also use pseudonymisation of sensitive data where relevant, as well as data minimisation and configurable retention. Our key management is handled through EU-based infrastructure, ensuring that all cryptographic keys are securely managed and protected.
+
+In addition to GDPR compliance, we hold the HDS certification, which is a French certification for health data hosting. This certification ensures that our solution meets the specific requirements for hosting and processing health data in France.
+
+To provide explainable recommendations or suggestions produced by our solution, we have implemented source grounding and audit trail capabilities. Our product, Atelier, is designed to provide transparent and explainable outputs, allowing users to understand the elements that led to a particular recommendation or suggestion. This is achieved through the use of audit logs and retrieval traces, which provide a clear record of all system activities.
+
+In terms of compliance strategies, we have a Data Protection Officer (DPO) appointed, who oversees our data protection practices and ensures that we comply with all relevant regulatory requirements. We also maintain a data processing register, which provides a detailed record of all personal and health data that we process. Our Data Processing Agreement (DPA) is aligned with GDPR Article 28, ensuring that all data processing activities are conducted in accordance with the highest standards of data protection.
+
+Overall, our solution is designed to provide robust security measures and compliance strategies to protect personal and health data, while also meeting the relevant regulatory frameworks, including GDPR and HDS certification.
+2026-06-26 01:49:29,667 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:49:29,668 | AGENT | Orchestrator correct answered: TRUE
+2026-06-26 01:49:29,772 | AGENT | Legal Agent received: The client requires compliance with various regulatory requirements, including GDPR, French HDS certification, and national framework (S-GUR du numérique en santé, Mon Espace Santé, DMP). The solution must also ensure data sovereignty, with no dependency on non-European suppliers. What legal risks should we flag, and are we compliant with the relevant regulations? How can we guarantee strict compliance with GDPR and other applicable regulatory requirements?
+2026-06-26 01:51:00,102 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:51:00,103 | AGENT | Legal Agent answered: As the Legal Agent of Faber IA, I have reviewed our company context and the client's requirements. We are a French SAS company registered in Paris, France, and our share capital is 250,000 euros. Our administrative attestations are available, and we can provide standard administrative attestations required for French public procurement.
+
+Regarding regulatory compliance, our Security & Compliance function monitors obligations such as GDPR (including Art. 9 special-category data and Art. 28 processing agreements), medical confidentiality, HDS framework, and EU AI Act requirements for AI systems used in a health context. We have experience with the French Code Commande Publique and framework agreements, including standard public clauses like CCAG-TIC.
+
+Given the client's requirements, we should flag potential legal risks related to GDPR compliance, data sovereignty, and dependency on non-European suppliers. As our platform IP model is proprietary software owned by Faber IA, licensed to the client under a subscription/usage model, we need to ensure that our licensing terms comply with applicable regulations.
+
+To guarantee strict compliance with GDPR and other regulatory requirements, we should:
+
+1. Ensure our data processing agreements are compliant with Art. 28 of the GDPR.
+2. Verify that our platform's proprietary software and AI models are designed to protect special-category data (Art. 9 GDPR).
+3. Confirm that our hosting infrastructure holds French HDS certification or equivalent.
+4. Review our supply chain to ensure no dependency on non-European suppliers, which could compromise data sovereignty.
+
+We can provide certificates of insurance for professional liability, with coverage up to 10 million euros per claim. Our general civil liability cover is also in place. However, we must carefully assess the client's specific requirements and ensure that our existing compliance framework meets their needs.
+
+In particular, we need to verify that our Atelier platform, which is proprietary software owned by Faber IA, complies with the required standards for data protection, security, and interoperability. Our open-source components are licensed under permissive licenses, and we provide an SBOM (Software Bill of Materials) to clients.
+
+By carefully reviewing our compliance framework and ensuring that our platform meets the client's regulatory requirements, we can mitigate potential legal risks and guarantee strict compliance with GDPR and other applicable regulations.
+2026-06-26 01:51:00,103 | INFO | Tokenize 1 inputs...
+2026-06-26 01:51:00,175 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 01:51:10,540 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:51:15,456 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:51:18,992 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:51:23,764 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:51:28,615 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:51:34,622 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:51:40,325 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:51:50,962 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:51:56,661 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:52:03,725 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:52:11,139 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:52:12,900 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:52:18,812 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:52:22,537 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:52:27,656 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:52:32,720 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:52:36,310 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:52:40,062 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:52:49,663 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:52:54,269 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:52:59,771 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:53:10,549 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:53:10,549 | AGENT | Legal Agent coherency answered: true
+2026-06-26 01:53:10,616 | AGENT | Orchestrator correct received: As the Legal Agent of Faber IA, I have reviewed our company context and the client's requirements. We are a French SAS company registered in Paris, France, and our share capital is 250,000 euros. Our administrative attestations are available, and we can provide standard administrative attestations required for French public procurement.
+
+Regarding regulatory compliance, our Security & Compliance function monitors obligations such as GDPR (including Art. 9 special-category data and Art. 28 processing agreements), medical confidentiality, HDS framework, and EU AI Act requirements for AI systems used in a health context. We have experience with the French Code Commande Publique and framework agreements, including standard public clauses like CCAG-TIC.
+
+Given the client's requirements, we should flag potential legal risks related to GDPR compliance, data sovereignty, and dependency on non-European suppliers. As our platform IP model is proprietary software owned by Faber IA, licensed to the client under a subscription/usage model, we need to ensure that our licensing terms comply with applicable regulations.
+
+To guarantee strict compliance with GDPR and other regulatory requirements, we should:
+
+1. Ensure our data processing agreements are compliant with Art. 28 of the GDPR.
+2. Verify that our platform's proprietary software and AI models are designed to protect special-category data (Art. 9 GDPR).
+3. Confirm that our hosting infrastructure holds French HDS certification or equivalent.
+4. Review our supply chain to ensure no dependency on non-European suppliers, which could compromise data sovereignty.
+
+We can provide certificates of insurance for professional liability, with coverage up to 10 million euros per claim. Our general civil liability cover is also in place. However, we must carefully assess the client's specific requirements and ensure that our existing compliance framework meets their needs.
+
+In particular, we need to verify that our Atelier platform, which is proprietary software owned by Faber IA, complies with the required standards for data protection, security, and interoperability. Our open-source components are licensed under permissive licenses, and we provide an SBOM (Software Bill of Materials) to clients.
+
+By carefully reviewing our compliance framework and ensuring that our platform meets the client's regulatory requirements, we can mitigate potential legal risks and guarantee strict compliance with GDPR and other applicable regulations.
+2026-06-26 01:53:12,050 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:53:12,050 | AGENT | Orchestrator correct answered: TRUE
+2026-06-26 01:53:12,175 | AGENT | Budget Agent received: The client's global budget is estimated at €900,000 over 5 years, with an annual operating cost that must remain controlled and compatible with the authority's budgetary capacity. Given our pricing model and current financial position, what is our projected margin on this contract, and are there cost-optimization strategies we can propose to ensure a competitive bid while maintaining profitability?
+2026-06-26 01:55:07,336 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:55:07,336 | AGENT | Budget Agent answered: Based on our company context, the reference budget for the contract is €900,000 over 5 years. Our pricing model indicates that we target a gross margin between 25% and 35%. 
+
+To calculate the projected margin, let's first determine the total cost of the contract from our perspective. Since we don't have explicit costs but rather rates and margins, we'll work backwards from the client's budget to find a suitable pricing structure that fits within their budget while meeting our margin targets.
+
+Given the €900,000 budget over 5 years, the annual budget is approximately €180,000. Our standard daily rates range from €700 to €1,300 per day, depending on the role. For simplicity, let's assume an average rate of around €1,000 per day, considering a mix of senior and junior roles.
+
+However, without explicit details on how many days per year we expect to work or the exact breakdown of roles, it's challenging to precisely calculate our costs. Nonetheless, we aim for a gross margin between 25% and 35%, which means our cost should be such that when added to the desired margin, it equals the client's annual budget.
+
+If we target the lower end of our margin range (25%) for conservatism and to ensure competitiveness, our revenue would need to be €180,000 / (1 - 0.25) = €240,000 per year to achieve a 25% margin on cost. However, this exceeds the client's annual budget, indicating we might need to adjust our pricing or costs.
+
+Given the constraint of the client's budget and our target margins, one strategy could be to optimize our service delivery by possibly reducing the number of high-rate days (e.g., project director, solution architect) and increasing the efficiency of our lower to medium-rate roles (e.g., engineers, data scientists). Another approach could be to negotiate the scope of work or the timeline to better fit within the budget while maintaining our margin targets.
+
+Since our financial capacity note indicates that figures place Faber IA above the typical financial-capacity thresholds for a €900,000 / 5-year public contract, and turnover-based eligibility ratios are met, we are financially capable of handling this contract. However, to maintain profitability, we should focus on efficient project management, ensuring we deliver value within the budget constraints while leveraging our standard daily rates effectively.
+
+Ultimately, the exact margin will depend on how we structure our proposal in terms of personnel deployment, efficiency gains, and potential economies of scale or scope that can be achieved during the contract's execution. By carefully planning the resource allocation and possibly offering phased implementation or flexible pricing models, we can aim to achieve a competitive bid that meets the client's budgetary constraints while ensuring our profitability targets are met.
+2026-06-26 01:55:07,337 | INFO | Tokenize 1 inputs...
+2026-06-26 01:55:07,412 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 01:55:13,491 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:55:18,527 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:55:28,366 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:55:32,880 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:55:39,308 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:55:46,601 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:55:49,427 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:55:56,245 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:55:59,763 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:56:04,957 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:56:09,266 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:56:22,427 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:56:28,164 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:56:36,313 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:56:41,438 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:56:50,097 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:56:57,263 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:57:08,168 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:57:08,168 | AGENT | Budget Agent coherency answered: true
+2026-06-26 01:57:08,243 | AGENT | Orchestrator correct received: Based on our company context, the reference budget for the contract is €900,000 over 5 years. Our pricing model indicates that we target a gross margin between 25% and 35%. 
+
+To calculate the projected margin, let's first determine the total cost of the contract from our perspective. Since we don't have explicit costs but rather rates and margins, we'll work backwards from the client's budget to find a suitable pricing structure that fits within their budget while meeting our margin targets.
+
+Given the €900,000 budget over 5 years, the annual budget is approximately €180,000. Our standard daily rates range from €700 to €1,300 per day, depending on the role. For simplicity, let's assume an average rate of around €1,000 per day, considering a mix of senior and junior roles.
+
+However, without explicit details on how many days per year we expect to work or the exact breakdown of roles, it's challenging to precisely calculate our costs. Nonetheless, we aim for a gross margin between 25% and 35%, which means our cost should be such that when added to the desired margin, it equals the client's annual budget.
+
+If we target the lower end of our margin range (25%) for conservatism and to ensure competitiveness, our revenue would need to be €180,000 / (1 - 0.25) = €240,000 per year to achieve a 25% margin on cost. However, this exceeds the client's annual budget, indicating we might need to adjust our pricing or costs.
+
+Given the constraint of the client's budget and our target margins, one strategy could be to optimize our service delivery by possibly reducing the number of high-rate days (e.g., project director, solution architect) and increasing the efficiency of our lower to medium-rate roles (e.g., engineers, data scientists). Another approach could be to negotiate the scope of work or the timeline to better fit within the budget while maintaining our margin targets.
+
+Since our financial capacity note indicates that figures place Faber IA above the typical financial-capacity thresholds for a €900,000 / 5-year public contract, and turnover-based eligibility ratios are met, we are financially capable of handling this contract. However, to maintain profitability, we should focus on efficient project management, ensuring we deliver value within the budget constraints while leveraging our standard daily rates effectively.
+
+Ultimately, the exact margin will depend on how we structure our proposal in terms of personnel deployment, efficiency gains, and potential economies of scale or scope that can be achieved during the contract's execution. By carefully planning the resource allocation and possibly offering phased implementation or flexible pricing models, we can aim to achieve a competitive bid that meets the client's budgetary constraints while ensuring our profitability targets are met.
+2026-06-26 01:57:09,756 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:57:09,757 | AGENT | Orchestrator correct answered: TRUE
+2026-06-26 01:57:09,899 | AGENT | AIInnovation Agent received: The solution requires the use of AI in healthcare, with a focus on explainability, transparency, and compliance with regulatory requirements. What AI components and innovation strategy can we design to meet these requirements, including the use of large language models (LLMs), retrieval-augmented generation (RAG), and other relevant technologies?
+2026-06-26 01:58:30,866 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:58:30,867 | AGENT | AIInnovation Agent answered: Our company, Faber IA, specializes in AI and innovation, and we have a strong foundation in retrieval-augmented generation (RAG) technology. Our RAG approach is based on retrieving passages from the client's controlled corpus and generating answers that cite those passages, ensuring grounding and transparency.
+
+To meet the requirements of explainability, transparency, and compliance with regulatory requirements in healthcare, we can design an AI solution that leverages our RAG capabilities, combined with other relevant technologies. Our solution will focus on providing explainable and transparent AI assistance to healthcare professionals, while ensuring compliance with regulatory requirements such as GDPR and HIPAA.
+
+Our AI components will include a hybrid retrieval system that combines lexical and semantic search to retrieve relevant information from the client's controlled corpus, which includes internal procedures, care protocols, applicable regulation, and internal documents. Our RAG model will then generate answers based on the retrieved passages, providing a clear audit trail and source grounding for all outputs.
+
+We will also incorporate human oversight into our workflow, where healthcare professionals validate the outputs of our AI system, consistent with HAS guidance. This ensures that our solution is aligned with the client's requirements for non-automated decision-making and explicit validation by qualified professionals.
+
+In terms of innovation strategy, we will adopt an iterative approach, working closely with the client's experts to select and curate the corpus, tune retrieval, design prompts and templates per use case, and evaluate the system through a labelled evaluation set built with the client. This collaborative approach will enable us to ensure that our solution meets the specific needs of the healthcare professionals and complies with regulatory requirements.
+
+Our solution will also provide features such as source citations, retrieved passages, and retrieval trace, allowing users to understand the elements that led to an output. Additionally, every interaction will be logged for a posteriori audit, ensuring transparency and accountability.
+
+Overall, our AI solution will provide explainable, transparent, and compliant AI assistance to healthcare professionals, supporting their daily activities and decision-making while ensuring the highest standards of regulatory compliance and data protection.
+2026-06-26 01:58:30,867 | INFO | Tokenize 1 inputs...
+2026-06-26 01:58:30,937 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 01:58:33,194 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:58:38,033 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:58:43,312 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:58:50,371 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:58:58,684 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:59:04,784 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:59:16,897 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:59:23,562 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:59:28,380 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:59:33,861 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:59:39,504 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:59:44,926 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:59:50,701 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 01:59:56,881 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:00:05,853 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:00:16,838 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:00:16,838 | AGENT | AIInnovation Agent coherency answered: true
+2026-06-26 02:00:16,922 | AGENT | Orchestrator correct received: Our company, Faber IA, specializes in AI and innovation, and we have a strong foundation in retrieval-augmented generation (RAG) technology. Our RAG approach is based on retrieving passages from the client's controlled corpus and generating answers that cite those passages, ensuring grounding and transparency.
+
+To meet the requirements of explainability, transparency, and compliance with regulatory requirements in healthcare, we can design an AI solution that leverages our RAG capabilities, combined with other relevant technologies. Our solution will focus on providing explainable and transparent AI assistance to healthcare professionals, while ensuring compliance with regulatory requirements such as GDPR and HIPAA.
+
+Our AI components will include a hybrid retrieval system that combines lexical and semantic search to retrieve relevant information from the client's controlled corpus, which includes internal procedures, care protocols, applicable regulation, and internal documents. Our RAG model will then generate answers based on the retrieved passages, providing a clear audit trail and source grounding for all outputs.
+
+We will also incorporate human oversight into our workflow, where healthcare professionals validate the outputs of our AI system, consistent with HAS guidance. This ensures that our solution is aligned with the client's requirements for non-automated decision-making and explicit validation by qualified professionals.
+
+In terms of innovation strategy, we will adopt an iterative approach, working closely with the client's experts to select and curate the corpus, tune retrieval, design prompts and templates per use case, and evaluate the system through a labelled evaluation set built with the client. This collaborative approach will enable us to ensure that our solution meets the specific needs of the healthcare professionals and complies with regulatory requirements.
+
+Our solution will also provide features such as source citations, retrieved passages, and retrieval trace, allowing users to understand the elements that led to an output. Additionally, every interaction will be logged for a posteriori audit, ensuring transparency and accountability.
+
+Overall, our AI solution will provide explainable, transparent, and compliant AI assistance to healthcare professionals, supporting their daily activities and decision-making while ensuring the highest standards of regulatory compliance and data protection.
+2026-06-26 02:00:18,315 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:00:18,315 | AGENT | Orchestrator correct answered: TRUE
+2026-06-26 02:00:18,476 | AGENT | CSRSustainability Agent received: The client requires a solution that reduces energy consumption and contributes to a reduced environmental footprint. The authority's information systems must also be limited to a reduced environmental footprint. What strategies can we implement to minimize the environmental impact of our solution, including the use of low-carbon infrastructure, green hosting partners, and digital sobriety practices?
+2026-06-26 02:01:08,144 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:01:08,145 | AGENT | CSRSustainability Agent answered: We can implement several strategies to minimize the environmental impact of our solution. Firstly, we can rely on low-carbon infrastructure, such as our existing partnership with OuraneCloud, a green hosting partner that uses renewable energy and has a power usage effectiveness (PUE) of 1.2, indicating efficient energy use. Additionally, OuraneCloud reuses heat, further reducing waste.
+
+To reduce energy consumption, we can apply digital sobriety practices, including model right-sizing, caching, and batching. These practices help minimize the computational resources required for our solution, thereby decreasing energy consumption.
+
+We also conduct a bilan carbone, which covers scopes 1, 2, and main scope 3 items, including cloud inference, to assess and reduce our carbon footprint. Furthermore, we have published a trajectory to reduce carbon intensity per managed assistant year on year, demonstrating our commitment to continuous improvement in environmental sustainability.
+
+By leveraging these strategies, we can contribute to reducing the environmental footprint of the authority's information systems while providing a solution that meets their requirements for minimizing energy consumption and environmental impact.
+2026-06-26 02:01:08,145 | INFO | Tokenize 1 inputs...
+2026-06-26 02:01:08,213 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 02:01:11,568 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:01:13,763 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:01:20,353 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:01:27,079 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:01:33,725 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:01:50,936 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:01:55,605 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:01:59,126 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:02:09,256 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:02:09,256 | AGENT | CSRSustainability Agent coherency answered: true
+2026-06-26 02:02:09,347 | AGENT | Orchestrator correct received: We can implement several strategies to minimize the environmental impact of our solution. Firstly, we can rely on low-carbon infrastructure, such as our existing partnership with OuraneCloud, a green hosting partner that uses renewable energy and has a power usage effectiveness (PUE) of 1.2, indicating efficient energy use. Additionally, OuraneCloud reuses heat, further reducing waste.
+
+To reduce energy consumption, we can apply digital sobriety practices, including model right-sizing, caching, and batching. These practices help minimize the computational resources required for our solution, thereby decreasing energy consumption.
+
+We also conduct a bilan carbone, which covers scopes 1, 2, and main scope 3 items, including cloud inference, to assess and reduce our carbon footprint. Furthermore, we have published a trajectory to reduce carbon intensity per managed assistant year on year, demonstrating our commitment to continuous improvement in environmental sustainability.
+
+By leveraging these strategies, we can contribute to reducing the environmental footprint of the authority's information systems while providing a solution that meets their requirements for minimizing energy consumption and environmental impact.
+2026-06-26 02:02:10,221 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:02:10,221 | AGENT | Orchestrator correct answered: TRUE
+2026-06-26 02:02:10,390 | AGENT | ProjectCoordinator Agent received: The project must be conducted progressively, with a pilot phase on a limited perimeter of one or two departments, followed by progressive generalization to all services. What project management approach can we propose to ensure successful deployment, including change management support, training, and evaluation of the solution's quality and relevance?
+2026-06-26 02:03:17,537 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:03:17,538 | AGENT | ProjectCoordinator Agent answered: We at Faber IA can propose our Hybrid delivery model combining agile iterations with a phase-gate structure suited to public and health procurement. This model consists of five phases: Framing, Design, Pilot, Generalisation, and Run. Each phase ends with a formal review and a go/no-go decision, ensuring that we meet the requirements and constraints of the project.
+
+To conduct the project progressively, we can start with the Framing phase to define the scope and objectives, followed by the Design phase to develop the solution. The Pilot phase will be conducted on a limited perimeter of one or two departments, as required, to test and refine the solution.
+
+For change management support, we can provide additional resources, including training and assistance in adapting to the new solution. Our dedicated team includes a project director, solution architect, engineers, data scientist, and security compliance lead, who will work closely with the client to ensure a smooth deployment.
+
+To evaluate the solution's quality and relevance, we can establish a joint steering committee with the client, meeting monthly, and an operational committee meeting fortnightly. We also have a RACI matrix in place to ensure clear roles and responsibilities.
+
+Our approach is adapted from standard public-sector project frameworks, with documented deliverables at each gate, ensuring that we meet the requirements and constraints of the project. We can also provide concurrent public health engagements, with a confirmed availability of our dedicated team.
+
+By following this hybrid delivery model, we can ensure a successful deployment of the solution, including change management support, training, and evaluation of the solution's quality and relevance, while meeting the requirements of progressive deployment and pilot phase on a limited perimeter.
+2026-06-26 02:03:17,538 | INFO | Tokenize 1 inputs...
+2026-06-26 02:03:17,608 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 02:03:20,648 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:03:37,026 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:03:42,084 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:03:43,125 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:03:51,910 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:04:03,780 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:04:12,869 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:04:23,708 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:04:23,708 | AGENT | ProjectCoordinator Agent coherency answered: true
+2026-06-26 02:04:23,802 | AGENT | Orchestrator correct received: We at Faber IA can propose our Hybrid delivery model combining agile iterations with a phase-gate structure suited to public and health procurement. This model consists of five phases: Framing, Design, Pilot, Generalisation, and Run. Each phase ends with a formal review and a go/no-go decision, ensuring that we meet the requirements and constraints of the project.
+
+To conduct the project progressively, we can start with the Framing phase to define the scope and objectives, followed by the Design phase to develop the solution. The Pilot phase will be conducted on a limited perimeter of one or two departments, as required, to test and refine the solution.
+
+For change management support, we can provide additional resources, including training and assistance in adapting to the new solution. Our dedicated team includes a project director, solution architect, engineers, data scientist, and security compliance lead, who will work closely with the client to ensure a smooth deployment.
+
+To evaluate the solution's quality and relevance, we can establish a joint steering committee with the client, meeting monthly, and an operational committee meeting fortnightly. We also have a RACI matrix in place to ensure clear roles and responsibilities.
+
+Our approach is adapted from standard public-sector project frameworks, with documented deliverables at each gate, ensuring that we meet the requirements and constraints of the project. We can also provide concurrent public health engagements, with a confirmed availability of our dedicated team.
+
+By following this hybrid delivery model, we can ensure a successful deployment of the solution, including change management support, training, and evaluation of the solution's quality and relevance, while meeting the requirements of progressive deployment and pilot phase on a limited perimeter.
+2026-06-26 02:04:24,782 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:04:24,782 | AGENT | Orchestrator correct answered: TRUE
+2026-06-26 02:06:43,960 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:06:43,960 | AGENT | Final proposal generated: Our consortium proposes an intelligent assistance solution, Atelier, which utilizes retrieval augmented generation (RAG) technology to provide healthcare professionals with accurate and reliable information. The solution integrates with existing hospital information systems (SIH) and electronic patient records (DPI), supporting health interoperability standards such as HL7 and FHIR. Atelier also supports the national health identifier (INS) and adheres to the national framework, including S-GUR du numérique en santé and Mon Espace Santé.
+
+The solution is designed to assist hospital staff in clinical and administrative activities, providing functionality for retrieval of information from internal procedures, care protocols, and applicable regulation. It also offers assistance in drafting medical and administrative documents, handling dossiers, and supporting the continuity of care between professionals, shifts, and services. Atelier ensures data sovereignty, hosting all data exclusively within the European Union, and guarantees strict compliance with GDPR regulations.
+
+Our approach prioritizes explainability, providing source grounding and audit trails for all outputs. The solution is capable of adapting to the clinical and administrative context, ensuring that generated content conforms to expected quality standards. We guarantee a high level of availability, with an expected availability target of at least 99.9% and response times below 2 seconds for common queries.
+
+Our infrastructure hosting the solution holds French HDS certification and ensures that sensitive data is protected through encryption and pseudonymisation where relevant. Our team includes a project director, solution architect, engineers, data scientists, and security compliance lead, ensuring that all aspects of the project are adequately addressed.
+
+We propose a hybrid delivery model, with a phased approach consisting of five phases: framing, design, pilot, generalization, and run. The pilot phase will be conducted on a limited perimeter, with progressive generalization to all services. Our approach guarantees expected quality of service, ensures data sovereignty, and limits the environmental footprint of the authority's information systems.
+
+Our global budget for the project is estimated at 900,000 euros over five years, with an annual operating cost that remains controlled and compatible with the authority's budgetary capacity. We consider environmental issues and propose a solution that reduces energy consumption, relying on low-carbon infrastructure and green hosting partners.
+
+In conclusion, our consortium offers a comprehensive and innovative solution that meets the requirements and constraints outlined in the call for tenders. Our Atelier solution prioritizes explainability, data sovereignty, and compliance with regulatory requirements, ensuring that healthcare professionals have access to accurate and reliable information to provide high-quality patient care.
+2026-06-26 02:06:43,960 | INFO | Tokenize 1 inputs...
+2026-06-26 02:06:44,028 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 02:07:50,247 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:07:54,823 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:09,246 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:22,550 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:24,659 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:26,654 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:28,645 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:30,639 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:32,631 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:34,611 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:36,602 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:38,587 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:40,577 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:42,561 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:44,543 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:46,522 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:48,510 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:50,502 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:52,485 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:54,470 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:56,462 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:08:58,444 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:00,426 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:02,417 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:04,410 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:06,393 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:08,391 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:10,420 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:12,410 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:14,401 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:16,382 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:18,370 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:20,369 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:22,714 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:24,688 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:26,681 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:28,671 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:30,659 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:32,647 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:34,621 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:36,607 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:38,587 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:40,601 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:42,592 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:44,648 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:46,628 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:48,612 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:50,599 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:52,584 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:54,573 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:56,551 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:58,536 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 02:09:58,538 | INFO | Token usage saved to /home/msernia/Prova/kg_claude/experiments/chrb/llama/JSON/NO_TEXT/C_{OAP}_0/tokens.json

@@ -1,0 +1,1070 @@
+@prefix con: <http://example.org/constraint/> .
+@prefix ex: <http://example.org/ontologia#> .
+@prefix ns1: <http://example.org/edge/> .
+@prefix pro: <http://example.org/proposal/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix req: <http://example.org/requirement/> .
+@prefix tri: <http://example.org/triplet/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/extraction/pro/extraction18> {
+    pro:pro13 a ex:Proposal ;
+        ns1:will_reduce <http://example.org/node/energy_consumption> ;
+        rdf:subject <http://example.org/node/our_consortium> .
+
+    pro:pro14 a ex:Proposal ;
+        ns1:relies_on <http://example.org/node/low_carbon_infrastructure> ;
+        rdf:subject <http://example.org/node/our_consortium> .
+
+    pro:pro15 a ex:Proposal ;
+        ns1:includes <http://example.org/node/a_pilot_phase_on_a_limited_perimeter_followed_by_progressive_generalization_to_all_services> ;
+        rdf:subject <http://example.org/node/our_proposed_approach> .
+
+    pro:pro16 a ex:Proposal ;
+        ns1:includes <http://example.org/node/change_management_support_and_staff_training> ;
+        rdf:subject <http://example.org/node/our_proposed_approach> .
+
+    pro:pro17 a ex:Proposal ;
+        ns1:will_help_control <http://example.org/node/annual_operating_costs> ;
+        rdf:subject <http://example.org/node/our_solution> .
+
+    pro:pro18 a ex:Proposal ;
+        ns1:ensures <http://example.org/node/annual_operating_costs_remain_compatible_with_the_authority_s_budgetary_capacity> ;
+        rdf:subject <http://example.org/node/our_solution> .
+
+    pro:pro19 a ex:Proposal ;
+        ns1:proposes <http://example.org/node/the_sovereign_hds_tier_as_a_cost_efficient_option> ;
+        rdf:subject <http://example.org/node/our_consortium> .
+
+    pro:pro20 a ex:Proposal ;
+        ns1:proposes <http://example.org/node/the_sovereign_european_model_as_a_cost_efficient_option> ;
+        rdf:subject <http://example.org/node/our_consortium> .
+
+    pro:pro21 a ex:Proposal ;
+        ns1:provides <http://example.org/node/an_innovative_solution_that_meets_the_client_s_expectations_in_terms_of_efficiency_quality_of_care_integration_with_existing_systems_and_reduction_of_energy_consumption> ;
+        rdf:subject <http://example.org/node/our_solution> .
+
+    pro:pro22 a ex:Proposal ;
+        ns1:assists <http://example.org/node/hospital_staff_in_daily_activities> ;
+        rdf:subject <http://example.org/node/our_solution> .
+
+    pro:pro23 a ex:Proposal ;
+        ns1:ensures <http://example.org/node/strict_compliance_with_regulatory_requirements> ;
+        rdf:subject <http://example.org/node/our_solution> .
+
+    pro:pro24 a ex:Proposal ;
+        ns1:ensures <http://example.org/node/data_sovereignty> ;
+        rdf:subject <http://example.org/node/our_solution> .
+
+    pro:pro25 a ex:Proposal ;
+        ns1:relies_on <http://example.org/node/low_carbon_infrastructure> ;
+        rdf:subject <http://example.org/node/our_solution> .
+
+    pro:pro26 a ex:Proposal ;
+        ns1:offers <http://example.org/node/a_comprehensive_ai_assistance_solution_that_addresses_the_centre_hospitalier_r_gional_de_belval_chrb_needs> ;
+        rdf:subject <http://example.org/node/our_consortium_proposal> .
+
+    pro:pro27 a ex:Proposal ;
+        ns1:provides <http://example.org/node/an_efficient_integrated_and_sustainable_tool_for_hospital_staff_to_improve_patient_care_quality_and_reduce_administrative_burdens> ;
+        rdf:subject <http://example.org/node/our_consortium_proposal> .
+}
+
+<http://example.org/extraction/tri/extraction5> {
+    tri:tri1 a ex:Triplet ;
+        ns1:requires_response_time <http://example.org/node/below_2_seconds> ;
+        rdf:subject <http://example.org/node/client> .
+
+    tri:tri10 a ex:Triplet ;
+        ns1:meets_availability_target_requirement <http://example.org/node/fully_covered> ;
+        rdf:subject <http://example.org/node/nexus_engineering_platform> .
+
+    tri:tri11 a ex:Triplet ;
+        ns1:meets_api_integration_requirement <http://example.org/node/fully_covered> ;
+        rdf:subject <http://example.org/node/nexus_engineering_platform> .
+
+    tri:tri2 a ex:Triplet ;
+        ns1:requires_availability_target <http://example.org/node/99_9> ;
+        rdf:subject <http://example.org/node/client> .
+
+    tri:tri3 a ex:Triplet ;
+        ns1:requires_api_integration <http://example.org/node/hospital_information_system_and_electronic_patient_record> ;
+        rdf:subject <http://example.org/node/client> .
+
+    tri:tri4 a ex:Triplet ;
+        ns1:requires_hosting_infrastructure <http://example.org/node/secnumcloud_qualified_infrastructure_or_equivalent_within_the_eu> ;
+        rdf:subject <http://example.org/node/client> .
+
+    tri:tri5 a ex:Triplet ;
+        ns1:has_dependency_requirement <http://example.org/node/no_dependency_on_non_european_suppliers> ;
+        rdf:subject <http://example.org/node/client> .
+
+    tri:tri6 a ex:Triplet ;
+        ns1:has_response_time <http://example.org/node/below_2_seconds> ;
+        rdf:subject <http://example.org/node/nexus_engineering_platform> .
+
+    tri:tri7 a ex:Triplet ;
+        ns1:has_availability_target <http://example.org/node/99_9> ;
+        rdf:subject <http://example.org/node/nexus_engineering_platform> .
+
+    tri:tri8 a ex:Triplet ;
+        ns1:has_api_integration <http://example.org/node/rest_webhook_and_standard_connectors_for_sih_dpi_integration> ;
+        rdf:subject <http://example.org/node/nexus_engineering_platform> .
+
+    tri:tri9 a ex:Triplet ;
+        ns1:meets_response_time_requirement <http://example.org/node/fully_covered> ;
+        rdf:subject <http://example.org/node/nexus_engineering_platform> .
+}
+
+<http://example.org/extraction/tri/extraction11> {
+    tri:tri46 a ex:Triplet ;
+        ns1:has_global_budget <http://example.org/node/900_000> ;
+        rdf:subject <http://example.org/node/client> .
+
+    tri:tri47 a ex:Triplet ;
+        ns1:has_contract_duration <http://example.org/node/5_years> ;
+        rdf:subject <http://example.org/node/client> .
+
+    tri:tri48 a ex:Triplet ;
+        ns1:has_annual_budget <http://example.org/node/180_000> ;
+        rdf:subject <http://example.org/node/client> .
+
+    tri:tri49 a ex:Triplet ;
+        ns1:has_target_gross_margin_range <http://example.org/node/25_35> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri50 a ex:Triplet ;
+        ns1:has_standard_daily_rate_range <http://example.org/node/700_1300> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri51 a ex:Triplet ;
+        ns1:requires_pilot_phase <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/contract> .
+
+    tri:tri52 a ex:Triplet ;
+        ns1:has_rollout_type <http://example.org/node/progressive> ;
+        rdf:subject <http://example.org/node/contract> .
+}
+
+<http://example.org/extraction/tri/extraction15> {
+    tri:tri80 a ex:Triplet ;
+        ns1:location <http://example.org/node/eu> ;
+        rdf:subject <http://example.org/node/ouranecloud> .
+
+    tri:tri81 a ex:Triplet ;
+        ns1:energy_source <http://example.org/node/renewable> ;
+        rdf:subject <http://example.org/node/ouranecloud> .
+
+    tri:tri82 a ex:Triplet ;
+        ns1:pue <http://example.org/node/1_2> ;
+        rdf:subject <http://example.org/node/ouranecloud> .
+
+    tri:tri83 a ex:Triplet ;
+        ns1:has_heat_reuse <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/ouranecloud> .
+
+    tri:tri84 a ex:Triplet ;
+        ns1:requires_low_carbon_infrastructure <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/the_client> .
+
+    tri:tri85 a ex:Triplet ;
+        ns1:requires_energy_consumption_reduction <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/the_client> .
+}
+
+<http://example.org/extraction/tri/extraction8> {
+    tri:tri28 a ex:Triplet ;
+        ns1:has_certification <http://example.org/node/h_bergeur_de_donn_es_de_sant_hds> ;
+        rdf:subject <http://example.org/node/ouranecloud> .
+
+    tri:tri29 a ex:Triplet ;
+        ns1:supports_explainability <http://example.org/node/yes> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    tri:tri30 a ex:Triplet ;
+        ns1:supports_traceability <http://example.org/node/yes> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    tri:tri31 a ex:Triplet ;
+        ns1:has_audit_logs <http://example.org/node/yes> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    tri:tri32 a ex:Triplet ;
+        ns1:has_compliance_measures <http://example.org/node/existing_capabilities_and_measures> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction10> {
+    tri:tri40 a ex:Triplet ;
+        ns1:has_regulatory_requirement <http://example.org/node/ce_mdr> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri41 a ex:Triplet ;
+        ns1:has_regulatory_requirement <http://example.org/node/gdpr> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri42 a ex:Triplet ;
+        ns1:has_contractual_agreement_status <http://example.org/node/pending_review> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri43 a ex:Triplet ;
+        ns1:has_solution_design_status <http://example.org/node/pending_validation> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri44 a ex:Triplet ;
+        ns1:has_legal_risk_level <http://example.org/node/high> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri45 a ex:Triplet ;
+        ns1:has_compliance_status <http://example.org/node/compliant> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+}
+
+<http://example.org/extraction/con/extraction4> {
+    con:con10 a ex:Constraint ;
+        ns1:must_be_positioned_so_as_not_to_require <http://example.org/node/medical_device_qualification_ce_marking_mdr> ;
+        ex:constraintType ex:regulatory ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con11 a ex:Constraint ;
+        ns1:must_be_compatible_with <http://example.org/node/daily_clinical_use> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/response_times> .
+
+    con:con12 a ex:Constraint ;
+        ns1:is_expected_to_be_below <http://example.org/node/2_seconds_for_common_queries> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/response_time> .
+
+    con:con13 a ex:Constraint ;
+        ns1:is_expected_to_be_at_a_high_level <http://example.org/node/> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/answer_relevance> .
+
+    con:con14 a ex:Constraint ;
+        ns1:must_be_at_a_high_level_including_outside_office_hours <http://example.org/node/24_7_services> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/availability> .
+
+    con:con15 a ex:Constraint ;
+        ns1:is_expected_to_be_of_the_order_of <http://example.org/node/99_9> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/availability_target> .
+
+    con:con16 a ex:Constraint ;
+        ns1:must_integrate_with <http://example.org/node/existing_hospital_information_system_sih_and_electronic_patient_record_dpi> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con17 a ex:Constraint ;
+        ns1:must_support <http://example.org/node/health_interoperability_standards_hl7_fhir_national_health_identifier_ins_and_national_framework_s_gur_du_num_rique_en_sant_mon_espace_sant_dmp> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con18 a ex:Constraint ;
+        ns1:must_be_performed_on <http://example.org/node/secnumcloud_qualified_infrastructure_or_equivalent> ;
+        ex:constraintType ex:sovereignty ;
+        rdf:subject <http://example.org/node/hosting> .
+
+    con:con19 a ex:Constraint ;
+        ns1:particular_attention_will_be_paid_to <http://example.org/node/non_european_suppliers> ;
+        ex:constraintType ex:sovereignty ;
+        rdf:subject <http://example.org/node/dependency> .
+
+    con:con20 a ex:Constraint ;
+        ns1:is_estimated_at <http://example.org/node/900_000_over_5_years> ;
+        ex:constraintType ex:budgetary ;
+        rdf:subject <http://example.org/node/global_budget> .
+
+    con:con21 a ex:Constraint ;
+        ns1:must_remain_controlled_and_compatible_with <http://example.org/node/authority_s_budgetary_capacity> ;
+        ex:constraintType ex:budgetary ;
+        rdf:subject <http://example.org/node/annual_operating_cost> .
+
+    con:con22 a ex:Constraint ;
+        ns1:must_contribute_to_reducing <http://example.org/node/energy_consumption> ;
+        ex:constraintType ex:environmental ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con23 a ex:Constraint ;
+        ns1:must_rely_as_far_as_possible_on <http://example.org/node/low_carbon_infrastructure> ;
+        ex:constraintType ex:environmental ;
+        rdf:subject <http://example.org/node/infrastructure> .
+
+    con:con24 a ex:Constraint ;
+        ns1:must_be_conducted_progressively_with_a_pilot_phase <http://example.org/node/on_a_limited_perimeter_one_or_two_departments_followed_by_progressive_generalisation_to_all_services> ;
+        ex:constraintType ex:temporal ;
+        rdf:subject <http://example.org/node/project> .
+
+    con:con8 a ex:Constraint ;
+        ns1:must_be_designed_as <http://example.org/node/an_assistance_tool> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con9 a ex:Constraint ;
+        ns1:may_not_be_automated_without <http://example.org/node/explicit_validation_by_a_qualified_professional> ;
+        ex:constraintType ex:regulatory ;
+        rdf:subject <http://example.org/node/clinical_or_medico_administrative_decision> .
+}
+
+<http://example.org/extraction/con/extraction3> {
+    con:con1 a ex:Constraint ;
+        ns1:must_guarantee_strict_compliance_with <http://example.org/node/gdpr> ;
+        ex:constraintType ex:regulatory ;
+        rdf:subject <http://example.org/node/titleholder> .
+
+    con:con2 a ex:Constraint ;
+        ns1:must_be_hosted <http://example.org/node/exclusively_within_the_european_union> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/health_data> .
+
+    con:con3 a ex:Constraint ;
+        ns1:must_not_be_transferred_outside <http://example.org/node/the_european_union> ;
+        ex:constraintType ex:sovereignty ;
+        rdf:subject <http://example.org/node/data> .
+
+    con:con4 a ex:Constraint ;
+        ns1:must_be_protected_by <http://example.org/node/encryption_pseudonymisation_where_relevant> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/sensitive_data> .
+
+    con:con5 a ex:Constraint ;
+        ns1:must_hold <http://example.org/node/french_h_bergeur_de_donn_es_de_sant_hds_certification> ;
+        ex:constraintType ex:regulatory ;
+        rdf:subject <http://example.org/node/infrastructure_hosting_the_solution> .
+
+    con:con6 a ex:Constraint ;
+        ns1:must_be <http://example.org/node/explainable> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/recommendations_or_suggestions_produced_by_the_solution> .
+
+    con:con7 a ex:Constraint ;
+        ns1:must_not_introduce <http://example.org/node/rupture_in_clinical_or_administrative_workflows> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+}
+
+<http://example.org/extraction/tri/extraction16> {
+    tri:tri86 a ex:Triplet ;
+        ns1:has_environmental_practice <http://example.org/node/low_carbon_infrastructure> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri87 a ex:Triplet ;
+        ns1:has_digital_sobriety_practice <http://example.org/node/model_right_sizing> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri88 a ex:Triplet ;
+        ns1:has_digital_sobriety_practice <http://example.org/node/caching> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri89 a ex:Triplet ;
+        ns1:has_digital_sobriety_practice <http://example.org/node/batching> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri90 a ex:Triplet ;
+        ns1:has_carbon_reporting_capability <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri91 a ex:Triplet ;
+        ns1:has_commitment_to_sustainability <http://example.org/node/continuous_improvement> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction6> {
+    tri:tri12 a ex:Triplet ;
+        ns1:hosting_infrastructure_coverage <http://example.org/node/fully_covered> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri13 a ex:Triplet ;
+        ns1:dependency_on_non_eu_suppliers_coverage <http://example.org/node/partially_covered> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri14 a ex:Triplet ;
+        ns1:has_secnumcloud_qualification <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/ouranecloud> .
+
+    tri:tri15 a ex:Triplet ;
+        ns1:has_hds_certification <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/ouranecloud> .
+
+    tri:tri16 a ex:Triplet ;
+        ns1:location <http://example.org/node/eu> ;
+        rdf:subject <http://example.org/node/ouranecloud> .
+
+    tri:tri17 a ex:Triplet ;
+        ns1:provided_by <http://example.org/node/ouranecloud> ;
+        rdf:subject <http://example.org/node/sovereign_hds_tier> .
+
+    tri:tri18 a ex:Triplet ;
+        ns1:hosted_on <http://example.org/node/sovereign_hds_tier> ;
+        rdf:subject <http://example.org/node/nexus_engineering_atelier_platform> .
+}
+
+<http://example.org/extraction/req/extraction1> {
+    req:req1 a ex:Requirement ;
+        ns1:improve <http://example.org/node/efficiency> ;
+        ex:category ex:healthcare ;
+        rdf:subject <http://example.org/node/hospital_staff> .
+
+    req:req10 a ex:Requirement ;
+        ns1:ensure <http://example.org/node/continuity_of_care_between_professionals_shifts_and_services> ;
+        ex:category ex:healthcare ;
+        rdf:subject <http://example.org/node/professionals> .
+
+    req:req2 a ex:Requirement ;
+        ns1:enhance <http://example.org/node/quality_and_safety_of_care_delivered_to_patients> ;
+        ex:category ex:healthcare ;
+        rdf:subject <http://example.org/node/hospital_staff> .
+
+    req:req3 a ex:Requirement ;
+        ns1:facilitate <http://example.org/node/access_to_information> ;
+        ex:category ex:healthcare ;
+        rdf:subject <http://example.org/node/hospital_staff> .
+
+    req:req4 a ex:Requirement ;
+        ns1:improve <http://example.org/node/quality_of_written_outputs> ;
+        ex:category ex:healthcare ;
+        rdf:subject <http://example.org/node/hospital_staff> .
+
+    req:req5 a ex:Requirement ;
+        ns1:reduce <http://example.org/node/processing_and_documentation_times> ;
+        ex:category ex:healthcare ;
+        rdf:subject <http://example.org/node/hospital_staff> .
+
+    req:req6 a ex:Requirement ;
+        ns1:support <http://example.org/node/clinical_administrative_activities> ;
+        ex:category ex:healthcare ;
+        rdf:subject <http://example.org/node/hospital_staff> .
+
+    req:req7 a ex:Requirement ;
+        ns1:retrieve <http://example.org/node/information_from_internal_procedures_care_protocols_and_applicable_regulation> ;
+        ex:category ex:healthcare ;
+        rdf:subject <http://example.org/node/hospital_staff> .
+
+    req:req8 a ex:Requirement ;
+        ns1:assist <http://example.org/node/in_drafting_medical_and_administrative_documents> ;
+        ex:category ex:healthcare ;
+        rdf:subject <http://example.org/node/hospital_staff> .
+
+    req:req9 a ex:Requirement ;
+        ns1:handle <http://example.org/node/dossiers_admissions_coding_medico_social_pathways_etc> ;
+        ex:category ex:healthcare ;
+        rdf:subject <http://example.org/node/hospital_staff> .
+}
+
+<http://example.org/extraction/tri/extraction14> {
+    tri:tri73 a ex:Triplet ;
+        ns1:provides <http://example.org/node/structured_handover_summaries> ;
+        rdf:subject <http://example.org/node/nexus_engineering_solution> .
+
+    tri:tri74 a ex:Triplet ;
+        ns1:enables <http://example.org/node/seamless_continuity_of_care> ;
+        rdf:subject <http://example.org/node/nexus_engineering_solution> .
+
+    tri:tri75 a ex:Triplet ;
+        ns1:integrates_with <http://example.org/node/electronic_patient_record> ;
+        rdf:subject <http://example.org/node/nexus_engineering_solution> .
+
+    tri:tri76 a ex:Triplet ;
+        ns1:integrates_with <http://example.org/node/existing_hospital_information_systems> ;
+        rdf:subject <http://example.org/node/nexus_engineering_solution> .
+
+    tri:tri77 a ex:Triplet ;
+        ns1:has <http://example.org/node/auditable_performance> ;
+        rdf:subject <http://example.org/node/nexus_engineering_retrieval_augmented_generation_model> .
+
+    tri:tri78 a ex:Triplet ;
+        ns1:has <http://example.org/node/strong_grounding_behavior> ;
+        rdf:subject <http://example.org/node/nexus_engineering_retrieval_augmented_generation_model> .
+
+    tri:tri79 a ex:Triplet ;
+        ns1:has <http://example.org/node/lower_raw_performance_on_complex_tasks> ;
+        rdf:subject <http://example.org/node/nexus_engineering_retrieval_augmented_generation_model> .
+}
+
+<http://example.org/extraction/tri/extraction13> {
+    tri:tri60 a ex:Triplet ;
+        ns1:expects_answer_relevance_level <http://example.org/node/high> ;
+        rdf:subject <http://example.org/node/client> .
+
+    tri:tri61 a ex:Triplet ;
+        ns1:expects_response_time <http://example.org/node/daily_clinical_use> ;
+        rdf:subject <http://example.org/node/client> .
+
+    tri:tri62 a ex:Triplet ;
+        ns1:requires_integration_with <http://example.org/node/hospital_information_systems> ;
+        rdf:subject <http://example.org/node/client> .
+
+    tri:tri63 a ex:Triplet ;
+        ns1:must_support_document_types <http://example.org/node/medical_documents> ;
+        rdf:subject <http://example.org/node/ai_solution> .
+
+    tri:tri64 a ex:Triplet ;
+        ns1:must_support_document_types <http://example.org/node/administrative_documents> ;
+        rdf:subject <http://example.org/node/ai_solution> .
+
+    tri:tri65 a ex:Triplet ;
+        ns1:must_handle <http://example.org/node/dossiers> ;
+        rdf:subject <http://example.org/node/ai_solution> .
+
+    tri:tri66 a ex:Triplet ;
+        ns1:must_support <http://example.org/node/continuity_of_care> ;
+        rdf:subject <http://example.org/node/ai_solution> .
+
+    tri:tri67 a ex:Triplet ;
+        ns1:can_leverage <http://example.org/node/retrieval_augmented_generation> ;
+        rdf:subject <http://example.org/node/ai_components> .
+
+    tri:tri68 a ex:Triplet ;
+        ns1:enables <http://example.org/node/answer_grounding_in_validated_documents> ;
+        rdf:subject <http://example.org/node/retrieval_augmented_generation> .
+
+    tri:tri69 a ex:Triplet ;
+        ns1:allows_creation_of <http://example.org/node/structured_documents> ;
+        rdf:subject <http://example.org/node/template_guided_drafting_capability> .
+
+    tri:tri70 a ex:Triplet ;
+        ns1:supports_document_types <http://example.org/node/discharge_summaries> ;
+        rdf:subject <http://example.org/node/template_guided_drafting_capability> .
+
+    tri:tri71 a ex:Triplet ;
+        ns1:supports_document_types <http://example.org/node/medical_correspondence> ;
+        rdf:subject <http://example.org/node/template_guided_drafting_capability> .
+
+    tri:tri72 a ex:Triplet ;
+        ns1:supports_document_types <http://example.org/node/administrative_documents> ;
+        rdf:subject <http://example.org/node/template_guided_drafting_capability> .
+}
+
+GRAPH <urn:x-arq:DefaultGraph> {
+    <http://example.org/extraction/con/extraction3> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk3> .
+
+    <http://example.org/extraction/con/extraction4> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk4> .
+
+    <http://example.org/extraction/pro/extraction17> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk17> .
+
+    <http://example.org/extraction/pro/extraction18> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk18> .
+
+    <http://example.org/extraction/req/extraction1> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk1> .
+
+    <http://example.org/extraction/req/extraction2> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk2> .
+
+    <http://example.org/extraction/tri/extraction10> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk10> .
+
+    <http://example.org/extraction/tri/extraction11> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk11> .
+
+    <http://example.org/extraction/tri/extraction12> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk12> .
+
+    <http://example.org/extraction/tri/extraction13> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk13> .
+
+    <http://example.org/extraction/tri/extraction14> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk14> .
+
+    <http://example.org/extraction/tri/extraction15> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk15> .
+
+    <http://example.org/extraction/tri/extraction16> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk16> .
+
+    <http://example.org/extraction/tri/extraction5> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk5> .
+
+    <http://example.org/extraction/tri/extraction6> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk6> .
+
+    <http://example.org/extraction/tri/extraction7> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk7> .
+
+    <http://example.org/extraction/tri/extraction8> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk8> .
+
+    <http://example.org/extraction/tri/extraction9> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk9> .
+
+    <http://example.org/node/message1> a prov:Entity ;
+        ex:sent_To <http://example.org/node/user> ;
+        prov:generatedAtTime "2026-07-15T13:56:50"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/orchestrator> ;
+        prov:wasDerivedFrom <http://example.org/node/message0> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity2> .
+
+    <http://example.org/activity/activity1> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T13:53:37"^^xsd:dateTime ;
+        prov:wasAssociatedWith <http://example.org/node/user> .
+
+    <http://example.org/activity/activity10> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:01:30"^^xsd:dateTime ;
+        prov:used <http://example.org/node/message8> ;
+        prov:wasAssociatedWith <http://example.org/node/budget_agent> .
+
+    <http://example.org/activity/activity11> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:01:59"^^xsd:dateTime ;
+        prov:wasAssociatedWith <http://example.org/node/orchestrator> .
+
+    <http://example.org/activity/activity12> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:02:59"^^xsd:dateTime ;
+        prov:used <http://example.org/node/message10> ;
+        prov:wasAssociatedWith <http://example.org/node/aiinnovation_agent> .
+
+    <http://example.org/activity/activity13> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:03:40"^^xsd:dateTime ;
+        prov:wasAssociatedWith <http://example.org/node/orchestrator> .
+
+    <http://example.org/activity/activity14> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:04:09"^^xsd:dateTime ;
+        prov:used <http://example.org/node/message12> ;
+        prov:wasAssociatedWith <http://example.org/node/csrsustainability_agent> .
+
+    <http://example.org/activity/activity15> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:06:53"^^xsd:dateTime ;
+        prov:used <http://example.org/node/message0> ;
+        prov:wasAssociatedWith <http://example.org/node/orchestrator> .
+
+    <http://example.org/activity/activity2> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T13:56:50"^^xsd:dateTime ;
+        prov:used <http://example.org/node/message0> ;
+        prov:wasAssociatedWith <http://example.org/node/orchestrator> .
+
+    <http://example.org/activity/activity3> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T13:56:50"^^xsd:dateTime ;
+        prov:wasAssociatedWith <http://example.org/node/orchestrator> .
+
+    <http://example.org/activity/activity4> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T13:57:44"^^xsd:dateTime ;
+        prov:used <http://example.org/node/message2> ;
+        prov:wasAssociatedWith <http://example.org/node/technicalarchitect_agent> .
+
+    <http://example.org/activity/activity5> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T13:58:24"^^xsd:dateTime ;
+        prov:wasAssociatedWith <http://example.org/node/orchestrator> .
+
+    <http://example.org/activity/activity6> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T13:59:02"^^xsd:dateTime ;
+        prov:used <http://example.org/node/message4> ;
+        prov:wasAssociatedWith <http://example.org/node/securitycompliance_agent> .
+
+    <http://example.org/activity/activity7> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T13:59:34"^^xsd:dateTime ;
+        prov:wasAssociatedWith <http://example.org/node/orchestrator> .
+
+    <http://example.org/activity/activity8> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:00:15"^^xsd:dateTime ;
+        prov:used <http://example.org/node/message6> ;
+        prov:wasAssociatedWith <http://example.org/node/legal_agent> .
+
+    <http://example.org/activity/activity9> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:00:43"^^xsd:dateTime ;
+        prov:wasAssociatedWith <http://example.org/node/orchestrator> .
+
+    <http://example.org/node/chunk1> a prov:Entity ;
+        ex:hasText "Public Tender - Centre Hospitalier Régional de Belval (CHRB) Implementation of an AI assistance solution for hospital staff 1. Context and objectives The Centre Hospitalier Régional de Belval (CHRB) is a public regional hospital serving the Belval region (approximately 1,200 beds and 4,500 staff across medical, care and medico-administrative functions). As part of The Centre Hospitalier Régional de Belval (CHRB) digital transformation and of the national Ségur du numérique en santé programme, The Centre Hospitalier Régional de Belval (CHRB) wishes to improve the efficiency of The Centre Hospitalier Régional de Belval (CHRB) staff and the quality and safety of the care delivered to patients. Staff face a growing complexity of procedures, a multiplicity of information sources (care protocols, recommendations from the Haute Autorité de Santé (HAS), internal procedures, regulatory texts, business systems) and an increasing volume of administrative and documentation work that reduces the time available for patient care. In this context, The Centre Hospitalier Régional de Belval (CHRB) wishes to procure, deploy and operate an artificial intelligence solution that assists staff in staff daily activities - facilitating access to information, improving the quality of written outputs, and reducing processing and documentation times - while remaining strictly a non-decisional support tool. The present contract covers the design, implementation and deployment of such a solution. 2. General description of the need The expected solution must provide hospital staff with an intelligent assistance tool, accessible from hospital staff work environment, capable of supporting hospital staff in hospital staff clinical-administrative activities. an intelligent assistance tool, accessible from their work environment, capable of supporting them in their clinical-administrative activities may notably cover: retrieval of information from internal procedures, care protocols and applicable regulation; assistance in drafting medical and administrative documents; support in handling dossiers (admissions, coding, medico-social pathways, etc.); support for the continuity of care between professionals, shifts and services. The solution must fit into the existing practices of staff and must not introduce a rupture in clinical or administrative workflows. 3. Functional scope 3.1 Information consultation assistance. The solution must let staff quickly access reliable, up-to-date information drawn from the authority's internal procedures, care protocols and HAS recommendations, applicable regulatory texts, and internal documents (guides, notes, reference frameworks, drug references). The solution must contextualise The solution answers to the staff member's request. 3.2 Drafting assistance. The solution must assist the drafting of clinical and administrative content, notably discharge summaries and medical reports (comptes-rendus), medical correspondence and patient letters, administrative documents and dossier syntheses. Generated content must be adapted to the clinical/administrative context and conform to expected quality standards. 3.3 Dossier-handling assistance. The solution must assist staff in analysing and handling dossiers by surfacing relevant information, recalling applicable rules, and suggesting actions or verifications. The solution must support medical coding (PMSI / ICD-10) for activity reporting (T2A). The solution must take the dossier context into account where available. No decision may be automated. 3.4 Collaboration and continuity of care. The solution must facilitate the continuity of care between professionals and services by enabling relevant information sharing, an understanding of the context of an in-progress patient pathway, and an efficient resumption of handling by another professional. 4. Regulatory and legal constraints 4.1 Personal and health data protection. The titleholder must guarantee strict compliance with the GDPR. Health data is processed as special-category data (GDPR Art. 9) and medical confidentiality (secret médical) must be preserved. Data must be hosted exclusively within the European Union; no transfer of data outside the European Union is authorised; sensitive data must be appropriately protected (encryption, pseudonymisation where relevant). 4.2 Health-data hosting (HDS). The infrastructure hosting The solution must hold the French Hébergeur de Données de Santé (HDS) certification. 4.3 Explainability and traceability. Recommendations or suggestions produced by The solution must be explainable." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk10> a prov:Entity ;
+        ex:hasText "Our Security & Compliance function flags CE/MDR implications and CE/MDR implications consequences for liability and positioning where a use case could approach the medical-device threshold. Based on the provided context, it appears that we is compliant with these regulatory requirements. However, the Legal Agent for Faber IA would like to flag the importance of ensuring that we contractual agreements and data processing terms explicitly address GDPR compliance, medical confidentiality, and the non-automation of clinical decisions without professional validation. Additionally, we should verify that our solution design and deployment align with the requirement for positioning as an assistance tool, avoiding any implications that could suggest a need for medical-device qualification. In summary, while we company context suggests compliance with these regulatory requirements, it is crucial to carefully review and ensure that all legal documents, contractual agreements, and solution designs explicitly address these critical aspects to mitigate potential legal risks." ;
+        prov:wasDerivedFrom <http://example.org/node/message7> .
+
+    <http://example.org/node/chunk11> a prov:Entity ;
+        ex:hasText "The client's global budget is €900,000 over 5 years. Annual operating costs must remain controlled and compatible with the authority's budgetary capacity. The tender requires a pilot phase followed by progressive rollout. Given our pricing model and current financial position, what is our projected margin on this contract, and are there cost-optimisation strategies our can propose? our standard daily rates range from €700 to €1300 ex-VAT, and our target a gross margin between 25% and 35%. The client's global budget of €900,000 over 5 years translates to an annual budget of €180,000. Given the budget envelope and our pricing model, it is likely that our can achieve a gross margin between 25% and 35%." ;
+        prov:wasDerivedFrom <http://example.org/node/message9> .
+
+    <http://example.org/node/chunk12> a prov:Entity ;
+        ex:hasText "However, to provide a more precise projection, our need to consider the cost structure, including one-off project costs such as framing, design, integration, change management, and training, as well as recurring run costs like platform subscription, hosting, inference, support, and maintenance. Since The tender requires a pilot phase followed by progressive rollout, our can propose a cost-optimisation strategy that takes into account the phased implementation. By conducting the project progressively, our can help control annual operating costs and ensure annual operating costs remain compatible with the authority's budgetary capacity. our commercial posture favours configurations that protect the gross margin and recurring-cost predictability. our can arbitrate toward more cost-efficient tiers or models where the requirements allow, which may include proposing the sovereign HDS tier and the sovereign European model, as they are more cost-efficient on the recurring side than the premium high-availability tier combined with top-tier proprietary inference. By working closely with the architect to keep the proposed configuration within the budget envelope and preserve an acceptable margin, our can aim to achieve a gross margin within our target range of 25% to 35%. However, without more detailed information on the specific requirements and resource allocation, it is challenging to provide a more precise projection of the margin." ;
+        prov:wasDerivedFrom <http://example.org/node/message9> .
+
+    <http://example.org/node/chunk13> a prov:Entity ;
+        ex:hasText "The client expects a high level of answer relevance, response times compatible with daily clinical use, and integration with existing hospital information systems. The solution must assist in drafting medical and administrative documents, handle dossiers, and support continuity of care between professionals and services. How can we design the AI components to meet these requirements and provide an innovative solution? To meet The client expectations, the AI components can be designed leveraging we Retrieval-augmented generation capabilities, which enable we to generate answers grounded in the organization's own validated documents. This approach ensures a high level of answer relevance as required by The client. For drafting medical and administrative documents, we can utilize we template-guided drafting capability, which allows for the creation of structured documents such as discharge summaries, medical correspondence, and administrative documents. This feature will assist hospital staff in generating high-quality written outputs efficiently. To handle dossiers effectively, we solution can employ the capabilities of retrieval and synthesis of information from multiple documents, ensuring that all relevant information is considered when handling a dossier." ;
+        prov:wasDerivedFrom <http://example.org/node/message11> .
+
+    <http://example.org/node/chunk14> a prov:Entity ;
+        ex:hasText "Additionally, we structured extraction capability can assist in tasks such as PMSI/ICD-10 coding from clinical notes, streamlining the dossier handling process. Supporting continuity of care between professionals and services is crucial, and our solution can facilitate Supporting through dossier-context continuity. dossier-context continuity provides structured handover summaries that enable another professional or a colleague resuming a shift to efficiently take over an in-progress dossier with full context, thus ensuring seamless continuity of care. Regarding integration with existing hospital information systems, we design principle is to embed the assistant into the staff's existing work environment and tools without introducing any rupture. embed means we can integrate our solution with the client's electronic patient record (DPI) and other existing systems, ensuring a smooth workflow and minimizing disruptions. To achieve response times compatible with daily clinical use, we will focus on optimizing the performance of we Retrieval-augmented generation model. Although our Retrieval-augmented generation model is fully auditable and has strong grounding behavior, our Retrieval-augmented generation model may have somewhat lower raw performance on complex generative tasks compared to top-tier proprietary models. However, this trade-off is necessary to ensure explainability and sovereignty over the AI system. By addressing these key requirements through we AI capabilities and design principles, we can provide an innovative solution that not only meets but exceeds The client expectations in terms of efficiency, quality of care, and integration with existing systems." ;
+        prov:wasDerivedFrom <http://example.org/node/message11> .
+
+    <http://example.org/node/chunk15> a prov:Entity ;
+        ex:hasText "The client wishes to limit the environmental footprint of The client information systems. The titleholder must propose a solution that contributes to reducing energy consumption and relies as far as possible on low-carbon infrastructure. What measures can we take to ensure a solution that contributes to reducing energy consumption and relies as far as possible on low-carbon infrastructure meets these sustainability requirements? To address The client requirement for reducing energy consumption and relying on low-carbon infrastructure, we can leverage we existing environmental capabilities. we have a green hosting partner, OuraneCloud, which is located in the EU and uses renewable energy, with a power usage effectiveness (PUE) of 1.2 and heat reuse capabilities." ;
+        prov:wasDerivedFrom <http://example.org/node/message13> .
+
+    <http://example.org/node/chunk16> a prov:Entity ;
+        ex:hasText "This partnership allows we to host a solution that contributes to reducing energy consumption and relies as far as possible on low-carbon infrastructure in an environmentally friendly manner. Additionally, we practice digital sobriety through model right-sizing, caching, and batching, which helps minimize energy consumption. we also have a carbon reporting capability, enabling we to monitor and optimize the carbon footprint of a solution that contributes to reducing energy consumption and relies as far as possible on low-carbon infrastructure. By utilizing we low-carbon infrastructure and implementing we digital sobriety practices, we can propose a solution that contributes to reducing energy consumption and meets The client sustainability requirements. Furthermore, we published trajectory to reduce carbon intensity per managed assistant year on year demonstrates we commitment to continuous improvement in this area." ;
+        prov:wasDerivedFrom <http://example.org/node/message13> .
+
+    <http://example.org/node/chunk17> a prov:Entity ;
+        ex:hasText "Our consortium proposes an artificial intelligence assistance solution designed to support hospital staff in hospital staff daily clinical-administrative activities at the Centre Hospitalier Régional de Belval (CHRB). Our consortium solution, built on the Atelier platform hosted on the Sovereign HDS tier provided by OuraneCloud, ensures strict compliance with GDPR and medical confidentiality. Our consortium guarantee that all data is encrypted in transit using TLS 1.3 and at rest using AES-256, and Our consortium apply pseudonymisation where relevant. Our solution, built on the Atelier platform hosted on the Sovereign HDS tier provided by OuraneCloud, provides an intelligent assistance tool accessible from hospital staff's work environment, facilitating access to reliable, up-to-date information drawn from internal procedures, care protocols, and applicable regulatory texts. Our solution, built on the Atelier platform hosted on the Sovereign HDS tier provided by OuraneCloud, assists in drafting medical and administrative documents, such as discharge summaries and medical reports, and supports dossier handling by surfacing relevant information and suggesting actions or verifications. Our solution, built on the Atelier platform hosted on the Sovereign HDS tier provided by OuraneCloud, also facilitates the continuity of care between professionals and services through structured handover summaries. the Atelier platform hosted on the Sovereign HDS tier provided by OuraneCloud Retrieval-augmented generation capabilities enable the Atelier platform hosted on the Sovereign HDS tier provided by OuraneCloud to generate answers grounded in the organization's own validated documents, ensuring a high level of answer relevance. The template-guided drafting capability allows for the creation of structured documents, such as discharge summaries, medical correspondence, and administrative documents. Our solution, built on the Atelier platform hosted on the Sovereign HDS tier provided by OuraneCloud, integrates with existing hospital information systems (SIH) and electronic patient records (DPI), supporting health interoperability standards like HL7/FHIR, the national health identifier (INS), and the national framework (Ségur du numérique en santé, Mon espace santé/DMP). Our consortium ensure high availability, with a target of 99.9%, including outside office hours (24/7 services). Our solution, built on the Atelier platform hosted on the Sovereign HDS tier provided by OuraneCloud, provides response times compatible with daily clinical use, with an expected response time below 2 seconds for common queries. Our consortium also guarantee that Our consortium infrastructure meets the French Hébergeur de Données de Santé (HDS) certification and is hosted exclusively within the European Union." ;
+        prov:wasDerivedFrom <http://example.org/node/message14> .
+
+    <http://example.org/node/chunk18> a prov:Entity ;
+        ex:hasText "Our consortium hosting partner, OuraneCloud, uses renewable energy, has a power usage effectiveness (PUE) of 1.2, and heat reuse capabilities, allowing Our consortium to reduce energy consumption and rely on low-carbon infrastructure. Our consortium practice digital sobriety through model right-sizing, caching, and batching, minimizing energy consumption. Our consortium proposed approach includes a pilot phase on a limited perimeter (one or two departments) followed by progressive generalization to all services, with change management support and staff training. Our proposed approach will help control annual operating costs, ensuring annual operating costs remain compatible with the authority's budgetary capacity. The global budget for Our solution, built on the Atelier platform hosted on the Sovereign HDS tier provided by OuraneCloud, is estimated at €900,000 over 5 years, with an annual operating cost of €180,000. Our consortium aim to achieve a gross margin within Our consortium target range of 25% to 35%. Our consortium commercial posture favors configurations that protect the gross margin and recurring-cost predictability, proposing the sovereign HDS tier and the sovereign European model as more cost-efficient options. By leveraging Our consortium AI capabilities, existing environmental practices, and commitment to sustainability, Our consortium can provide an innovative solution that meets the client's expectations in terms of efficiency, quality of care, integration with existing systems, and reduction of energy consumption. Our solution, built on the Atelier platform hosted on the Sovereign HDS tier provided by OuraneCloud, is designed to assist hospital staff in hospital staff daily activities while ensuring strict compliance with regulatory requirements, data sovereignty, and low-carbon infrastructure reliance. In conclusion, Our consortium proposal offers a comprehensive AI assistance solution that addresses the Centre Hospitalier Régional de Belval (CHRB) needs, providing an efficient, integrated, and sustainable tool for hospital staff to improve patient care quality and reduce administrative burdens." ;
+        prov:wasDerivedFrom <http://example.org/node/message14> .
+
+    <http://example.org/node/chunk2> a prov:Entity ;
+        ex:hasText "It must be possible, a posteriori, to understand the elements that led to an output (source grounding, audit trail), consistent with HAS guidance on the use of AI in healthcare. 4.4 Medical responsibility. The solution must be designed as an assistance tool. No clinical or medico-administrative decision may be automated without explicit validation by a qualified professional. The solution must be positioned so as not to require medical-device qualification (CE marking / MDR); should any use case approach medical-device qualification (CE marking / MDR), the bidder must explicitly address the implications. 5. Technical constraints 5.1 Performance. The solution must provide response times compatible with daily clinical use. As an indication, a response time below 2 seconds is expected for common queries. A high level of answer relevance is expected. 5.2 Availability. Continuity of care requires a high level of availability, including outside office hours (24/7 services). An availability target of the order of 99.9% is expected. 5.3 Integration and interoperability. The solution must integrate with the existing hospital information system (SIH) and the electronic patient record (DPI). The solution must support health interoperability standards (HL7 / FHIR), the national health identifier (INS), and the national framework (Ségur du numérique en santé, Mon espace santé / DMP). API-type interfaces are expected, as is integration with user directories. 6. Sovereignty constraints the authority's attaches particular importance to data sovereignty. Hosting must be performed on SecNumCloud-qualified infrastructure or equivalent, and particular attention will be paid to dependency on non-European suppliers. 7. Budget constraints The global budget allocated to the project is estimated at 900,000 over 5 years. The annual operating cost must remain controlled and compatible with the authority's budgetary capacity. The titleholder must propose an approach that optimises costs while guaranteeing the expected quality of service. 8. Environmental constraints As part of the authority's sustainable-development policy, the authority's wishes to limit the environmental footprint of the authority's information systems. The titleholder must propose a solution that contributes to reducing energy consumption and relies, as far as possible, on low-carbon infrastructure. 9. Deployment terms the project must be conducted progressively, with a pilot phase on a limited perimeter (one or two departments) followed by progressive generalisation to all services. Change-management support and staff training are expected. 10. Evaluation criteria Offers will be evaluated against the following criteria: quality and relevance of the proposed solution; compliance with regulatory requirements; level of security; data sovereignty; quality of integration with the existing SIH/DPI; total cost of the proposed solution; consideration of environmental issues; capacity for innovation." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk3> a prov:Entity ;
+        ex:hasText "Public Tender - Centre Hospitalier Régional de Belval (CHRB) Implementation of an AI assistance solution for hospital staff 1. Context and objectives The Centre Hospitalier Régional de Belval (CHRB) is a public regional hospital serving the Belval region (approximately 1,200 beds and 4,500 staff across medical, care and medico-administrative functions). As part of The Centre Hospitalier Régional de Belval (CHRB) digital transformation and of the national Ségur du numérique en santé programme, The Centre Hospitalier Régional de Belval (CHRB) wishes to improve the efficiency of The Centre Hospitalier Régional de Belval (CHRB) staff and the quality and safety of the care delivered to patients. Staff face a growing complexity of procedures, a multiplicity of information sources (care protocols, recommendations from the Haute Autorité de Santé (HAS), internal procedures, regulatory texts, business systems) and an increasing volume of administrative and documentation work that reduces the time available for patient care. In this context, The Centre Hospitalier Régional de Belval (CHRB) wishes to procure, deploy and operate an artificial intelligence solution that assists staff in staff daily activities - facilitating access to information, improving the quality of written outputs, and reducing processing and documentation times - while remaining strictly a non-decisional support tool. The present contract covers the design, implementation and deployment of such a solution. 2. General description of the need The expected solution must provide hospital staff with an intelligent assistance tool, accessible from hospital staff work environment, capable of supporting hospital staff in hospital staff clinical-administrative activities. an intelligent assistance tool, accessible from their work environment, capable of supporting them in their clinical-administrative activities may notably cover: retrieval of information from internal procedures, care protocols and applicable regulation; assistance in drafting medical and administrative documents; support in handling dossiers (admissions, coding, medico-social pathways, etc.); support for the continuity of care between professionals, shifts and services. The solution must fit into the existing practices of staff and must not introduce a rupture in clinical or administrative workflows. 3. Functional scope 3.1 Information consultation assistance. The solution must let staff quickly access reliable, up-to-date information drawn from the authority's internal procedures, care protocols and HAS recommendations, applicable regulatory texts, and internal documents (guides, notes, reference frameworks, drug references). The solution must contextualise The solution answers to the staff member's request. 3.2 Drafting assistance. The solution must assist the drafting of clinical and administrative content, notably discharge summaries and medical reports (comptes-rendus), medical correspondence and patient letters, administrative documents and dossier syntheses. Generated content must be adapted to the clinical/administrative context and conform to expected quality standards. 3.3 Dossier-handling assistance. The solution must assist staff in analysing and handling dossiers by surfacing relevant information, recalling applicable rules, and suggesting actions or verifications. The solution must support medical coding (PMSI / ICD-10) for activity reporting (T2A). The solution must take the dossier context into account where available. No decision may be automated. 3.4 Collaboration and continuity of care. The solution must facilitate the continuity of care between professionals and services by enabling relevant information sharing, an understanding of the context of an in-progress patient pathway, and an efficient resumption of handling by another professional. 4. Regulatory and legal constraints 4.1 Personal and health data protection. The titleholder must guarantee strict compliance with the GDPR. Health data is processed as special-category data (GDPR Art. 9) and medical confidentiality (secret médical) must be preserved. Data must be hosted exclusively within the European Union; no transfer of data outside the European Union is authorised; sensitive data must be appropriately protected (encryption, pseudonymisation where relevant). 4.2 Health-data hosting (HDS). The infrastructure hosting The solution must hold the French Hébergeur de Données de Santé (HDS) certification. 4.3 Explainability and traceability. Recommendations or suggestions produced by The solution must be explainable." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk4> a prov:Entity ;
+        ex:hasText "It must be possible, a posteriori, to understand the elements that led to an output (source grounding, audit trail), consistent with HAS guidance on the use of AI in healthcare. 4.4 Medical responsibility. The solution must be designed as an assistance tool. No clinical or medico-administrative decision may be automated without explicit validation by a qualified professional. The solution must be positioned so as not to require medical-device qualification (CE marking / MDR); should any use case approach medical-device qualification (CE marking / MDR), the bidder must explicitly address the implications. 5. Technical constraints 5.1 Performance. The solution must provide response times compatible with daily clinical use. As an indication, a response time below 2 seconds is expected for common queries. A high level of answer relevance is expected. 5.2 Availability. Continuity of care requires a high level of availability, including outside office hours (24/7 services). An availability target of the order of 99.9% is expected. 5.3 Integration and interoperability. The solution must integrate with the existing hospital information system (SIH) and the electronic patient record (DPI). The solution must support health interoperability standards (HL7 / FHIR), the national health identifier (INS), and the national framework (Ségur du numérique en santé, Mon espace santé / DMP). API-type interfaces are expected, as is integration with user directories. 6. Sovereignty constraints the authority's attaches particular importance to data sovereignty. Hosting must be performed on SecNumCloud-qualified infrastructure or equivalent, and particular attention will be paid to dependency on non-European suppliers. 7. Budget constraints The global budget allocated to the project is estimated at 900,000 over 5 years. The annual operating cost must remain controlled and compatible with the authority's budgetary capacity. The titleholder must propose an approach that optimises costs while guaranteeing the expected quality of service. 8. Environmental constraints As part of the authority's sustainable-development policy, the authority's wishes to limit the environmental footprint of the authority's information systems. The titleholder must propose a solution that contributes to reducing energy consumption and relies, as far as possible, on low-carbon infrastructure. 9. Deployment terms the project must be conducted progressively, with a pilot phase on a limited perimeter (one or two departments) followed by progressive generalisation to all services. Change-management support and staff training are expected. 10. Evaluation criteria Offers will be evaluated against the following criteria: quality and relevance of the proposed solution; compliance with regulatory requirements; level of security; data sovereignty; quality of integration with the existing SIH/DPI; total cost of the proposed solution; consideration of environmental issues; capacity for innovation." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk5> a prov:Entity ;
+        ex:hasText "The client requires response times below 2 seconds, an availability target of 99.9% including outside office hours (24/7 services), API integration with the existing hospital information system and electronic patient record, hosting on SecNumCloud-qualified infrastructure or equivalent within the EU, and no dependency on non-European suppliers. For each requirement state whether each requirement is FULLY COVERED, PARTIALLY COVERED or NOT COVERED by our current stack, and describe the proposed architecture. Response times below 2 seconds: FULLY COVERED  our platform's performance metrics indicate that common single-document queries are below 2 seconds at p95 latency, which meets this requirement. Availability target of 99.9% including outside office hours (24/7 services): FULLY COVERED  The availability target for Our platform's is 99.9%, and Our platform's operates 24/7, meeting The client requirements for high availability. API integration with the existing hospital information system and electronic patient record: FULLY COVERED  our architecture and integration capabilities include API design (REST + webhook) that can be embedded in existing work environments and standard connectors for SIH/DPI integration, which should meet this requirement." ;
+        prov:wasDerivedFrom <http://example.org/node/message3> .
+
+    <http://example.org/node/chunk6> a prov:Entity ;
+        ex:hasText "Hosting on SecNumCloud-qualified infrastructure or equivalent within the EU: FULLY COVERED  our offer hosting options that include the Sovereign HDS tier, provided by OuraneCloud, which is SecNumCloud-qualified, HDS-certified, and located within the EU, meeting this requirement. No dependency on non-European suppliers: PARTIALLY COVERED  While our sovereign European open-weight model is fully sovereign and hosted by Faber IA on OuraneCloud, our also offer top-tier proprietary models accessed via API, some of which are operated by non-European providers. To meet this requirement, our would need to ensure that our sovereign European open-weight model is used. Proposed architecture:  Proposed architecture would utilize our Atelier platform, hosted on the Sovereign HDS tier provided by OuraneCloud, ensuring compliance with the hosting and dependency requirements. our Atelier platform API design and standard connectors for SIH/DPI integration would facilitate seamless integration with the existing hospital information system and electronic patient record. By leveraging our sovereign European open-weight model, our can ensure that all requirements are met while minimizing dependencies on non-European suppliers." ;
+        prov:wasDerivedFrom <http://example.org/node/message3> .
+
+    <http://example.org/node/chunk7> a prov:Entity ;
+        ex:hasText "The tender requires strict GDPR compliance (EU-only data hosting, no transfer outside EU, encryption and pseudonymisation of sensitive data where applicable), French Hébergeur de Données de Santé (HDS) certification for the infrastructure hosting the solution, explainability and traceability of recommendations or suggestions produced by the solution. What security measures should we implement to ensure compliance with these requirements? To comply with The tender requirements, our company, Faber IA, can implement several security measures based on we existing capabilities. For strict GDPR compliance, we can utilize we EU-only infrastructure for key management and ensure that all data is encrypted in transit using TLS 1.3 and at rest using AES-256. we also apply pseudonymisation where relevant. we hosting partner, OuraneCloud, is SecNumCloud-qualified, ensuring sovereignty and compliance with the requirement of not transferring data outside EU." ;
+        prov:wasDerivedFrom <http://example.org/node/message5> .
+
+    <http://example.org/node/chunk8> a prov:Entity ;
+        ex:hasText "Regarding the French Hébergeur de Données de Santé (HDS) certification, we hosting infrastructure operated on Our hosting partner, OuraneCloud holds the French Hébergeur de Données de Santé (HDS) certificationoperated on OuraneCloud. holds aligns with the requirement for the infrastructure hosting the solution to be HDS certified. For explainability and traceability of recommendations or suggestions produced by we solution, Atelier, we can leverage our solution, Atelier features that support explainability, such as being grounded in sources and providing retrieval traces. Additionally, our solution, Atelier supports audit logs and traceability, which can help in ensuring that all interactions with the system are trackable and understandable. By leveraging these existing capabilities and measures, we can ensure compliance with the specified security and regulatory requirements of The tender." ;
+        prov:wasDerivedFrom <http://example.org/node/message5> .
+
+    <http://example.org/node/chunk9> a prov:Entity ;
+        ex:hasText "The tender requires strict GDPR compliance, medical confidentiality (secret médical), no automation of clinical or medico-administrative decisions without explicit validation by a qualified professional, and positioning as an assistance tool not requiring medical-device qualification (CE marking / MDR). What legal risks should we flag, and are we compliant with these regulatory requirements? As the Legal Agent for we, the Legal Agent for Faber IA can confirm that we is committed to maintaining strict GDPR compliance, as well as adhering to obligations related to medical confidentiality, in the context of health deployments. we Security & Compliance function ensures that obligations related to medical confidentiality are monitored and maintained. Regarding the automation of clinical or medico-administrative decisions, we understand the requirement for explicit validation by a qualified professional. understand is consistent with we approach to providing assistance tools rather than automating decisions. Furthermore, we are aware of the need to position we solution as an assistance tool that does not require medical-device qualification (CE marking / MDR)." ;
+        prov:wasDerivedFrom <http://example.org/node/message7> .
+
+    <http://example.org/node/message10> a prov:Entity ;
+        ex:sent_To <http://example.org/node/aiinnovation_agent> ;
+        prov:generatedAtTime "2026-07-15T14:01:59"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/orchestrator> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity11> .
+
+    <http://example.org/node/message11> a prov:Entity ;
+        ex:does_answer "TRUE" ;
+        ex:is_coherent "TRUE" ;
+        ex:sent_To <http://example.org/node/orchestrator> ;
+        prov:generatedAtTime "2026-07-15T14:02:59"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/aiinnovation_agent> ;
+        prov:wasDerivedFrom <http://example.org/node/message10> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity12> .
+
+    <http://example.org/node/message12> a prov:Entity ;
+        ex:sent_To <http://example.org/node/csrsustainability_agent> ;
+        prov:generatedAtTime "2026-07-15T14:03:40"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/orchestrator> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity13> .
+
+    <http://example.org/node/message13> a prov:Entity ;
+        ex:does_answer "TRUE" ;
+        ex:is_coherent "TRUE" ;
+        ex:sent_To <http://example.org/node/orchestrator> ;
+        prov:generatedAtTime "2026-07-15T14:04:09"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/csrsustainability_agent> ;
+        prov:wasDerivedFrom <http://example.org/node/message12> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity14> .
+
+    <http://example.org/node/message14> a prov:Entity ;
+        ex:sent_To <http://example.org/node/csrsustainability_agent> ;
+        prov:generatedAtTime "2026-07-15T14:06:53"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/orchestrator> ;
+        prov:wasDerivedFrom <http://example.org/node/message0> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity15> .
+
+    <http://example.org/node/message2> a prov:Entity ;
+        ex:sent_To <http://example.org/node/technicalarchitect_agent> ;
+        prov:generatedAtTime "2026-07-15T13:56:50"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/orchestrator> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity3> .
+
+    <http://example.org/node/message3> a prov:Entity ;
+        ex:does_answer "TRUE" ;
+        ex:is_coherent "TRUE" ;
+        ex:sent_To <http://example.org/node/orchestrator> ;
+        prov:generatedAtTime "2026-07-15T13:57:44"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/technicalarchitect_agent> ;
+        prov:wasDerivedFrom <http://example.org/node/message2> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity4> .
+
+    <http://example.org/node/message4> a prov:Entity ;
+        ex:sent_To <http://example.org/node/securitycompliance_agent> ;
+        prov:generatedAtTime "2026-07-15T13:58:24"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/orchestrator> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity5> .
+
+    <http://example.org/node/message5> a prov:Entity ;
+        ex:does_answer "TRUE" ;
+        ex:is_coherent "TRUE" ;
+        ex:sent_To <http://example.org/node/orchestrator> ;
+        prov:generatedAtTime "2026-07-15T13:59:02"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/securitycompliance_agent> ;
+        prov:wasDerivedFrom <http://example.org/node/message4> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity6> .
+
+    <http://example.org/node/message6> a prov:Entity ;
+        ex:sent_To <http://example.org/node/legal_agent> ;
+        prov:generatedAtTime "2026-07-15T13:59:34"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/orchestrator> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity7> .
+
+    <http://example.org/node/message7> a prov:Entity ;
+        ex:does_answer "TRUE" ;
+        ex:is_coherent "TRUE" ;
+        ex:sent_To <http://example.org/node/orchestrator> ;
+        prov:generatedAtTime "2026-07-15T14:00:15"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/legal_agent> ;
+        prov:wasDerivedFrom <http://example.org/node/message6> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity8> .
+
+    <http://example.org/node/message8> a prov:Entity ;
+        ex:sent_To <http://example.org/node/budget_agent> ;
+        prov:generatedAtTime "2026-07-15T14:00:43"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/orchestrator> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity9> .
+
+    <http://example.org/node/message9> a prov:Entity ;
+        ex:does_answer "TRUE" ;
+        ex:is_coherent "TRUE" ;
+        ex:sent_To <http://example.org/node/orchestrator> ;
+        prov:generatedAtTime "2026-07-15T14:01:30"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/budget_agent> ;
+        prov:wasDerivedFrom <http://example.org/node/message8> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity10> .
+
+    <http://example.org/node/aiinnovation_agent> a prov:Agent .
+
+    <http://example.org/node/budget_agent> a prov:Agent .
+
+    <http://example.org/node/legal_agent> a prov:Agent .
+
+    <http://example.org/node/securitycompliance_agent> a prov:Agent .
+
+    <http://example.org/node/technicalarchitect_agent> a prov:Agent .
+
+    <http://example.org/node/user> a prov:Agent .
+
+    <http://example.org/node/csrsustainability_agent> a prov:Agent .
+
+    <http://example.org/node/message0> a prov:Entity ;
+        ex:sent_To <http://example.org/node/orchestrator> ;
+        prov:generatedAtTime "2026-07-15T13:53:37"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/user> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity1> .
+
+    <http://example.org/node/orchestrator> a prov:Agent .
+}
+
+<http://example.org/extraction/tri/extraction7> {
+    tri:tri19 a ex:Triplet ;
+        ns1:has_gdpr_compliance_status <http://example.org/node/strict> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri20 a ex:Triplet ;
+        ns1:uses_data_hosting_location <http://example.org/node/eu_only> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri21 a ex:Triplet ;
+        ns1:applies_data_transfer_policy <http://example.org/node/no_transfer_outside_eu> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri22 a ex:Triplet ;
+        ns1:uses_data_encryption_protocol <http://example.org/node/tls_1_3> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri23 a ex:Triplet ;
+        ns1:uses_data_at_rest_encryption <http://example.org/node/aes_256> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri24 a ex:Triplet ;
+        ns1:has_secnumcloud_qualification_status <http://example.org/node/qualified> ;
+        rdf:subject <http://example.org/node/ouranecloud> .
+
+    tri:tri25 a ex:Triplet ;
+        ns1:has_hds_certification_status <http://example.org/node/required> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri26 a ex:Triplet ;
+        ns1:implements_pseudonymisation <http://example.org/node/where_relevant> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri27 a ex:Triplet ;
+        ns1:requires_hds_certification <http://example.org/node/french_h_bergeur_de_donn_es_de_sant> ;
+        rdf:subject <http://example.org/node/the_tender> .
+}
+
+<http://example.org/extraction/tri/extraction9> {
+    tri:tri33 a ex:Triplet ;
+        ns1:has_gdpr_compliance_status <http://example.org/node/strict> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri34 a ex:Triplet ;
+        ns1:has_medical_confidentiality_status <http://example.org/node/compliant> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri35 a ex:Triplet ;
+        ns1:requires_explicit_validation_for_clinical_decisions <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri36 a ex:Triplet ;
+        ns1:positions_solution_as <http://example.org/node/assistance_tool> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri37 a ex:Triplet ;
+        ns1:requires_medical_device_qualification <http://example.org/node/no> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri38 a ex:Triplet ;
+        ns1:has_ce_marking_requirement <http://example.org/node/no> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri39 a ex:Triplet ;
+        ns1:has_mdr_requirement <http://example.org/node/no> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+}
+
+<http://example.org/extraction/tri/extraction12> {
+    tri:tri53 a ex:Triplet ;
+        ns1:target_gross_margin_range <http://example.org/node/25_35> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri54 a ex:Triplet ;
+        ns1:proposed_cost_optimisation_strategy <http://example.org/node/phased_implementation> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri55 a ex:Triplet ;
+        ns1:requires_pilot_phase <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/the_tender> .
+
+    tri:tri56 a ex:Triplet ;
+        ns1:rollout_type <http://example.org/node/progressive> ;
+        rdf:subject <http://example.org/node/the_tender> .
+
+    tri:tri57 a ex:Triplet ;
+        ns1:commercial_posture <http://example.org/node/gross_margin_protection> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri58 a ex:Triplet ;
+        ns1:preferred_configuration <http://example.org/node/sovereign_hds_tier> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri59 a ex:Triplet ;
+        ns1:preferred_model <http://example.org/node/sovereign_european_model> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/req/extraction2> {
+    req:req11 a ex:Requirement ;
+        ns1:understand <http://example.org/node/elements_that_led_to_an_output> ;
+        ex:category ex:healthcare ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/users> .
+
+    req:req12 a ex:Requirement ;
+        ns1:assist <http://example.org/node/clinical_decisions> ;
+        ex:category ex:healthcare ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req13 a ex:Requirement ;
+        ns1:provide <http://example.org/node/response_times_compatible_with_daily_clinical_use> ;
+        ex:category ex:healthcare ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req14 a ex:Requirement ;
+        ns1:ensure <http://example.org/node/high_level_of_answer_relevance> ;
+        ex:category ex:healthcare ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req15 a ex:Requirement ;
+        ns1:integrate <http://example.org/node/existing_hospital_information_system_and_electronic_patient_record> ;
+        ex:category ex:healthcare ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req16 a ex:Requirement ;
+        ns1:support <http://example.org/node/health_interoperability_standards> ;
+        ex:category ex:healthcare ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req17 a ex:Requirement ;
+        ns1:provide <http://example.org/node/api_type_interfaces> ;
+        ex:category ex:healthcare ;
+        ex:priority ex:should ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req18 a ex:Requirement ;
+        ns1:optimise <http://example.org/node/costs_while_guaranteeing_expected_quality_of_service> ;
+        ex:category ex:healthcare ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/authority> .
+
+    req:req19 a ex:Requirement ;
+        ns1:propose <http://example.org/node/approach_that_reduces_energy_consumption_and_relies_on_low_carbon_infrastructure> ;
+        ex:category ex:healthcare ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/titleholder> .
+
+    req:req20 a ex:Requirement ;
+        ns1:conduct <http://example.org/node/project_progressively_with_pilot_phase_and_change_management_support> ;
+        ex:category ex:healthcare ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/titleholder> .
+}
+
+<http://example.org/extraction/pro/extraction17> {
+    pro:pro1 a ex:Proposal ;
+        ns1:ensures <http://example.org/node/strict_compliance_with_gdpr_and_medical_confidentiality> ;
+        rdf:subject <http://example.org/node/our_consortium_solution> .
+
+    pro:pro10 a ex:Proposal ;
+        ns1:ensure <http://example.org/node/high_availability_with_a_target_of_99_9_including_outside_office_hours_24_7_services> ;
+        rdf:subject <http://example.org/node/our_consortium> .
+
+    pro:pro11 a ex:Proposal ;
+        ns1:provides <http://example.org/node/response_times_compatible_with_daily_clinical_use_with_an_expected_response_time_below_2_seconds_for_common_queries> ;
+        rdf:subject <http://example.org/node/our_solution> .
+
+    pro:pro12 a ex:Proposal ;
+        ns1:guarantee <http://example.org/node/our_consortium_infrastructure_meets_the_french_h_bergeur_de_donn_es_de_sant_hds_certification_and_is_hosted_exclusively_within_the_european_union> ;
+        rdf:subject <http://example.org/node/our_consortium> .
+
+    pro:pro2 a ex:Proposal ;
+        ns1:guarantee <http://example.org/node/all_data_is_encrypted_in_transit_using_tls_1_3_and_at_rest_using_aes_256> ;
+        rdf:subject <http://example.org/node/our_consortium> .
+
+    pro:pro3 a ex:Proposal ;
+        ns1:apply <http://example.org/node/pseudonymisation_where_relevant> ;
+        rdf:subject <http://example.org/node/our_consortium> .
+
+    pro:pro4 a ex:Proposal ;
+        ns1:provides <http://example.org/node/an_intelligent_assistance_tool_accessible_from_hospital_staff_s_work_environment> ;
+        rdf:subject <http://example.org/node/our_solution> .
+
+    pro:pro5 a ex:Proposal ;
+        ns1:assists <http://example.org/node/in_drafting_medical_and_administrative_documents_such_as_discharge_summaries_and_medical_reports> ;
+        rdf:subject <http://example.org/node/our_solution> .
+
+    pro:pro6 a ex:Proposal ;
+        ns1:supports <http://example.org/node/dossier_handling_by_surfacing_relevant_information_and_suggesting_actions_or_verifications> ;
+        rdf:subject <http://example.org/node/our_solution> .
+
+    pro:pro7 a ex:Proposal ;
+        ns1:facilitates <http://example.org/node/the_continuity_of_care_between_professionals_and_services_through_structured_handover_summaries> ;
+        rdf:subject <http://example.org/node/our_solution> .
+
+    pro:pro8 a ex:Proposal ;
+        ns1:enables <http://example.org/node/retrieval_augmented_generation_capabilities_to_generate_answers_grounded_in_the_organization_s_own_validated_documents> ;
+        rdf:subject <http://example.org/node/the_atelier_platform_hosted_on_the_sovereign_hds_tier_provided_by_ouranecloud> .
+
+    pro:pro9 a ex:Proposal ;
+        ns1:integrates <http://example.org/node/with_existing_hospital_information_systems_sih_and_electronic_patient_records_dpi_supporting_health_interoperability_standards_like_hl7_fhir_the_national_health_identifier_ins_and_the_national_framework_s_gur_du_num_rique_en_sant_mon_espace_sant_dmp> ;
+        rdf:subject <http://example.org/node/our_solution> .
+}
+

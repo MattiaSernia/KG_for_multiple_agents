@@ -1,0 +1,72 @@
+{
+  "company": "Faber IA",
+  "agent_role": "AI & Innovation agent",
+  "reference_year": 2025,
+  "ai_llm_rag_capabilities": {
+    "core_approach": "Retrieval-augmented generation (RAG): every answer is generated from passages retrieved from the client's controlled corpus, and the answer cites those passages",
+    "grounding": "Answers grounded in the organisation's own validated documents (care protocols, HAS recommendations, internal procedures, applicable regulatory texts, internal guides, notes, reference frameworks and drug references), limiting unsupported generation",
+    "capabilities": [
+      "Hybrid retrieval (lexical + semantic)",
+      "Re-ranking",
+      "Query reformulation",
+      "Multi-document synthesis",
+      "Structured extraction (e.g. assisting PMSI/ICD-10 coding from a clinical note)",
+      "Template-guided drafting (discharge summaries, medical correspondence, administrative documents and dossier syntheses)",
+      "Applicable rules recall during dossier handling (surfaces relevant institutional rules, protocols and regulations in the context of an active dossier)",
+      "Action and verification suggestions (recommends next steps based on the dossier context and applicable rules)",
+      "Dossier-context continuity (structured handover summaries that allow another professional or a colleague resuming a shift to efficiently take over an in-progress dossier with full context)"
+    ]
+  },
+  "model_options": [
+    {
+      "type": "Sovereign European open-weight model (self-hosted)",
+      "characteristics": "Fully auditable, with strong grounding behaviour; well suited to explainability-driven and sovereignty-driven requirements; somewhat lower raw performance on the most complex generative tasks"
+    },
+    {
+      "type": "Top-tier proprietary models (via API)",
+      "characteristics": "Higher performance on complex drafting and reasoning; some operated by non-European providers; lower internal transparency"
+    }
+  ],
+  "model_selection_principle": "The choice trades performance against explainability and sovereignty, and is made per engagement",
+  "methodologies": {
+    "approach": "Iterative",
+    "steps": [
+      "Corpus selection and curation with the client's experts",
+      "Retrieval tuning",
+      "Prompt and template design per use case",
+      "Evaluation loop"
+    ],
+    "quality_measurement": "Answer quality measured with a labelled evaluation set built with the client (groundedness, relevance, factual support); metrics reported during the pilot"
+  },
+  "explainability": {
+    "features": [
+      "Source citations",
+      "Retrieved passages",
+      "Retrieval trace",
+      "Every interaction logged for a posteriori audit"
+    ],
+    "human_oversight": "Built into the workflow — the assistant proposes, the professional validates — consistent with HAS guidance"
+  },
+  "personalisation_and_data_use": {
+    "adaptation_method": "Primarily through corpus curation and retrieval/prompt configuration, which does not require training on personal data",
+    "fine_tuning": "Optional fine-tuning on client material is technically available",
+    "data_use_terms": "Defined with the client and the compliance function before any such use"
+  },
+  "workflow_integration": {
+    "design_principle": "The assistant is embedded into the staff's existing work environment and tools; it does not replace or restructure clinical or administrative workflows but augments them in place",
+    "disruption_avoidance": "Fits into existing practices without introducing a rupture; staff interact with the assistant through their current interfaces (DPI, web portal, or API-connected application)",
+    "efficiency_outcomes": "Demonstrated reduction in processing and documentation times in comparable deployments, by surfacing information and drafting content at the point of need"
+  },
+  "use_cases_delivered": [
+    {
+      "use_case": "Social-services case-work assistant for a regional council"
+    },
+    {
+      "use_case": "Claims-handling assistant for a mutual health insurer"
+    },
+    {
+      "use_case": "Medical-documentation pilot for a regional hospital group (discharge-summary drafting, protocol retrieval, applicable rules recall and dossier handover support)",
+      "note": "The most relevant prior use case for CHRB"
+    }
+  ]
+}

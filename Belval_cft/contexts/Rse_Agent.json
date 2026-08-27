@@ -1,0 +1,76 @@
+{
+  "company": "Nexus Engineering S.r.l.",
+  "agent_role": "CSR & Sustainability Officer",
+  "reference_year": 2024,
+  "company_csr_profile": {
+    "csr_policy_published": true,
+    "iso14001_certified": false,
+    "iso14001_target_year": 2026,
+    "ecovadis_rating": "Silver",
+    "ecovadis_score": 62,
+    "bilan_carbone_conducted": true,
+    "bilan_carbone_year": 2023,
+    "total_scope1_2_tco2e": 148,
+    "net_zero_target_year": 2040
+  },
+  "environmental_capabilities": {
+    "green_hosting_partners": [
+      {
+        "name": "OVHcloud",
+        "country": "France",
+        "renewable_energy_pct": 100,
+        "pue": 1.3,
+        "iso14001": true
+      },
+      {
+        "name": "Scaleway",
+        "country": "France",
+        "renewable_energy_pct": 100,
+        "pue": 1.28,
+        "iso14001": true
+      }
+    ],
+    "digital_sobriety_practices": [
+      "INT8/INT4 model quantisation (reduces GPU energy ~40%)",
+      "Auto-scaling to zero outside business hours",
+      "Query result caching (estimated 20% recompute reduction)",
+      "Green IT hardware procurement policy (min 5-year lifecycle)"
+    ],
+    "e_waste_management_partner": "Ecologic (France) - certified WEEE recycling",
+    "carbon_reporting_capability": true,
+    "carbon_reporting_standard": "GRI Standards (partial)",
+    "typical_energy_reduction_vs_baseline_pct": 35
+  },
+  "social_commitments": {
+    "gender_equality_index": 88,
+    "disabled_workers_pct": 4.2,
+    "local_subcontracting_preference": true,
+    "accessibility_standards": ["WCAG 2.1 AA", "RGAA 4.1"],
+    "training_hours_per_employee_per_year": 42
+  },
+  "ai_ethics": {
+    "ethics_charter_published": true,
+    "principles": [
+      "Human oversight mandatory for all AI recommendations",
+      "No discriminatory outputs - quarterly bias testing",
+      "Transparency of data sources to end users",
+      "Right to contest any AI-generated suggestion"
+    ],
+    "bias_audit_frequency": "quarterly",
+    "whistleblowing_policy": true
+  },
+  "known_csr_tensions": {
+    "high_availability_vs_energy": {
+      "description": "99.9% uptime SLA requires warm standby nodes that consume energy continuously",
+      "standard_resolution": "Low-power standby mode with <90s wake-up; accepted as SLA-compatible"
+    },
+    "on_premise_vs_green_energy": {
+      "description": "On-premise servers powered by client electricity grid, which may not be 100% renewable",
+      "standard_resolution": "Recommend client subscribes to renewable energy Guarantee of Origin certificate"
+    },
+    "performance_vs_model_size": {
+      "description": "Larger models deliver higher accuracy but consume significantly more energy",
+      "standard_resolution": "Prefer quantised mid-size models (7B–13B) with fine-tuning over large unoptimised models"
+    }
+  }
+}

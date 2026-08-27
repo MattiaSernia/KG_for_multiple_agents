@@ -1,0 +1,90 @@
+{
+  "company": "Faber IA",
+  "agent_role": "Technical Architect",
+  "reference_year": 2025,
+  "platform": {
+    "name": "Atelier",
+    "type": "Retrieval-augmented generation (RAG) platform",
+    "components": [
+      "Document-ingestion pipeline (parsing, chunking, metadata extraction)",
+      "Vector store",
+      "Retrieval layer with hybrid (lexical + semantic) search",
+      "Orchestration layer (routes a query through retrieval, generation and post-processing)",
+      "Answer layer (grounded response with source citations and retrieval trace)"
+    ],
+    "containerisation": ["Kubernetes"],
+    "model_agnostic": true
+  },
+  "model_options": [
+    {
+      "type": "Sovereign European open-weight model",
+      "hosting": "Hosted by Faber IA on OuraneCloud",
+      "characteristics": [
+        "Fully sovereign",
+        "Fully auditable",
+        "Strong grounding/citation behaviour"
+      ],
+      "limitations": "Lower raw performance on the most complex generative tasks"
+    },
+    {
+      "type": "Top-tier proprietary models accessed via API",
+      "characteristics": [
+        "Higher performance on complex drafting/reasoning tasks"
+      ],
+      "notes": "Some of these are operated by non-European providers"
+    }
+  ],
+  "architecture_and_integration_capabilities": {
+    "api_design": "API-first (REST + webhook); documented APIs, can be embedded in existing work environments",
+    "business_tool_integration": {
+      "connectors_and_adapters": [
+        "Accounting-production and payroll software",
+        "Document-management systems (GED)",
+        "Electronic-invoicing / dematerialisation environment"
+      ],
+      "delivery_partner": "Ligeo Conseil"
+    },
+    "structured_extraction": "Figures and references extracted from documents are linked back to their source passage",
+    "identity": {
+      "sso": ["SAML", "OIDC"],
+      "user_directories": ["LDAP", "Entra ID"]
+    }
+  },
+  "performance": {
+    "median_latency_s": 1.3,
+    "p95_latency_s_below": 2.5,
+    "scope": "Common queries on comparable deployments, depending on the model option and the hosting tier",
+    "throughput": "Scales horizontally; capacity can be sized for seasonal peak loads (closing periods, tax campaigns)"
+  },
+  "hosting_options": [
+    {
+      "tier": "Sovereign tier",
+      "provider": "OuraneCloud",
+      "characteristics": [
+        "SecNumCloud-qualified",
+        "EU-only",
+        "Renewable-powered"
+      ],
+      "notes": "Reference tier for confidential financial data"
+    },
+    {
+      "tier": "High-availability premium tier",
+      "characteristics": [
+        "Additional redundancy",
+        "Dedicated inference capacity"
+      ],
+      "notes": "Higher throughput and peak resilience, at higher cost and higher energy use"
+    },
+    {
+      "tier": "On-premise / hybrid",
+      "notes": "Deployment within the firm's own infrastructure, where client data does not leave the firm's premises"
+    }
+  ],
+  "availability_and_operations": {
+    "redundancy": "Active-active across two availability zones",
+    "availability": "High availability during business hours and resilience to peak loads",
+    "condition": "On the appropriate hosting tier",
+    "built_in": ["Monitoring", "Logging", "Observability"],
+    "access_control": "Can be strictly partitioned and audited per client file"
+  }
+}

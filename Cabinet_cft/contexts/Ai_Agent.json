@@ -1,0 +1,70 @@
+{
+  "company": "Faber IA",
+  "agent_role": "AI & Innovation agent",
+  "platform": "Atelier",
+  "ai_llm_rag_capabilities": {
+    "core_approach": "Retrieval-augmented generation (RAG): every answer is generated from passages retrieved from the client's controlled corpus and cites those passages, rather than relying on a model's parametric memory",
+    "grounding": "Answers grounded in validated material (accounting standards, tax doctrine, the commercial code, collective agreements, internal procedures), limiting unsupported generation",
+    "capabilities": [
+      "Hybrid retrieval (lexical + semantic)",
+      "Re-ranking",
+      "Query reformulation",
+      "Multi-document synthesis",
+      "Structured extraction with source linking (e.g. extracting a figure from a document and linking it to its source passage)",
+      "Template-guided drafting (client letters, mission notes, file syntheses)"
+    ]
+  },
+  "factual_reliability_of_figures": {
+    "principle": "Reliability of numeric outputs is treated as a first-class requirement",
+    "grounding": "Figure-bearing statements are grounded in and linked to a source document",
+    "ungrounded_figure_handling": "The platform can be configured to refrain from producing an ungrounded numeric claim and to flag a missing source rather than guess",
+    "requirement_addressed": "The firm's requirement that no ungrounded figure be produced"
+  },
+  "model_options": [
+    {
+      "type": "Sovereign European open-weight model (self-hosted)",
+      "characteristics": "Fully auditable; well suited to reliability-driven and sovereignty-driven requirements; somewhat lower raw performance on the most complex tasks"
+    },
+    {
+      "type": "Top-tier proprietary models (via API)",
+      "characteristics": "Higher performance; some non-European; lower internal transparency"
+    }
+  ],
+  "model_selection_principle": "The choice trades performance against explainability and sovereignty, and is made per engagement",
+  "methodologies": {
+    "approach": "Iterative",
+    "steps": [
+      "Corpus curation with the firm's experts",
+      "Retrieval tuning",
+      "Prompt and template design per use case",
+      "Evaluation loop"
+    ],
+    "quality_measurement": "Answer quality measured with a labelled evaluation set built with the client (groundedness, relevance, factual support, correctness of cited figures); metrics reported during the pilot"
+  },
+  "explainability": {
+    "features": [
+      "Source citations",
+      "Retrieved passages",
+      "Retrieval trace",
+      "Every interaction logged for a posteriori audit"
+    ],
+    "human_oversight": "Built into the workflow — the assistant proposes, the professional validates and signs"
+  },
+  "personalisation_and_data_use": {
+    "adaptation_method": "Primarily through corpus curation and retrieval/prompt configuration, which does not require training on personal or client data",
+    "fine_tuning": "Optional fine-tuning is technically available",
+    "data_use_terms": "Defined with the firm and the compliance function before any such use"
+  },
+  "use_cases_delivered": [
+    {
+      "use_case": "Regulatory-information assistant for a national professional order",
+      "note": "Closest analogue for an accounting/audit firm"
+    },
+    {
+      "use_case": "Claims-handling assistant for a mutual health insurer"
+    },
+    {
+      "use_case": "Social-services case-work assistant for a regional council"
+    }
+  ]
+}

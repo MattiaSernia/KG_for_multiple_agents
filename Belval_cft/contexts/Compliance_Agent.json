@@ -1,0 +1,77 @@
+{
+  "company": "Nexus Engineering S.r.l.",
+  "agent_role": "Security & Compliance Officer",
+  "reference_year": 2024,
+  "certifications": {
+    "iso27001": true,
+    "iso27001_scope": "Design, development and operation of AI-powered information systems",
+    "iso27001_expiry": "2026-11-30",
+    "iso27005_risk_management": true,
+    "gdpr_dpo_appointed": true,
+    "dpo_contact": "dpo@nexus-engineering.it",
+    "rgs_v2_experience": true,
+    "anssi_secnumcloud_projects": 3
+  },
+  "gdpr_posture": {
+    "dpa_template_available": true,
+    "standard_data_residency": "EU only",
+    "cross_border_transfer_policy": "prohibited by default unless explicit legal basis",
+    "anonymisation_tools": ["Microsoft Presidio (self-hosted)", "custom NER models"],
+    "data_subject_rights_implemented": ["access", "rectification", "erasure", "portability", "objection"],
+    "dpia_capability": true,
+    "average_dpia_duration_weeks": 3
+  },
+  "access_control_standards": {
+    "mfa_enforced": true,
+    "mfa_methods": ["TOTP", "hardware token (FIDO2)"],
+    "rbac_design_experience": true,
+    "pam_solutions": ["CyberArk Conjur", "HashiCorp Vault"],
+    "session_timeout_policy_minutes": 30,
+    "sso_protocols": ["SAML 2.0", "OpenID Connect"]
+  },
+  "network_security": {
+    "architecture_patterns": ["Zero-trust", "micro-segmentation", "defence-in-depth"],
+    "ids_ips_deployed": true,
+    "ddos_mitigation_experience": true,
+    "pentest_frequency": "annual + post major release",
+    "pentest_partners": ["Synacktiv (France)", "HN Security (Italy)"],
+    "last_pentest_date": "2024-09-15",
+    "last_pentest_result": "2 medium findings, 0 critical - all remediated"
+  },
+  "ai_security_controls": {
+    "prompt_injection_protection": true,
+    "output_pii_redaction": true,
+    "adversarial_input_detection": true,
+    "confidence_threshold_escalation": true,
+    "model_isolation": "inference API only - no direct model access for end users",
+    "model_update_security_review": true
+  },
+  "audit_and_logging": {
+    "all_queries_logged": true,
+    "log_immutability_method": "append-only with SHA-256 hash chaining",
+    "retention_audit_logs_years": 7,
+    "cnil_export_capability": true,
+    "real_time_siem_integration": true,
+    "siem_tools": ["Wazuh", "Elastic SIEM"]
+  },
+  "incident_response": {
+    "sirt_in_place": true,
+    "breach_notification_delay_hours": 72,
+    "playbooks_available": true,
+    "drills_frequency": "semi-annual",
+    "last_drill_date": "2024-06-01"
+  },
+  "regulatory_frameworks_experience": [
+    "RGPD / GDPR",
+    "EU AI Act",
+    "RGS v2 (ANSSI)",
+    "SecNumCloud",
+    "NIS2 Directive",
+    "eIDAS"
+  ],
+  "known_compliance_constraints": {
+    "open_api_integration_risk": "Wide SI integration via open APIs requires additional firewall rule hardening and privilege escalation audit",
+    "ldap_ad_risk": "LDAP/AD integration must be reviewed for lateral movement risks",
+    "ai_training_data_restriction": "No personal data permitted in training pipelines; anonymisation mandatory before any model update"
+  }
+}

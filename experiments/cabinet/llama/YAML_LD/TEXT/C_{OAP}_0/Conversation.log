@@ -1,0 +1,652 @@
+2026-06-26 15:34:01,613 | INFO | missing_keys: []
+2026-06-26 15:34:01,613 | INFO | unexpected_keys: []
+2026-06-26 15:34:01,613 | INFO | mismatched_keys: []
+2026-06-26 15:34:01,613 | INFO | error_msgs: []
+2026-06-26 15:34:01,613 | INFO | Model Parameters: 90.5M, Transformer: 82.1M, Coref head: 8.4M
+2026-06-26 15:34:01,616 | AGENT | User asked: 1. Context and objectives
+
+
+
+Cabinet Vauclair & Associés is a regional accounting and statutory-audit firm (cabinet d’expertise comptable et de commissariat aux comptes) operating several offices across the Belval region, with around 250 staff (chartered accountants, statutory auditors, accounting, payroll and legal collaborators).
+
+
+
+The firm’s professionals work with a large volume of regulatory and methodological reference material (accounting standards, tax doctrine, the commercial code, collective-bargaining agreements for payroll, internal procedures and methodology guides), under strict confidentiality obligations, and with a strong seasonality of workload (closing periods, tax-return campaigns).
+
+
+
+As part of a consultation run with a small number of selected vendors, the firm wishes to equip its professionals with an artificial-intelligence assistance solution that improves productivity and the quality and reliability of its work, while preserving professional secrecy and the reliability of figures — and while remaining strictly a non-decisional support tool.
+
+
+
+This consultation covers the design, implementation and deployment of such a solution.
+
+
+
+2. General description of the need
+
+
+
+The solution must provide the firm’s professionals with an intelligent assistance tool, accessible from their work environment, supporting them in their daily activities. This assistance may notably cover:
+
+
+
+-   retrieval of regulatory and methodological information;
+
+-   assistance in drafting professional documents;
+
+-   support in handling client files;
+
+-   support for the continuity of missions between collaborators.
+
+
+
+The solution must fit into existing practices and must not introduce a rupture in the firm’s working methods. The chartered accountant or statutory auditor remains the sole validator: no deliverable is produced or signed without professional validation.
+
+
+
+3. Functional scope
+
+
+
+3.1 Information consultation assistance. Quick access to reliable, up-to-date information drawn from accounting standards (PCG), tax doctrine and the tax code (CGI), the commercial code and applicable legal texts, collective-bargaining agreements for payroll/social, and the firm’s internal procedures and methodology guides. Answers must be contextualised and grounded in cited sources.
+
+
+
+3.2 Drafting assistance. Assistance in drafting client letters and correspondence, mission notes, file memos and syntheses. The solution does not autonomously produce binding or signed deliverables; the professional validates.
+
+
+
+3.3 Client-file handling support. During the handling and review of a client file, the solution must surface relevant information, recall applicable rules, propose a checklist of verifications and flag potential anomalies for human review (e.g. during the révision des comptes). It must support the preparation of recurring documents. No decision or sign-off may be automated.
+
+
+
+3.4 Collaboration and mission continuity. The solution must facilitate the continuity of missions between collaborators by enabling relevant information sharing, an understanding of the context of an in-progress client file, and an efficient resumption by another collaborator.
+
+
+
+4. Regulatory, professional and legal constraints
+
+
+
+4.1 Professional secrecy and confidentiality. The titleholder must ensure strict respect of professional secrecy and confidentiality of client data. Client files must be strictly partitioned; no leakage of data between client files is acceptable.
+
+
+
+4.2 Personal-data protection (GDPR). Client and employee personal and financial data must be processed in compliance with the GDPR. Data must be hosted within the EU, with no transfer outside the EU; sensitive data must be protected (encryption, pseudonymisation where relevant).
+
+
+
+4.3 Reliability and traceability of outputs. Any figure or factual statement produced by the solution must be grounded in, and traceable to, a source document; no ungrounded numeric output is acceptable. A complete audit trail and explainability are required, to support the firm’s internal quality control and statutory-audit review.
+
+
+
+4.4 Professional responsibility and independence. The solution is a non-decisional assistance tool; the chartered accountant or statutory auditor validates and signs. For statutory-audit (CAC) missions, the solution must respect the auditor’s independence and the separation of duties. The solution must not undermine the firm’s anti-money-laundering obligations (LCB-FT). The titleholder must comply with the legal retention and archival obligations for accounting documents.
+
+
+
+5. Technical constraints
+
+
+
+5.1 Performance. Response times compatible with daily professional use are expected — as an indication, below 2 seconds for common queries — and the solution must sustain its performance during seasonal peak loads (closing periods, tax campaigns).
+
+
+
+5.2 Availability. A high level of availability during business hours is required, with resilience to seasonal peak loads.
+
+
+
+5.3 Integration and interoperability. The solution must integrate with the firm’s production tools (accounting-production software, payroll software, document management / GED) and with the electronic-invoicing / dematerialisation environment. API-type interfaces are expected, as is integration with the user directory (SSO).
+
+
+
+6. Sovereignty constraints
+
+
+
+Given the confidential financial nature of the data, hosting on SecNumCloud-qualified infrastructure or equivalent is preferred, and particular attention will be paid to dependency on non-European suppliers.
+
+
+
+7. Budget constraints
+
+
+
+The budget allocated to the project is, as an indication, €220,000 over 3 years. The annual operating cost must remain controlled. As the firm is an SME, the titleholder must propose an approach that optimises costs while guaranteeing the expected quality of service.
+
+
+
+8. Environmental constraints
+
+
+
+The firm wishes to limit the environmental footprint of the solution and to rely, as far as possible, on low-carbon infrastructure.
+
+
+
+9. Deployment terms
+
+
+
+The project must be conducted progressively, with a pilot phase on one office or one mission line, followed by progressive generalisation. Change-management support and training are expected. Ideally, a pilot should be operational before the next closing / tax campaign.
+
+
+
+10. Evaluation criteria
+
+
+
+Offers will be evaluated against: quality and relevance of the solution; reliability and traceability of outputs; confidentiality and security; respect of professional secrecy and of auditor independence; data sovereignty; quality of integration with the firm’s production tools; total cost; quality of support; environmental considerations; capacity for innovation.
+
+
+2026-06-26 15:34:01,617 | INFO | Tokenize 1 inputs...
+2026-06-26 15:34:01,715 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 15:34:06,862 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:34:10,596 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:34:18,119 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:34:28,163 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:34:41,415 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:34:46,585 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:34:48,957 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:34:50,646 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:34:59,194 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:35:05,182 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:35:10,043 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:35:13,340 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:35:22,475 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:35:23,269 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:35:30,217 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:35:30,952 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:35:34,464 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:35:40,058 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:35:40,835 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:35:44,868 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:35:47,620 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:35:54,940 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:35:59,301 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:02,286 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:05,304 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:06,079 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:06,695 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:10,624 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:11,244 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:18,776 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:19,605 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:20,231 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:20,865 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:23,324 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:26,829 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:32,057 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:37,647 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:39,591 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:41,291 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:41,929 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:41,934 | INFO | Tokenize 1 inputs...
+2026-06-26 15:36:42,016 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 15:36:44,964 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:45,614 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:50,182 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:36:56,188 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:37:00,920 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:37:04,994 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:37:07,446 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:37:08,107 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:37:18,337 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:37:21,402 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:37:22,190 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:37:22,811 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:37:29,557 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:37:31,712 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:37:32,382 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:37:34,917 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:37:39,638 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:37:43,744 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:37:46,999 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:37:53,666 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:37:58,570 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:01,601 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:06,951 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:10,178 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:14,358 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:17,149 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:19,220 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:25,238 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:28,994 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:34,157 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:37,838 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:42,577 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:45,338 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:47,205 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:49,914 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:53,323 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:56,591 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:57,207 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:38:59,965 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:39:08,705 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:41:16,296 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:41:16,296 | AGENT | Orchestrator Answer: {
+  "ProjectCoordinator Agent": "Given the requirements to improve productivity, ensure reliability of figures, maintain confidentiality, and support collaboration among professionals, as well as the constraints around professional secrecy, GDPR compliance, and data sovereignty, how can we consolidate our response to address all these aspects while ensuring a coherent tender proposal?",
+  
+  "TechnicalArchitect Agent": "The client requires a solution with response times below 2 seconds for common queries, high availability during business hours, resilience to seasonal peak loads, integration with production tools (accounting software, payroll software, document management), and electronic invoicing/dematerialization environment. The solution must also be hosted on SecNumCloud-qualified infrastructure or equivalent, with no dependency on non-European suppliers. Can our current technology stack meet these requirements, and what adjustments would be necessary to ensure compliance?",
+  
+  "SecurityCompliance Agent": "The tender specifies strict GDPR compliance, professional secrecy, confidentiality of client data, and the need for a complete audit trail. It also mentions the importance of data sovereignty, with hosting within the EU and no transfer outside the EU. Sensitive data must be protected through encryption or pseudonymisation. How can we ensure our solution adheres to these security and compliance requirements, especially considering the constraints around personal data protection and professional responsibility?",
+  
+  "Legal Agent": "The client emphasizes the importance of respecting professional secrecy, auditor independence, and compliance with legal retention and archival obligations for accounting documents. The solution must not undermine the firm's anti-money-laundering obligations. How do we ensure our proposal complies with these legal requirements, particularly in terms of data protection (GDPR), professional responsibility, and regulatory constraints?",
+  
+  "Budget Agent": "The budget allocated to the project is €220,000 over 3 years, with an emphasis on controlling annual operating costs. The client seeks a cost-optimization approach that guarantees expected quality of service. Given our pricing model and current financial position, what is our projected margin on this contract, and what strategies can we propose to optimize costs while ensuring the desired service quality?",
+  
+  "AIInnovation Agent": "The solution requires AI-driven assistance for information retrieval, drafting documents, handling client files, and facilitating mission continuity. It must provide contextualized answers grounded in cited sources and support the preparation of recurring documents without automating decisions or sign-offs. How can we design an innovative AI component that meets these functional requirements while ensuring explainability, traceability, and compliance with regulatory constraints?",
+  
+  "CSRSustainability Agent": "The client aims to limit the environmental footprint of the solution and prefers low-carbon infrastructure. How can we ensure our proposed solution aligns with these sustainability goals, particularly in terms of hosting, energy consumption, and overall environmental impact?"
+}
+2026-06-26 15:41:16,400 | AGENT | ProjectCoordinator Agent received: Given the requirements to improve productivity, ensure reliability of figures, maintain confidentiality, and support collaboration among professionals, as well as the constraints around professional secrecy, GDPR compliance, and data sovereignty, how can we consolidate our response to address all these aspects while ensuring a coherent tender proposal?
+2026-06-26 15:42:48,790 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:42:48,790 | AGENT | ProjectCoordinator Agent answered: To address the client's requirements and constraints, Faber IA can leverage its flagship product Atelier, a sovereign platform that forges document-grounded AI assistants. This solution aligns with the need to improve productivity by providing professionals with an intelligent assistance tool that can aid in daily activities, such as retrieving regulatory and methodological information and assisting in drafting professional documents.
+
+Atelier's ability to ensure reliability of figures is grounded in its capacity to produce answers from a controlled corpus and cite sources, thereby maintaining traceability. This feature directly supports the requirement for reliable outputs and complies with constraints around GDPR and data sovereignty by ensuring that all processed data remains within the EU and is handled in accordance with relevant regulations.
+
+The platform's design also supports collaboration among professionals by providing a shared tool that can be accessed from their work environment, facilitating continuity of missions without rupturing existing working methods. This aspect addresses the constraint of not introducing a rupture in working methods while enhancing teamwork and information sharing.
+
+Faber IA's partnership with OuraneCloud, a French sovereign cloud provider (SecNumCloud-qualified), ensures that hosting requirements are met with high security standards, adhering to data sovereignty constraints. Additionally, integration with existing production tools through Ligeo Conseil as an integration partner will facilitate seamless interaction with the client's current systems.
+
+The company's project management methodology, which combines agile iterations with a phase-gate structure, guarantees a structured approach to the project, ensuring that each phase ends with a formal review and a go/no-go decision. This methodological rigor supports the constraint of conducting the project progressively, with a pilot phase and subsequent generalization, while maintaining control over annual operating costs.
+
+By emphasizing Atelier's capabilities in improving productivity, ensuring reliability, maintaining confidentiality, and supporting collaboration, while highlighting Faber IA's commitment to GDPR compliance, data sovereignty, and professional secrecy through secure hosting and integration partnerships, the tender proposal can comprehensively address the client's requirements and constraints. This approach ensures a coherent and compelling response that aligns with the client's needs and regulatory environment.
+2026-06-26 15:42:48,790 | INFO | Tokenize 1 inputs...
+2026-06-26 15:42:48,864 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 15:43:00,476 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:43:12,021 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:43:20,387 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:43:24,800 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:43:30,165 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:43:34,789 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:43:45,253 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:43:49,900 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:44:07,044 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:44:07,044 | AGENT | ProjectCoordinator Agent coherency answered: true
+2026-06-26 15:44:07,083 | AGENT | Orchestrator correct received: To address the client's requirements and constraints, Faber IA can leverage its flagship product Atelier, a sovereign platform that forges document-grounded AI assistants. This solution aligns with the need to improve productivity by providing professionals with an intelligent assistance tool that can aid in daily activities, such as retrieving regulatory and methodological information and assisting in drafting professional documents.
+
+Atelier's ability to ensure reliability of figures is grounded in its capacity to produce answers from a controlled corpus and cite sources, thereby maintaining traceability. This feature directly supports the requirement for reliable outputs and complies with constraints around GDPR and data sovereignty by ensuring that all processed data remains within the EU and is handled in accordance with relevant regulations.
+
+The platform's design also supports collaboration among professionals by providing a shared tool that can be accessed from their work environment, facilitating continuity of missions without rupturing existing working methods. This aspect addresses the constraint of not introducing a rupture in working methods while enhancing teamwork and information sharing.
+
+Faber IA's partnership with OuraneCloud, a French sovereign cloud provider (SecNumCloud-qualified), ensures that hosting requirements are met with high security standards, adhering to data sovereignty constraints. Additionally, integration with existing production tools through Ligeo Conseil as an integration partner will facilitate seamless interaction with the client's current systems.
+
+The company's project management methodology, which combines agile iterations with a phase-gate structure, guarantees a structured approach to the project, ensuring that each phase ends with a formal review and a go/no-go decision. This methodological rigor supports the constraint of conducting the project progressively, with a pilot phase and subsequent generalization, while maintaining control over annual operating costs.
+
+By emphasizing Atelier's capabilities in improving productivity, ensuring reliability, maintaining confidentiality, and supporting collaboration, while highlighting Faber IA's commitment to GDPR compliance, data sovereignty, and professional secrecy through secure hosting and integration partnerships, the tender proposal can comprehensively address the client's requirements and constraints. This approach ensures a coherent and compelling response that aligns with the client's needs and regulatory environment.
+2026-06-26 15:44:08,482 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:44:08,482 | AGENT | Orchestrator correct answered: TRUE
+2026-06-26 15:44:08,559 | AGENT | TechnicalArchitect Agent received: The client requires a solution with response times below 2 seconds for common queries, high availability during business hours, resilience to seasonal peak loads, integration with production tools (accounting software, payroll software, document management), and electronic invoicing/dematerialization environment. The solution must also be hosted on SecNumCloud-qualified infrastructure or equivalent, with no dependency on non-European suppliers. Can our current technology stack meet these requirements, and what adjustments would be necessary to ensure compliance?
+2026-06-26 15:45:25,186 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:45:25,186 | AGENT | TechnicalArchitect Agent answered: Our platform Atelier is a Retrieval-augmented generation (RAG) platform that can provide response times compatible with daily professional use. The median latency of our platform is 1.3 seconds, and the p95 latency is below 2.5 seconds for common queries on comparable deployments. This suggests we can meet the client's requirement for response times below 2 seconds.
+
+Regarding high availability during business hours and resilience to seasonal peak loads, our platform is designed to scale horizontally, allowing us to size capacity for seasonal peak loads. We also have built-in monitoring, logging, and observability capabilities to ensure high availability during business hours.
+
+For integration with production tools, we have connectors and adapters for accounting-production and payroll software, document-management systems (GED), and electronic-invoicing/dematerialisation environments through our delivery partner Ligeo Conseil. This should enable us to meet the client's requirements for integration with their production tools.
+
+To comply with the hosting requirements, we can offer our Sovereign tier hosting option, which is hosted on OuraneCloud, a SecNumCloud-qualified infrastructure provider that is EU-only and renewable-powered. This ensures no dependency on non-European suppliers.
+
+However, to guarantee compliance with all requirements, some adjustments might be necessary. For instance, we would need to configure our platform to ensure high availability during business hours specifically and implement measures to handle seasonal peak loads effectively. Additionally, we should review our integration capabilities with the client's specific production tools to ensure seamless integration. Overall, our current technology stack provides a solid foundation for meeting the client's requirements, but some fine-tuning and adjustments may be required to ensure full compliance.
+2026-06-26 15:45:25,187 | INFO | Tokenize 1 inputs...
+2026-06-26 15:45:25,257 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 15:45:35,985 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:45:38,102 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:45:42,379 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:45:46,067 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:45:48,607 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:45:55,369 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:46:04,039 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:46:07,726 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:46:13,792 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:46:15,877 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:46:20,202 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:46:24,284 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:46:27,194 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:46:44,261 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:46:44,261 | AGENT | TechnicalArchitect Agent coherency answered: false
+2026-06-26 15:46:44,310 | AGENT | TechnicalArchitect Agent received: The client requires a solution with response times below 2 seconds for common queries, high availability during business hours, resilience to seasonal peak loads, integration with production tools (accounting software, payroll software, document management), and electronic invoicing/dematerialization environment. The solution must also be hosted on SecNumCloud-qualified infrastructure or equivalent, with no dependency on non-European suppliers. Can our current technology stack meet these requirements, and what adjustments would be necessary to ensure compliance?
+2026-06-26 15:47:52,512 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:47:52,512 | AGENT | TechnicalArchitect Agent answered: Based on the provided context, our platform Atelier has a median latency of 1.3 seconds and a p95 latency below 2.5 seconds for common queries on comparable deployments, depending on the model option and hosting tier. This information suggests that we may be able to meet the client's requirement for response times, but it does not explicitly state that we can achieve response times below 2 seconds.
+
+Regarding high availability during business hours and resilience to seasonal peak loads, our platform is designed to scale horizontally, which allows us to size capacity for seasonal peak loads. We also have active-active redundancy across two availability zones, which contributes to high availability. However, the context does not explicitly state that we can guarantee high availability specifically during business hours.
+
+For integration with production tools, our context mentions that we have connectors and adapters for accounting-production and payroll software, document-management systems, and electronic-invoicing/dematerialisation environments through our delivery partner Ligeo Conseil. This suggests that we can meet the client's requirements for integration with their production tools.
+
+Regarding hosting, we offer a Sovereign tier hosting option on OuraneCloud, which is SecNumCloud-qualified, EU-only, and renewable-powered. This meets the client's requirement for hosting on SecNumCloud-qualified infrastructure or equivalent with no dependency on non-European suppliers.
+
+To determine if our current technology stack can meet all of the client's requirements, more information would be needed, as some details are not explicitly provided in the context. Adjustments to ensure compliance would depend on the specific gaps identified between our capabilities and the client's requirements, but based on the information available, it appears that we have a foundation that could potentially meet many of the client's needs with possible adjustments for specifics like guaranteed response times below 2 seconds during business hours.
+2026-06-26 15:47:52,513 | INFO | Tokenize 1 inputs...
+2026-06-26 15:47:52,597 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 15:47:58,526 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:48:02,886 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:48:05,131 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:48:10,408 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:48:16,778 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:48:24,447 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:48:26,389 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:48:32,711 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:48:35,311 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:48:39,459 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:48:44,915 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:48:47,826 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:48:51,397 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:48:56,685 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:49:00,721 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:49:06,440 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:49:08,629 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:49:15,705 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:49:22,693 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:49:26,647 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:49:34,056 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:49:51,196 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:49:51,196 | AGENT | TechnicalArchitect Agent coherency answered: true
+2026-06-26 15:49:51,254 | AGENT | Orchestrator correct received: Based on the provided context, our platform Atelier has a median latency of 1.3 seconds and a p95 latency below 2.5 seconds for common queries on comparable deployments, depending on the model option and hosting tier. This information suggests that we may be able to meet the client's requirement for response times, but it does not explicitly state that we can achieve response times below 2 seconds.
+
+Regarding high availability during business hours and resilience to seasonal peak loads, our platform is designed to scale horizontally, which allows us to size capacity for seasonal peak loads. We also have active-active redundancy across two availability zones, which contributes to high availability. However, the context does not explicitly state that we can guarantee high availability specifically during business hours.
+
+For integration with production tools, our context mentions that we have connectors and adapters for accounting-production and payroll software, document-management systems, and electronic-invoicing/dematerialisation environments through our delivery partner Ligeo Conseil. This suggests that we can meet the client's requirements for integration with their production tools.
+
+Regarding hosting, we offer a Sovereign tier hosting option on OuraneCloud, which is SecNumCloud-qualified, EU-only, and renewable-powered. This meets the client's requirement for hosting on SecNumCloud-qualified infrastructure or equivalent with no dependency on non-European suppliers.
+
+To determine if our current technology stack can meet all of the client's requirements, more information would be needed, as some details are not explicitly provided in the context. Adjustments to ensure compliance would depend on the specific gaps identified between our capabilities and the client's requirements, but based on the information available, it appears that we have a foundation that could potentially meet many of the client's needs with possible adjustments for specifics like guaranteed response times below 2 seconds during business hours.
+2026-06-26 15:49:52,645 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:49:52,646 | AGENT | Orchestrator correct answered: TRUE
+2026-06-26 15:49:52,756 | AGENT | SecurityCompliance Agent received: The tender specifies strict GDPR compliance, professional secrecy, confidentiality of client data, and the need for a complete audit trail. It also mentions the importance of data sovereignty, with hosting within the EU and no transfer outside the EU. Sensitive data must be protected through encryption or pseudonymisation. How can we ensure our solution adheres to these security and compliance requirements, especially considering the constraints around personal data protection and professional responsibility?
+2026-06-26 15:51:35,485 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:51:35,486 | AGENT | SecurityCompliance Agent answered: We are committed to ensuring the highest level of security and compliance in our solution. As a company, Faber IA holds ISO 27001 certification since 2023, which encompasses the development, delivery, and operations of our services, including the scope of privacy information management through our ISO 27701 certification. This foundation allows us to manage sensitive data securely.
+
+To address GDPR compliance, we implement robust data protection measures. These include encryption in transit using TLS 1.3 and encryption at rest using AES-256. Our key management is based on EU-based infrastructure, ensuring that all cryptographic keys are securely managed within the European Union. We also employ strict partitioning of client files with logical isolation per client and per mission, alongside access controls that prevent any cross-client circulation of data. Additionally, we use pseudonymisation to further protect sensitive information.
+
+Our hosting partner, OuraneCloud, provides a SecNumCloud-qualified infrastructure, which supports sovereign hosting of confidential data within the EU. This ensures that all data are hosted within the European Union and not transferred outside, adhering to the data sovereignty requirements.
+
+For audit trail and compliance purposes, we maintain a complete log of access and every system output. Our solution, Atelier, is designed with explainability and auditability in mind, providing grounded and traceable figures or factual statements. This transparency supports internal quality control and statutory audit reviews, ensuring that our outputs are reliable and compliant.
+
+Given the importance of professional secrecy and confidentiality of client data, we have appointed a Data Protection Officer (DPO) and maintain a data processing register. Our Data Processing Agreement (DPA) is aligned with GDPR Article 28, ensuring that all data processing activities are legally compliant.
+
+To prevent leakage of data between client files, we ensure strict partitioning and access controls. All sensitive data are protected through encryption or pseudonymisation as appropriate, and our system is designed to maintain confidentiality and security.
+
+In terms of continuity and reliability, our solution supports the preparation of recurring documents and facilitates collaboration among professionals while ensuring the integrity and security of client data. We also prioritize the environmental sustainability of our infrastructure, aiming for a low carbon footprint.
+
+By leveraging these measures and certifications, we can ensure that our solution not only meets but exceeds the specified security and compliance requirements, providing a robust, secure, and GDPR-compliant environment for managing sensitive client data.
+2026-06-26 15:51:35,486 | INFO | Tokenize 1 inputs...
+2026-06-26 15:51:35,558 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 15:51:44,850 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:51:50,504 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:51:52,872 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:51:56,392 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:52:01,325 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:52:05,082 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:52:15,676 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:52:24,103 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:52:29,329 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:52:34,712 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:52:41,343 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:52:47,802 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:52:50,253 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:52:55,908 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:53:06,114 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:53:23,171 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:53:23,171 | AGENT | SecurityCompliance Agent coherency answered: true
+2026-06-26 15:53:23,239 | AGENT | Orchestrator correct received: We are committed to ensuring the highest level of security and compliance in our solution. As a company, Faber IA holds ISO 27001 certification since 2023, which encompasses the development, delivery, and operations of our services, including the scope of privacy information management through our ISO 27701 certification. This foundation allows us to manage sensitive data securely.
+
+To address GDPR compliance, we implement robust data protection measures. These include encryption in transit using TLS 1.3 and encryption at rest using AES-256. Our key management is based on EU-based infrastructure, ensuring that all cryptographic keys are securely managed within the European Union. We also employ strict partitioning of client files with logical isolation per client and per mission, alongside access controls that prevent any cross-client circulation of data. Additionally, we use pseudonymisation to further protect sensitive information.
+
+Our hosting partner, OuraneCloud, provides a SecNumCloud-qualified infrastructure, which supports sovereign hosting of confidential data within the EU. This ensures that all data are hosted within the European Union and not transferred outside, adhering to the data sovereignty requirements.
+
+For audit trail and compliance purposes, we maintain a complete log of access and every system output. Our solution, Atelier, is designed with explainability and auditability in mind, providing grounded and traceable figures or factual statements. This transparency supports internal quality control and statutory audit reviews, ensuring that our outputs are reliable and compliant.
+
+Given the importance of professional secrecy and confidentiality of client data, we have appointed a Data Protection Officer (DPO) and maintain a data processing register. Our Data Processing Agreement (DPA) is aligned with GDPR Article 28, ensuring that all data processing activities are legally compliant.
+
+To prevent leakage of data between client files, we ensure strict partitioning and access controls. All sensitive data are protected through encryption or pseudonymisation as appropriate, and our system is designed to maintain confidentiality and security.
+
+In terms of continuity and reliability, our solution supports the preparation of recurring documents and facilitates collaboration among professionals while ensuring the integrity and security of client data. We also prioritize the environmental sustainability of our infrastructure, aiming for a low carbon footprint.
+
+By leveraging these measures and certifications, we can ensure that our solution not only meets but exceeds the specified security and compliance requirements, providing a robust, secure, and GDPR-compliant environment for managing sensitive client data.
+2026-06-26 15:53:24,719 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:53:24,719 | AGENT | Orchestrator correct answered: TRUE
+2026-06-26 15:53:24,846 | AGENT | Legal Agent received: The client emphasizes the importance of respecting professional secrecy, auditor independence, and compliance with legal retention and archival obligations for accounting documents. The solution must not undermine the firm's anti-money-laundering obligations. How do we ensure our proposal complies with these legal requirements, particularly in terms of data protection (GDPR), professional responsibility, and regulatory constraints?
+2026-06-26 15:54:36,612 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:54:36,612 | AGENT | Legal Agent answered: As Legal Agent for Faber IA, I can confirm that our company is familiar with the importance of professional secrecy, auditor independence, and compliance with legal retention and archival obligations for accounting documents. We are also aware of the need to respect anti-money-laundering obligations. 
+
+In terms of data protection, we comply with GDPR (including Art. 28 processing agreements) as part of our regulatory compliance obligations. Our company's contractual experience includes familiarity with professional secrecy expectations from clients bound by such obligations.
+
+To ensure that our proposal complies with the client's requirements, we will maintain the highest standards of professional secrecy and confidentiality, ensuring that all data is handled in accordance with GDPR and other relevant regulations. We will also guarantee auditor independence and separation of duties within our tooling to prevent any conflicts of interest or breaches of regulatory rules.
+
+Furthermore, we will ensure that our solution does not undermine the firm's anti-money-laundering obligations by adhering to the relevant framework (LCB-FT) and ensuring that all transactions and data exchanges are properly monitored and reported as required.
+
+Our Security & Compliance function works closely with our teams to monitor these obligations, including GDPR, professional secrecy, anti-money-laundering rules, auditor independence, and separation of duties for statutory audit. This ensures that our contractual framework does not compromise Faber IA's professional obligations or those of its clients.
+
+By prioritizing these critical aspects, we can provide a proposal that meets the client's needs while upholding the highest standards of legal compliance, professional responsibility, and data protection.
+2026-06-26 15:54:36,612 | INFO | Tokenize 1 inputs...
+2026-06-26 15:54:36,681 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 15:54:45,390 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:54:49,746 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:54:52,977 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:55:00,852 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:55:04,988 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:55:10,117 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:55:12,368 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:55:16,251 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:55:23,381 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:55:31,273 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:55:40,508 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:55:48,979 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:56:05,878 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:56:05,878 | AGENT | Legal Agent coherency answered: true
+2026-06-26 15:56:05,954 | AGENT | Orchestrator correct received: As Legal Agent for Faber IA, I can confirm that our company is familiar with the importance of professional secrecy, auditor independence, and compliance with legal retention and archival obligations for accounting documents. We are also aware of the need to respect anti-money-laundering obligations. 
+
+In terms of data protection, we comply with GDPR (including Art. 28 processing agreements) as part of our regulatory compliance obligations. Our company's contractual experience includes familiarity with professional secrecy expectations from clients bound by such obligations.
+
+To ensure that our proposal complies with the client's requirements, we will maintain the highest standards of professional secrecy and confidentiality, ensuring that all data is handled in accordance with GDPR and other relevant regulations. We will also guarantee auditor independence and separation of duties within our tooling to prevent any conflicts of interest or breaches of regulatory rules.
+
+Furthermore, we will ensure that our solution does not undermine the firm's anti-money-laundering obligations by adhering to the relevant framework (LCB-FT) and ensuring that all transactions and data exchanges are properly monitored and reported as required.
+
+Our Security & Compliance function works closely with our teams to monitor these obligations, including GDPR, professional secrecy, anti-money-laundering rules, auditor independence, and separation of duties for statutory audit. This ensures that our contractual framework does not compromise Faber IA's professional obligations or those of its clients.
+
+By prioritizing these critical aspects, we can provide a proposal that meets the client's needs while upholding the highest standards of legal compliance, professional responsibility, and data protection.
+2026-06-26 15:56:06,925 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:56:06,925 | AGENT | Orchestrator correct answered: TRUE
+2026-06-26 15:56:07,066 | AGENT | Budget Agent received: The budget allocated to the project is €220,000 over 3 years, with an emphasis on controlling annual operating costs. The client seeks a cost-optimization approach that guarantees expected quality of service. Given our pricing model and current financial position, what is our projected margin on this contract, and what strategies can we propose to optimize costs while ensuring the desired service quality?
+2026-06-26 15:57:15,787 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:57:15,787 | AGENT | Budget Agent answered: Our company's budget envelope for a project like this is €220,000 over 3 years, which is within our normal deal range and financial capacity. The cost structure of the project includes one-off project costs such as framing, design, integration with the firm's production tools, change management, and training, as well as recurring run costs like platform subscription, hosting/infrastructure, model-inference costs, support, and maintenance.
+
+Given that our target gross margin is between 25% and 35%, we can estimate our projected revenue from this contract to be around €220,000. To optimize costs while ensuring the desired service quality, we can propose a cost-efficient approach by favoring the sovereign tier with the sovereign European model, which is the most cost-efficient configuration on the recurring side.
+
+Additionally, we can work with the architect to keep the configuration within the SME envelope while preserving an acceptable margin. We maintain a three-year cost model that can be re-run if the requirements or budget change, allowing us to adapt and optimize our approach as needed.
+
+By taking a cost-efficient approach and working closely with the client to understand their needs, we can ensure that we deliver the expected quality of service while controlling annual operating costs and achieving our projected margin. Our financial capacity and comfortable cash runway, thanks to our Series A funding of €12 million, provide us with the necessary resources to support this project and deliver value to the client.
+2026-06-26 15:57:15,787 | INFO | Tokenize 1 inputs...
+2026-06-26 15:57:15,858 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 15:57:19,906 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:57:22,230 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:57:27,794 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:57:42,644 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:57:47,353 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:57:52,237 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:57:57,246 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:58:01,932 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:58:18,801 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:58:18,802 | AGENT | Budget Agent coherency answered: true
+2026-06-26 15:58:18,881 | AGENT | Orchestrator correct received: Our company's budget envelope for a project like this is €220,000 over 3 years, which is within our normal deal range and financial capacity. The cost structure of the project includes one-off project costs such as framing, design, integration with the firm's production tools, change management, and training, as well as recurring run costs like platform subscription, hosting/infrastructure, model-inference costs, support, and maintenance.
+
+Given that our target gross margin is between 25% and 35%, we can estimate our projected revenue from this contract to be around €220,000. To optimize costs while ensuring the desired service quality, we can propose a cost-efficient approach by favoring the sovereign tier with the sovereign European model, which is the most cost-efficient configuration on the recurring side.
+
+Additionally, we can work with the architect to keep the configuration within the SME envelope while preserving an acceptable margin. We maintain a three-year cost model that can be re-run if the requirements or budget change, allowing us to adapt and optimize our approach as needed.
+
+By taking a cost-efficient approach and working closely with the client to understand their needs, we can ensure that we deliver the expected quality of service while controlling annual operating costs and achieving our projected margin. Our financial capacity and comfortable cash runway, thanks to our Series A funding of €12 million, provide us with the necessary resources to support this project and deliver value to the client.
+2026-06-26 15:58:19,858 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:58:19,859 | AGENT | Orchestrator correct answered: TRUE
+2026-06-26 15:58:20,008 | AGENT | AIInnovation Agent received: The solution requires AI-driven assistance for information retrieval, drafting documents, handling client files, and facilitating mission continuity. It must provide contextualized answers grounded in cited sources and support the preparation of recurring documents without automating decisions or sign-offs. How can we design an innovative AI component that meets these functional requirements while ensuring explainability, traceability, and compliance with regulatory constraints?
+2026-06-26 15:59:45,687 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:59:45,687 | AGENT | AIInnovation Agent answered: To design an innovative AI component that meets the specified functional requirements, we will leverage our Atelier platform, which utilizes a retrieval-augmented generation approach. This core approach enables the generation of answers from passages retrieved from the client's controlled corpus, ensuring that every answer is grounded in validated material and cites those passages.
+
+Our ai_llm_rag_capabilities include hybrid retrieval, re-ranking, query reformulation, multi-document synthesis, structured extraction with source linking, and template-guided drafting. These capabilities can be applied to provide contextualized answers grounded in cited sources, support the preparation of recurring documents such as client letters and mission notes, and facilitate continuity of missions by ensuring that relevant information is surfaced and applicable rules are recalled.
+
+The Atelier platform's grounding in validated material, including accounting standards, tax doctrine, commercial code, collective agreements, and internal procedures, will help ensure compliance with regulatory constraints. Additionally, our factual_reliability_of_figures principle ensures that figure-bearing statements are grounded in and linked to a source document, preventing the production of ungrounded numeric claims.
+
+To address explainability and traceability, we will implement features such as source citations, retrieved passages, retrieval traces, and logging of every interaction for posterior audit. Human oversight is also built into our workflow, where the assistant proposes and the professional validates and signs, maintaining the non-decisional nature of the AI assistance tool.
+
+By configuring our model options, which include a sovereign European open-weight model and top-tier proprietary models, we can balance performance against explainability and sovereignty requirements. Our iterative methodologies, including corpus curation, retrieval tuning, prompt and template design, and evaluation loops, will ensure that the solution is tailored to the client's specific needs.
+
+Overall, our approach will provide an innovative AI component that supports the firm's professionals in their daily activities while ensuring compliance with regulatory constraints, maintaining professional secrecy, and upholding data protection principles.
+2026-06-26 15:59:45,688 | INFO | Tokenize 1 inputs...
+2026-06-26 15:59:45,763 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 15:59:52,806 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:59:53,527 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:59:57,807 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:00:08,944 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:00:21,380 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:00:23,501 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:00:29,843 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:00:34,922 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:00:44,286 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:00:49,741 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:01:06,833 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:01:06,833 | AGENT | AIInnovation Agent coherency answered: true
+2026-06-26 16:01:06,918 | AGENT | Orchestrator correct received: To design an innovative AI component that meets the specified functional requirements, we will leverage our Atelier platform, which utilizes a retrieval-augmented generation approach. This core approach enables the generation of answers from passages retrieved from the client's controlled corpus, ensuring that every answer is grounded in validated material and cites those passages.
+
+Our ai_llm_rag_capabilities include hybrid retrieval, re-ranking, query reformulation, multi-document synthesis, structured extraction with source linking, and template-guided drafting. These capabilities can be applied to provide contextualized answers grounded in cited sources, support the preparation of recurring documents such as client letters and mission notes, and facilitate continuity of missions by ensuring that relevant information is surfaced and applicable rules are recalled.
+
+The Atelier platform's grounding in validated material, including accounting standards, tax doctrine, commercial code, collective agreements, and internal procedures, will help ensure compliance with regulatory constraints. Additionally, our factual_reliability_of_figures principle ensures that figure-bearing statements are grounded in and linked to a source document, preventing the production of ungrounded numeric claims.
+
+To address explainability and traceability, we will implement features such as source citations, retrieved passages, retrieval traces, and logging of every interaction for posterior audit. Human oversight is also built into our workflow, where the assistant proposes and the professional validates and signs, maintaining the non-decisional nature of the AI assistance tool.
+
+By configuring our model options, which include a sovereign European open-weight model and top-tier proprietary models, we can balance performance against explainability and sovereignty requirements. Our iterative methodologies, including corpus curation, retrieval tuning, prompt and template design, and evaluation loops, will ensure that the solution is tailored to the client's specific needs.
+
+Overall, our approach will provide an innovative AI component that supports the firm's professionals in their daily activities while ensuring compliance with regulatory constraints, maintaining professional secrecy, and upholding data protection principles.
+2026-06-26 16:01:08,345 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:01:08,346 | AGENT | Orchestrator correct answered: TRUE
+2026-06-26 16:01:08,507 | AGENT | CSRSustainability Agent received: The client aims to limit the environmental footprint of the solution and prefers low-carbon infrastructure. How can we ensure our proposed solution aligns with these sustainability goals, particularly in terms of hosting, energy consumption, and overall environmental impact?
+2026-06-26 16:02:09,889 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:02:09,889 | AGENT | CSRSustainability Agent answered: As a CSR & Sustainability officer at Faber IA, I can assure that our company has a strong commitment to sustainability. We have already conducted a bilan carbone and have published a trajectory to reduce our carbon intensity per managed assistant year on year. 
+
+In terms of hosting, we partner with green hosting providers such as OuraneCloud, which is located in the EU, uses renewable energy, and has a power usage effectiveness (PUE) of 1.2, indicating efficient energy use. Additionally, they reuse heat, further reducing their environmental footprint.
+
+Our digital sobriety practices include model right-sizing, caching, and batching, which help reduce energy consumption. We also consider inference efficiency as an energy lever, ensuring that our AI models are optimized for minimal energy usage while maintaining performance.
+
+To align with the client's sustainability goals, we can propose hosting our solution on OuraneCloud or similar low-carbon infrastructure. This will not only reduce the environmental footprint of our solution but also ensure that it is hosted within the EU, addressing any data sovereignty concerns.
+
+We will provide regular carbon reporting to ensure transparency and accountability in our sustainability efforts. By choosing Faber IA as their solution provider, the client can be confident that we share their commitment to reducing environmental impact and are taking concrete steps to minimize our ecological footprint.
+2026-06-26 16:02:09,890 | INFO | Tokenize 1 inputs...
+2026-06-26 16:02:09,964 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 16:02:13,856 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:02:22,177 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:02:23,794 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:02:29,059 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:02:34,161 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:02:35,899 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:02:41,107 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:02:45,760 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:02:53,878 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:02:58,583 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:03:03,949 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:03:20,814 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:03:20,815 | AGENT | CSRSustainability Agent coherency answered: true
+2026-06-26 16:03:20,903 | AGENT | Orchestrator correct received: As a CSR & Sustainability officer at Faber IA, I can assure that our company has a strong commitment to sustainability. We have already conducted a bilan carbone and have published a trajectory to reduce our carbon intensity per managed assistant year on year. 
+
+In terms of hosting, we partner with green hosting providers such as OuraneCloud, which is located in the EU, uses renewable energy, and has a power usage effectiveness (PUE) of 1.2, indicating efficient energy use. Additionally, they reuse heat, further reducing their environmental footprint.
+
+Our digital sobriety practices include model right-sizing, caching, and batching, which help reduce energy consumption. We also consider inference efficiency as an energy lever, ensuring that our AI models are optimized for minimal energy usage while maintaining performance.
+
+To align with the client's sustainability goals, we can propose hosting our solution on OuraneCloud or similar low-carbon infrastructure. This will not only reduce the environmental footprint of our solution but also ensure that it is hosted within the EU, addressing any data sovereignty concerns.
+
+We will provide regular carbon reporting to ensure transparency and accountability in our sustainability efforts. By choosing Faber IA as their solution provider, the client can be confident that we share their commitment to reducing environmental impact and are taking concrete steps to minimize our ecological footprint.
+2026-06-26 16:03:21,841 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:03:21,841 | AGENT | Orchestrator correct answered: TRUE
+2026-06-26 16:06:21,814 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:06:21,814 | AGENT | Final proposal generated: Dear Cabinet Vauclair Associés,
+
+We are pleased to submit our proposal in response to your call for tenders for an artificial intelligence assistance solution. Our team has carefully reviewed your requirements and constraints, and we are confident that our solution meets your needs.
+
+Our proposed solution is designed to support your professionals in their daily activities, improving productivity and quality of work while ensuring the strict respect of professional secrecy and confidentiality of client data. We understand the importance of preserving the reliability of figures and maintaining a non-decisional assistance tool that fits into existing practices without introducing any rupture in working methods.
+
+Our solution will provide contextualized answers grounded in cited sources, surface relevant information, recall applicable rules, and propose a checklist of verifications. It will also flag potential anomalies for human review and ensure the completeness of the audit trail. We guarantee that our solution will not undermine your anti-money laundering obligations (LCB-FT) and will comply with legal retention and archival obligations for accounting documents.
+
+We will conduct the project progressively, starting with a pilot phase on one office or one mission line, followed by progressive generalization. Our team will provide change management support and training to ensure a smooth transition. We are committed to delivering high-quality integration with your production tools, including electronic invoicing dematerialization environments, and ensuring the reliability and traceability of outputs.
+
+Our solution will be hosted on SecNumCloud-qualified infrastructure or equivalent, with no dependency on non-European suppliers. We guarantee that our solution will have a limited environmental footprint, using low-carbon infrastructure, and will respect data sovereignty.
+
+In terms of technical requirements, our solution will have response times below 2 seconds for common queries, sustain performance during seasonal peak loads, and ensure high availability during business hours. We will also provide API-type interfaces and integrate with your user directory (SSO).
+
+Our team is committed to delivering a solution that meets the expected quality of service while controlling annual operating costs. We propose an approach that guarantees the expected quality of service, ensuring that our solution is operational before the next closing tax campaign.
+
+We believe that our proposed solution meets all your requirements and constraints, and we are confident that it will bring significant benefits to your organization. We look forward to the opportunity to discuss our proposal in more detail and demonstrate how our solution can support your professionals in their daily activities.
+
+Thank you for considering our proposal.
+
+Sincerely,
+[Your Name]
+2026-06-26 16:06:21,815 | INFO | Tokenize 1 inputs...
+2026-06-26 16:06:21,938 | INFO | ***** Running Inference on 1 texts *****
+2026-06-26 16:06:27,251 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:06:35,212 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:06:47,023 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:06:51,926 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:06:56,193 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:06:59,295 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:07:10,067 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:07:14,824 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:07:22,344 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:07:25,984 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:07:30,835 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:07:36,930 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:07:37,545 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:07:44,014 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:07:44,763 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:07:45,350 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:07:47,470 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:07:49,453 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:07:51,420 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:07:53,397 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:07:55,369 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:07:57,344 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:07:59,307 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:01,267 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:03,222 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:05,243 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:07,212 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:09,181 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:11,142 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:13,127 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:15,096 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:17,062 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:19,021 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:20,986 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:23,149 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:25,131 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:27,108 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:29,079 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:31,051 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:33,019 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:34,997 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:36,967 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:38,941 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:40,902 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:42,863 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:44,839 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:46,813 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:48,788 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:50,764 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:52,734 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:54,700 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:56,667 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:08:58,653 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:09:00,636 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:09:02,615 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:09:04,586 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:09:06,561 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:09:08,533 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:09:10,501 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:09:12,482 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:09:14,789 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:09:16,756 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:09:18,733 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:09:20,699 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:09:22,851 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:09:24,825 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:09:26,785 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:09:28,895 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:09:30,861 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 16:09:30,863 | INFO | Token usage saved to /home/msernia/Prova/kg_claude/experiments/cabinet/llama/YAML_LD/TEXT/C_{OAP}_0/tokens.json

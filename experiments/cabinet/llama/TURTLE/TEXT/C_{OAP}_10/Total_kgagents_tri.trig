@@ -1,0 +1,2649 @@
+@prefix con: <http://example.org/constraint/> .
+@prefix ex: <http://example.org/ontologia#> .
+@prefix ns1: <http://example.org/edge/> .
+@prefix pro: <http://example.org/proposal/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix req: <http://example.org/requirement/> .
+@prefix tri: <http://example.org/triplet/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/extraction/tri/extraction21> {
+    tri:tri1 a ex:Triplet ;
+        ns1:has_budget <http://example.org/node/220_000> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri10 a ex:Triplet ;
+        ns1:requires_low_environmental_footprint <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri2 a ex:Triplet ;
+        ns1:budget_duration <http://example.org/node/3_years> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri3 a ex:Triplet ;
+        ns1:has_flagship_product <http://example.org/node/atelier> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri4 a ex:Triplet ;
+        ns1:is_sovereign_platform <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    tri:tri5 a ex:Triplet ;
+        ns1:provides_intelligent_assistance <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    tri:tri6 a ex:Triplet ;
+        ns1:ensures_reliability_of_figures <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    tri:tri7 a ex:Triplet ;
+        ns1:preserves_professional_secrecy <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    tri:tri8 a ex:Triplet ;
+        ns1:requires_gdpr_compliance <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri9 a ex:Triplet ;
+        ns1:requires_data_sovereignty <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction26> {
+    tri:tri32 a ex:Triplet ;
+        ns1:has_structure <http://example.org/node/hybrid> ;
+        rdf:subject <http://example.org/node/nexus_engineering_delivery_model> .
+
+    tri:tri33 a ex:Triplet ;
+        ns1:includes_iterations <http://example.org/node/agile> ;
+        rdf:subject <http://example.org/node/nexus_engineering_delivery_model> .
+
+    tri:tri34 a ex:Triplet ;
+        ns1:includes_decision_point <http://example.org/node/go_no_go> ;
+        rdf:subject <http://example.org/node/nexus_engineering_delivery_model> .
+}
+
+<http://example.org/extraction/tri/extraction40> {
+    tri:tri103 a ex:Triplet ;
+        ns1:has_certification <http://example.org/node/iso_27001> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri104 a ex:Triplet ;
+        ns1:certification_valid_since <http://example.org/node/2023> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri105 a ex:Triplet ;
+        ns1:has_gdpr_compliance <http://example.org/node/robust_security_controls> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri106 a ex:Triplet ;
+        ns1:information_security_management_standard <http://example.org/node/high> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction62> {
+    tri:tri183 a ex:Triplet ;
+        ns1:requires_explainability <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri184 a ex:Triplet ;
+        ns1:requires_traceability <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction44> {
+    tri:tri119 a ex:Triplet ;
+        ns1:has_experience_in <http://example.org/node/professional_secrecy> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri120 a ex:Triplet ;
+        ns1:understands_importance_of <http://example.org/node/confidentiality> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri121 a ex:Triplet ;
+        ns1:works_with <http://example.org/node/national_professional_orders> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction56> {
+    tri:tri169 a ex:Triplet ;
+        ns1:has_budget <http://example.org/node/220_000> ;
+        rdf:subject <http://example.org/node/the_project> .
+
+    tri:tri170 a ex:Triplet ;
+        ns1:has_duration <http://example.org/node/3_years> ;
+        rdf:subject <http://example.org/node/the_project> .
+}
+
+<http://example.org/extraction/con/extraction19> {
+    con:con42 a ex:Constraint ;
+        ns1:is <http://example.org/node/220_000_over_3_years> ;
+        ex:constraintType ex:budgetary ;
+        rdf:subject <http://example.org/node/budget_allocated_to_the_project> .
+
+    con:con43 a ex:Constraint ;
+        ns1:must_remain <http://example.org/node/controlled> ;
+        ex:constraintType ex:budgetary ;
+        rdf:subject <http://example.org/node/annual_operating_cost> .
+
+    con:con44 a ex:Constraint ;
+        ns1:must_be_limited_to <http://example.org/node/low_carbon_infrastructure> ;
+        ex:constraintType ex:environmental ;
+        rdf:subject <http://example.org/node/environmental_footprint_of_the_solution> .
+
+    con:con45 a ex:Constraint ;
+        ns1:must_optimise <http://example.org/node/costs_while_guaranteeing_expected_quality_of_service> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/approach> .
+}
+
+<http://example.org/extraction/con/extraction13> {
+    con:con7 a ex:Constraint ;
+        ns1:must_be <http://example.org/node/contextualised_and_grounded_in_cited_sources> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/answers> .
+
+    con:con8 a ex:Constraint ;
+        ns1:does_not_autonomously_produce <http://example.org/node/binding_or_signed_deliverables> ;
+        ex:constraintType ex:regulatory ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con9 a ex:Constraint ;
+        ns1:validates <http://example.org/node/deliverables> ;
+        ex:constraintType ex:regulatory ;
+        rdf:subject <http://example.org/node/professional> .
+}
+
+<http://example.org/extraction/tri/extraction30> {
+    tri:tri52 a ex:Triplet ;
+        ns1:requires_response_time <http://example.org/node/2_seconds> ;
+        rdf:subject <http://example.org/node/client> .
+
+    tri:tri53 a ex:Triplet ;
+        ns1:requires_availability <http://example.org/node/high> ;
+        rdf:subject <http://example.org/node/client> .
+
+    tri:tri54 a ex:Triplet ;
+        ns1:requires_resilience <http://example.org/node/seasonal_peak_loads> ;
+        rdf:subject <http://example.org/node/client> .
+
+    tri:tri55 a ex:Triplet ;
+        ns1:requires_integration <http://example.org/node/production_tools> ;
+        rdf:subject <http://example.org/node/client> .
+
+    tri:tri56 a ex:Triplet ;
+        ns1:requires_invoicing_environment <http://example.org/node/electronic> ;
+        rdf:subject <http://example.org/node/client> .
+
+    tri:tri57 a ex:Triplet ;
+        ns1:requires_user_directory <http://example.org/node/sso> ;
+        rdf:subject <http://example.org/node/client> .
+}
+
+<http://example.org/extraction/tri/extraction76> {
+    tri:tri247 a ex:Triplet ;
+        ns1:has_environmental_considerations <http://example.org/node/yes> ;
+        rdf:subject <http://example.org/node/the_firm> .
+
+    tri:tri248 a ex:Triplet ;
+        ns1:has_sustainability_performance <http://example.org/node/improving> ;
+        rdf:subject <http://example.org/node/the_firm> .
+
+    tri:tri249 a ex:Triplet ;
+        ns1:has_dedication_to_sustainability <http://example.org/node/continuous> ;
+        rdf:subject <http://example.org/node/the_firm> .
+}
+
+<http://example.org/extraction/tri/extraction35> {
+    tri:tri79 a ex:Triplet ;
+        ns1:has_component <http://example.org/node/document_ingestion_pipeline> ;
+        rdf:subject <http://example.org/node/nexus_engineering_atelier_platform> .
+
+    tri:tri80 a ex:Triplet ;
+        ns1:has_component <http://example.org/node/vector_store> ;
+        rdf:subject <http://example.org/node/nexus_engineering_atelier_platform> .
+
+    tri:tri81 a ex:Triplet ;
+        ns1:has_component <http://example.org/node/retrieval_layer> ;
+        rdf:subject <http://example.org/node/nexus_engineering_atelier_platform> .
+
+    tri:tri82 a ex:Triplet ;
+        ns1:has_component <http://example.org/node/orchestration_layer> ;
+        rdf:subject <http://example.org/node/nexus_engineering_atelier_platform> .
+
+    tri:tri83 a ex:Triplet ;
+        ns1:has_component <http://example.org/node/answer_layer> ;
+        rdf:subject <http://example.org/node/nexus_engineering_atelier_platform> .
+
+    tri:tri84 a ex:Triplet ;
+        ns1:is_type <http://example.org/node/rag> ;
+        rdf:subject <http://example.org/node/nexus_engineering_atelier_platform> .
+
+    tri:tri85 a ex:Triplet ;
+        ns1:provides_functionality <http://example.org/node/query_handling> ;
+        rdf:subject <http://example.org/node/nexus_engineering_atelier_platform> .
+
+    tri:tri86 a ex:Triplet ;
+        ns1:provides_functionality <http://example.org/node/information_retrieval> ;
+        rdf:subject <http://example.org/node/nexus_engineering_atelier_platform> .
+
+    tri:tri87 a ex:Triplet ;
+        ns1:provides_functionality <http://example.org/node/document_management> ;
+        rdf:subject <http://example.org/node/nexus_engineering_atelier_platform> .
+}
+
+<http://example.org/extraction/tri/extraction32> {
+    tri:tri60 a ex:Triplet ;
+        ns1:has_certification <http://example.org/node/secnumcloud_qualified> ;
+        rdf:subject <http://example.org/node/ouranecloud_sovereign_tier> .
+
+    tri:tri61 a ex:Triplet ;
+        ns1:has_geographic_scope <http://example.org/node/eu_only> ;
+        rdf:subject <http://example.org/node/ouranecloud_sovereign_tier> .
+
+    tri:tri62 a ex:Triplet ;
+        ns1:has_power_source <http://example.org/node/renewable_powered> ;
+        rdf:subject <http://example.org/node/ouranecloud_sovereign_tier> .
+}
+
+<http://example.org/extraction/con/extraction20> {
+    con:con46 a ex:Constraint ;
+        ns1:must_be_conducted <http://example.org/node/progressively_with_a_pilot_phase> ;
+        ex:constraintType ex:temporal ;
+        rdf:subject <http://example.org/node/project> .
+
+    con:con47 a ex:Constraint ;
+        ns1:should_be_operational <http://example.org/node/before_the_next_closing_tax_campaign> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/pilot> .
+
+    con:con48 a ex:Constraint ;
+        ns1:must_respect <http://example.org/node/professional_secrecy_and_auditor_independence> ;
+        ex:constraintType ex:regulatory ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con49 a ex:Constraint ;
+        ns1:must_respect <http://example.org/node/sovereignty> ;
+        ex:constraintType ex:sovereignty ;
+        rdf:subject <http://example.org/node/data> .
+
+    con:con50 a ex:Constraint ;
+        ns1:must_ensure <http://example.org/node/confidentiality_and_security> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con51 a ex:Constraint ;
+        ns1:must_provide <http://example.org/node/reliability_and_traceability_of_outputs> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+}
+
+<http://example.org/extraction/pro/extraction82> {
+    pro:pro24 a ex:Proposal ;
+        ns1:will_leverage <http://example.org/node/ouranecloud_a_french_sovereign_cloud_provider_secnumcloud_qualified_low_carbon_infrastructure> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    pro:pro25 a ex:Proposal ;
+        ns1:will_use <http://example.org/node/renewable_energy> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    pro:pro26 a ex:Proposal ;
+        ns1:offers <http://example.org/node/a_power_usage_effectiveness_pue_of_1_2> ;
+        rdf:subject <http://example.org/node/the_proposed_solution> .
+}
+
+<http://example.org/extraction/req/extraction4> {
+    req:req16 a ex:Requirement ;
+        ns1:surface <http://example.org/node/relevant_information> ;
+        ex:category ex:document_management ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req17 a ex:Requirement ;
+        ns1:recall <http://example.org/node/applicable_rules> ;
+        ex:category ex:document_management ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req18 a ex:Requirement ;
+        ns1:propose <http://example.org/node/checklist_of_verifications> ;
+        ex:category ex:document_management ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req19 a ex:Requirement ;
+        ns1:flag <http://example.org/node/potential_anomalies_for_human_review> ;
+        ex:category ex:document_management ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req20 a ex:Requirement ;
+        ns1:support <http://example.org/node/preparation_of_recurring_documents> ;
+        ex:category ex:document_management ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req21 a ex:Requirement ;
+        ns1:facilitate <http://example.org/node/continuity_of_missions_between_collaborators> ;
+        ex:category ex:collaboration ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req22 a ex:Requirement ;
+        ns1:enable <http://example.org/node/relevant_information_sharing> ;
+        ex:category ex:collaboration ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req23 a ex:Requirement ;
+        ns1:enable <http://example.org/node/understanding_of_the_context_of_an_in_progress_client_file> ;
+        ex:category ex:collaboration ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req24 a ex:Requirement ;
+        ns1:enable <http://example.org/node/efficient_resumption_by_another_collaborator> ;
+        ex:category ex:collaboration ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+}
+
+<http://example.org/extraction/tri/extraction23> {
+    tri:tri15 a ex:Triplet ;
+        ns1:prioritizes_data_sovereignty <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri16 a ex:Triplet ;
+        ns1:prioritizes_environmental_footprint <http://example.org/node/low> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri17 a ex:Triplet ;
+        ns1:uses_infrastructure_type <http://example.org/node/low_carbon> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/con/extraction11> {
+    con:con1 a ex:Constraint ;
+        ns1:must_preserve <http://example.org/node/professional_secrecy> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/artificial_intelligence_assistance_solution> .
+
+    con:con2 a ex:Constraint ;
+        ns1:must_ensure <http://example.org/node/reliability_of_figures> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/artificial_intelligence_assistance_solution> .
+
+    con:con3 a ex:Constraint ;
+        ns1:must_remain <http://example.org/node/strictly_a_non_decisional_support_tool> ;
+        ex:constraintType ex:regulatory ;
+        rdf:subject <http://example.org/node/artificial_intelligence_assistance_solution> .
+}
+
+<http://example.org/extraction/tri/extraction64> {
+    tri:tri193 a ex:Triplet ;
+        ns1:utilizes_core_approach <http://example.org/node/rag> ;
+        rdf:subject <http://example.org/node/atelier_platform> .
+
+    tri:tri194 a ex:Triplet ;
+        ns1:has_configuration_option <http://example.org/node/refrain_from_ungrounded_claims> ;
+        rdf:subject <http://example.org/node/atelier_platform> .
+
+    tri:tri195 a ex:Triplet ;
+        ns1:has_configuration_option <http://example.org/node/flag_missing_sources> ;
+        rdf:subject <http://example.org/node/atelier_platform> .
+
+    tri:tri196 a ex:Triplet ;
+        ns1:has_principle <http://example.org/node/reliability_of_numeric_outputs_as_first_class_requirement> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/con/extraction14> {
+    con:con10 a ex:Constraint ;
+        ns1:must_surface <http://example.org/node/relevant_information> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con11 a ex:Constraint ;
+        ns1:must_recall <http://example.org/node/applicable_rules> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con12 a ex:Constraint ;
+        ns1:must_propose <http://example.org/node/a_checklist_of_verifications> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con13 a ex:Constraint ;
+        ns1:must_flag <http://example.org/node/potential_anomalies_for_human_review> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con14 a ex:Constraint ;
+        ns1:must_support <http://example.org/node/the_preparation_of_recurring_documents> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con15 a ex:Constraint ;
+        ns1:may_not_be <http://example.org/node/automated> ;
+        ex:constraintType ex:regulatory ;
+        rdf:subject <http://example.org/node/decision_or_sign_off> .
+
+    con:con16 a ex:Constraint ;
+        ns1:must_facilitate <http://example.org/node/the_continuity_of_missions_between_collaborators> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con17 a ex:Constraint ;
+        ns1:must_enable <http://example.org/node/relevant_information_sharing> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con18 a ex:Constraint ;
+        ns1:must_provide <http://example.org/node/an_understanding_of_the_context_of_an_in_progress_client_file> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con19 a ex:Constraint ;
+        ns1:must_allow <http://example.org/node/an_efficient_resumption_by_another_collaborator> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+}
+
+<http://example.org/extraction/tri/extraction73> {
+    tri:tri233 a ex:Triplet ;
+        ns1:implements_practice <http://example.org/node/model_right_sizing> ;
+        rdf:subject <http://example.org/node/the_firm> .
+
+    tri:tri234 a ex:Triplet ;
+        ns1:implements_practice <http://example.org/node/caching> ;
+        rdf:subject <http://example.org/node/the_firm> .
+
+    tri:tri235 a ex:Triplet ;
+        ns1:implements_practice <http://example.org/node/batching> ;
+        rdf:subject <http://example.org/node/the_firm> .
+
+    tri:tri236 a ex:Triplet ;
+        ns1:optimizes <http://example.org/node/energy_consumption> ;
+        rdf:subject <http://example.org/node/the_firm> .
+
+    tri:tri237 a ex:Triplet ;
+        ns1:has_energy_lever <http://example.org/node/inference_efficiency> ;
+        rdf:subject <http://example.org/node/the_firm> .
+}
+
+<http://example.org/extraction/req/extraction5> {
+    req:req25 a ex:Requirement ;
+        ns1:ensure <http://example.org/node/respect_of_professional_secrecy_and_confidentiality_of_client_data> ;
+        ex:category ex:data_protection ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/titleholder> .
+
+    req:req26 a ex:Requirement ;
+        ns1:prevent <http://example.org/node/leakage_of_data_between_client_files> ;
+        ex:category ex:data_protection ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/titleholder> .
+
+    req:req27 a ex:Requirement ;
+        ns1:protect <http://example.org/node/client_and_employee_personal_and_financial_data> ;
+        ex:category ex:data_protection ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/titleholder> .
+}
+
+<http://example.org/extraction/pro/extraction81> {
+    pro:pro23 a ex:Proposal ;
+        ns1:propose <http://example.org/node/a_cost_optimization_strategy_that_favors_cost_efficient_tiers_and_models> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+}
+
+<http://example.org/extraction/tri/extraction72> {
+    tri:tri229 a ex:Triplet ;
+        ns1:has_partnership_with <http://example.org/node/ouranecloud> ;
+        rdf:subject <http://example.org/node/the_firm> .
+
+    tri:tri230 a ex:Triplet ;
+        ns1:offers_pue <http://example.org/node/1_2> ;
+        rdf:subject <http://example.org/node/ouranecloud> .
+
+    tri:tri231 a ex:Triplet ;
+        ns1:offers_hosting_location <http://example.org/node/eu_region> ;
+        rdf:subject <http://example.org/node/ouranecloud> .
+
+    tri:tri232 a ex:Triplet ;
+        ns1:offers_energy_type <http://example.org/node/renewable> ;
+        rdf:subject <http://example.org/node/ouranecloud> .
+}
+
+<http://example.org/extraction/req/extraction3> {
+    req:req12 a ex:Requirement ;
+        ns1:access <http://example.org/node/reliable_up_to_date_information> ;
+        ex:category ex:knowledge_management ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/users> .
+
+    req:req13 a ex:Requirement ;
+        ns1:draft <http://example.org/node/client_letters_and_correspondence> ;
+        ex:category ex:document_management ;
+        ex:priority ex:should ;
+        rdf:subject <http://example.org/node/users> .
+
+    req:req14 a ex:Requirement ;
+        ns1:create <http://example.org/node/mission_notes_file_memos_and_syntheses> ;
+        ex:category ex:document_management ;
+        ex:priority ex:should ;
+        rdf:subject <http://example.org/node/users> .
+
+    req:req15 a ex:Requirement ;
+        ns1:handle <http://example.org/node/client_files> ;
+        ex:category ex:client_management ;
+        ex:priority ex:should ;
+        rdf:subject <http://example.org/node/users> .
+}
+
+<http://example.org/extraction/tri/extraction38> {
+    tri:tri96 a ex:Triplet ;
+        ns1:requires_compliance <http://example.org/node/gdpr> ;
+        rdf:subject <http://example.org/node/regione_lombardia_tender> .
+
+    tri:tri97 a ex:Triplet ;
+        ns1:requires_secrecy <http://example.org/node/professional> ;
+        rdf:subject <http://example.org/node/regione_lombardia_tender> .
+
+    tri:tri98 a ex:Triplet ;
+        ns1:requires_confidentiality <http://example.org/node/client_data> ;
+        rdf:subject <http://example.org/node/regione_lombardia_tender> .
+
+    tri:tri99 a ex:Triplet ;
+        ns1:requires_sovereignty <http://example.org/node/data> ;
+        rdf:subject <http://example.org/node/regione_lombardia_tender> .
+}
+
+<http://example.org/extraction/pro/extraction85> {
+    pro:pro31 a ex:Proposal ;
+        ns1:will_improve <http://example.org/node/productivity> ;
+        rdf:subject <http://example.org/node/our_solution> .
+
+    pro:pro32 a ex:Proposal ;
+        ns1:will_ensure <http://example.org/node/reliability_of_figures> ;
+        rdf:subject <http://example.org/node/our_solution> .
+
+    pro:pro33 a ex:Proposal ;
+        ns1:will_preserve <http://example.org/node/professional_secrecy> ;
+        rdf:subject <http://example.org/node/our_solution> .
+
+    pro:pro34 a ex:Proposal ;
+        ns1:will_respect <http://example.org/node/all_applicable_regulatory_requirements> ;
+        rdf:subject <http://example.org/node/our_solution> .
+}
+
+<http://example.org/extraction/tri/extraction65> {
+    tri:tri197 a ex:Triplet ;
+        ns1:provides_feature <http://example.org/node/source_citations> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri198 a ex:Triplet ;
+        ns1:provides_feature <http://example.org/node/retrieved_passages> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri199 a ex:Triplet ;
+        ns1:provides_feature <http://example.org/node/retrieval_trace> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri200 a ex:Triplet ;
+        ns1:provides_feature <http://example.org/node/logging_of_interactions> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/pro/extraction79> {
+    pro:pro12 a ex:Proposal ;
+        ns1:will_utilize <http://example.org/node/faber_ia_model_agnostic_approach_to_select_the_most_appropriate_model_option_that_balances_performance_and_sovereignty_requirements> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    pro:pro13 a ex:Proposal ;
+        ns1:ensures <http://example.org/node/strict_respect_of_professional_secrecy_and_confidentiality_of_client_data> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    pro:pro14 a ex:Proposal ;
+        ns1:prevents <http://example.org/node/any_leakage_of_data_between_client_files> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    pro:pro15 a ex:Proposal ;
+        ns1:maintains <http://example.org/node/confidentiality_and_secrecy> ;
+        rdf:subject <http://example.org/node/atelier> .
+}
+
+<http://example.org/extraction/tri/extraction71> {
+    tri:tri226 a ex:Triplet ;
+        ns1:has_environmental_footprint_reduction_trajectory <http://example.org/node/published> ;
+        rdf:subject <http://example.org/node/the_firm> .
+
+    tri:tri227 a ex:Triplet ;
+        ns1:has_commitment_to_minimizing_environmental_impact <http://example.org/node/yes> ;
+        rdf:subject <http://example.org/node/the_firm> .
+
+    tri:tri228 a ex:Triplet ;
+        ns1:publishes_yearly_carbon_intensity_reduction <http://example.org/node/yes> ;
+        rdf:subject <http://example.org/node/the_firm> .
+}
+
+<http://example.org/extraction/req/extraction1> {
+    req:req1 a ex:Requirement ;
+        ns1:improve <http://example.org/node/productivity> ;
+        ex:category ex:accounting ;
+        rdf:subject <http://example.org/node/professionals> .
+
+    req:req2 a ex:Requirement ;
+        ns1:improve <http://example.org/node/quality_and_reliability_of_work> ;
+        ex:category ex:accounting ;
+        rdf:subject <http://example.org/node/professionals> .
+
+    req:req3 a ex:Requirement ;
+        ns1:preserve <http://example.org/node/professional_secrecy> ;
+        ex:category ex:accounting ;
+        rdf:subject <http://example.org/node/professionals> .
+
+    req:req4 a ex:Requirement ;
+        ns1:ensure <http://example.org/node/reliability_of_figures> ;
+        ex:category ex:accounting ;
+        rdf:subject <http://example.org/node/professionals> .
+
+    req:req5 a ex:Requirement ;
+        ns1:equip <http://example.org/node/professionals_with_an_artificial_intelligence_assistance_solution> ;
+        ex:category ex:accounting ;
+        rdf:subject <http://example.org/node/firm> .
+}
+
+<http://example.org/extraction/tri/extraction47> {
+    tri:tri130 a ex:Triplet ;
+        ns1:complies_with_regulation <http://example.org/node/gdpr> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri131 a ex:Triplet ;
+        ns1:complies_with_regulation <http://example.org/node/lcb_ft> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/pro/extraction83> {
+    pro:pro27 a ex:Proposal ;
+        ns1:implement <http://example.org/node/digital_sobriety_practices_such_as_model_right_sizing_caching_and_batching_to_optimize_energy_consumption> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    pro:pro28 a ex:Proposal ;
+        ns1:ensures <http://example.org/node/that_each_phase_ends_with_a_formal_review_and_a_go_no_go_decision> ;
+        rdf:subject <http://example.org/node/faber_ia_project_delivery_model> .
+}
+
+<http://example.org/extraction/tri/extraction39> {
+    tri:tri100 a ex:Triplet ;
+        ns1:must_comply_with <http://example.org/node/lcb_ft> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri101 a ex:Triplet ;
+        ns1:has_retention_obligations <http://example.org/node/accounting_documents> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri102 a ex:Triplet ;
+        ns1:must_demonstrate <http://example.org/node/compliance_with_regulatory_requirements> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction54> {
+    tri:tri164 a ex:Triplet ;
+        ns1:has_budget <http://example.org/node/220_000> ;
+        rdf:subject <http://example.org/node/nexus_engineering_project> .
+
+    tri:tri165 a ex:Triplet ;
+        ns1:budget_duration <http://example.org/node/3_years> ;
+        rdf:subject <http://example.org/node/nexus_engineering_project> .
+
+    tri:tri166 a ex:Triplet ;
+        ns1:annual_operating_cost_status <http://example.org/node/controlled> ;
+        rdf:subject <http://example.org/node/nexus_engineering_project> .
+}
+
+<http://example.org/extraction/tri/extraction67> {
+    tri:tri208 a ex:Triplet ;
+        ns1:respects_secrecy_requirement <http://example.org/node/professional> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri209 a ex:Triplet ;
+        ns1:respects_confidentiality_requirement <http://example.org/node/yes> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri210 a ex:Triplet ;
+        ns1:uses_client_data_for_training <http://example.org/node/no> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction52> {
+    tri:tri153 a ex:Triplet ;
+        ns1:complies_with <http://example.org/node/legal_retention_and_archival_obligations> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri154 a ex:Triplet ;
+        ns1:respects <http://example.org/node/professional_secrecy> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri155 a ex:Triplet ;
+        ns1:ensures <http://example.org/node/auditor_independence> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri156 a ex:Triplet ;
+        ns1:maintains <http://example.org/node/separation_of_duties> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri157 a ex:Triplet ;
+        ns1:collaborates_with <http://example.org/node/client> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri158 a ex:Triplet ;
+        ns1:meets <http://example.org/node/client_specific_requirements> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri159 a ex:Triplet ;
+        ns1:does_not_compromise <http://example.org/node/client_anti_money_laundering_obligations> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction60> {
+    tri:tri181 a ex:Triplet ;
+        ns1:target_gross_margin_range_min <http://example.org/node/25> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri182 a ex:Triplet ;
+        ns1:target_gross_margin_range_max <http://example.org/node/35> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction74> {
+    tri:tri238 a ex:Triplet ;
+        ns1:provides_carbon_reporting <http://example.org/node/regularly> ;
+        rdf:subject <http://example.org/node/the_firm> .
+
+    tri:tri239 a ex:Triplet ;
+        ns1:has_environmental_footprint <http://example.org/node/reduced> ;
+        rdf:subject <http://example.org/node/the_firm> .
+
+    tri:tri240 a ex:Triplet ;
+        ns1:is_signatory_to <http://example.org/node/responsible_tech_charter> ;
+        rdf:subject <http://example.org/node/the_firm> .
+
+    tri:tri241 a ex:Triplet ;
+        ns1:has_dedication_to <http://example.org/node/responsible_and_sustainable_practices> ;
+        rdf:subject <http://example.org/node/the_firm> .
+}
+
+<http://example.org/extraction/tri/extraction70> {
+    tri:tri224 a ex:Triplet ;
+        ns1:has_environmental_goal <http://example.org/node/reduced_footprint> ;
+        rdf:subject <http://example.org/node/the_firm> .
+
+    tri:tri225 a ex:Triplet ;
+        ns1:prefers_infrastructure_type <http://example.org/node/low_carbon> ;
+        rdf:subject <http://example.org/node/the_firm> .
+}
+
+<http://example.org/extraction/tri/extraction36> {
+    tri:tri88 a ex:Triplet ;
+        ns1:uses_technology <http://example.org/node/kubernetes> ;
+        rdf:subject <http://example.org/node/nexus_engineering_infrastructure> .
+
+    tri:tri89 a ex:Triplet ;
+        ns1:has_scalability <http://example.org/node/supported> ;
+        rdf:subject <http://example.org/node/nexus_engineering_infrastructure> .
+
+    tri:tri90 a ex:Triplet ;
+        ns1:has_availability_requirement <http://example.org/node/high> ;
+        rdf:subject <http://example.org/node/nexus_engineering_infrastructure> .
+
+    tri:tri91 a ex:Triplet ;
+        ns1:has_resilience_requirement <http://example.org/node/supported> ;
+        rdf:subject <http://example.org/node/nexus_engineering_infrastructure> .
+}
+
+<http://example.org/extraction/con/extraction17> {
+    con:con32 a ex:Constraint ;
+        ns1:must_not_undermine <http://example.org/node/cabinet_vauclair_associ_s_anti_money_laundering_obligations_lcb_ft> ;
+        ex:constraintType ex:regulatory ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con33 a ex:Constraint ;
+        ns1:must_comply_with <http://example.org/node/legal_retention_and_archival_obligations_for_accounting_documents> ;
+        ex:constraintType ex:regulatory ;
+        rdf:subject <http://example.org/node/titleholder> .
+
+    con:con34 a ex:Constraint ;
+        ns1:are_expected_to_be <http://example.org/node/below_2_seconds_for_common_queries> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/response_times> .
+
+    con:con35 a ex:Constraint ;
+        ns1:must_sustain <http://example.org/node/performance_during_seasonal_peak_loads> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con36 a ex:Constraint ;
+        ns1:must_have <http://example.org/node/response_times_compatible_with_daily_professional_use> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+}
+
+<http://example.org/extraction/req/extraction6> {
+    req:req28 a ex:Requirement ;
+        ns1:maintain <http://example.org/node/complete_audit_trail> ;
+        ex:category ex:compliance ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/cabinet_vauclair_associ_s> .
+
+    req:req29 a ex:Requirement ;
+        ns1:ensure <http://example.org/node/explainability> ;
+        ex:category ex:compliance ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/cabinet_vauclair_associ_s> .
+
+    req:req30 a ex:Requirement ;
+        ns1:validate <http://example.org/node/output> ;
+        ex:category ex:professional_services ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/chartered_accountant_or_statutory_auditor> .
+
+    req:req31 a ex:Requirement ;
+        ns1:respect <http://example.org/node/auditor_s_independence> ;
+        ex:category ex:professional_services ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req32 a ex:Requirement ;
+        ns1:maintain <http://example.org/node/separation_of_duties> ;
+        ex:category ex:professional_services ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+}
+
+<http://example.org/extraction/req/extraction2> {
+    req:req10 a ex:Requirement ;
+        ns1:handle <http://example.org/node/client_files> ;
+        ex:category ex:client_management ;
+        ex:priority ex:may ;
+        rdf:subject <http://example.org/node/firm_s_professionals> .
+
+    req:req11 a ex:Requirement ;
+        ns1:ensure_continuity_of <http://example.org/node/missions> ;
+        ex:category ex:collaboration ;
+        ex:priority ex:may ;
+        rdf:subject <http://example.org/node/collaborators> .
+
+    req:req6 a ex:Requirement ;
+        ns1:provide <http://example.org/node/intelligent_assistance_tool> ;
+        ex:category ex:professional_services ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/firm_s_professionals> .
+
+    req:req7 a ex:Requirement ;
+        ns1:support <http://example.org/node/daily_activities> ;
+        ex:category ex:professional_services ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/firm_s_professionals> .
+
+    req:req8 a ex:Requirement ;
+        ns1:retrieve <http://example.org/node/regulatory_and_methodological_information> ;
+        ex:category ex:information_management ;
+        ex:priority ex:may ;
+        rdf:subject <http://example.org/node/firm_s_professionals> .
+
+    req:req9 a ex:Requirement ;
+        ns1:assist_in_drafting <http://example.org/node/professional_documents> ;
+        ex:category ex:document_management ;
+        ex:priority ex:may ;
+        rdf:subject <http://example.org/node/firm_s_professionals> .
+}
+
+<http://example.org/extraction/tri/extraction57> {
+    tri:tri171 a ex:Triplet ;
+        ns1:one_off_costs_percentage <http://example.org/node/40> ;
+        rdf:subject <http://example.org/node/nexus_engineering_project> .
+
+    tri:tri172 a ex:Triplet ;
+        ns1:recurring_run_costs_percentage <http://example.org/node/60> ;
+        rdf:subject <http://example.org/node/nexus_engineering_project> .
+
+    tri:tri173 a ex:Triplet ;
+        ns1:project_duration <http://example.org/node/3_years> ;
+        rdf:subject <http://example.org/node/nexus_engineering_project> .
+}
+
+<http://example.org/extraction/pro/extraction84> {
+    pro:pro29 a ex:Proposal ;
+        ns1:will_conduct <http://example.org/node/a_pilot_phase_on_one_office_or_one_mission_line_before_generalizing_the_deployment_progressively> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    pro:pro30 a ex:Proposal ;
+        ns1:combines <http://example.org/node/its_flagship_product_atelier_with_expertise_in_ai_innovation_and_commitment_to_sustainability> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+}
+
+<http://example.org/extraction/tri/extraction22> {
+    tri:tri11 a ex:Triplet ;
+        ns1:has_data_hosting_provider <http://example.org/node/ouranecloud> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri12 a ex:Triplet ;
+        ns1:has_certification <http://example.org/node/secnumcloud_qualified> ;
+        rdf:subject <http://example.org/node/ouranecloud> .
+
+    tri:tri13 a ex:Triplet ;
+        ns1:has_data_location <http://example.org/node/eu> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri14 a ex:Triplet ;
+        ns1:has_compliance_status_gdpr <http://example.org/node/compliant> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction37> {
+    tri:tri92 a ex:Triplet ;
+        ns1:aligns_with <http://example.org/node/the_client_technical_constraints> ;
+        rdf:subject <http://example.org/node/nexus_engineering_proposal> .
+
+    tri:tri93 a ex:Triplet ;
+        ns1:aligns_with <http://example.org/node/the_client_sovereignty_constraints> ;
+        rdf:subject <http://example.org/node/nexus_engineering_proposal> .
+
+    tri:tri94 a ex:Triplet ;
+        ns1:provides <http://example.org/node/artificial_intelligence_assistance_tool> ;
+        rdf:subject <http://example.org/node/nexus_engineering_proposal> .
+
+    tri:tri95 a ex:Triplet ;
+        ns1:tailored_to <http://example.org/node/the_client_needs> ;
+        rdf:subject <http://example.org/node/nexus_engineering_proposal> .
+}
+
+<http://example.org/extraction/pro/extraction80> {
+    pro:pro16 a ex:Proposal ;
+        ns1:respects <http://example.org/node/auditor_independence> ;
+        rdf:subject <http://example.org/node/faber_ia_solution> .
+
+    pro:pro17 a ex:Proposal ;
+        ns1:respects <http://example.org/node/separation_of_duties> ;
+        rdf:subject <http://example.org/node/faber_ia_solution> .
+
+    pro:pro18 a ex:Proposal ;
+        ns1:complies_with <http://example.org/node/legal_retention_and_archival_obligations_for_accounting_documents> ;
+        rdf:subject <http://example.org/node/faber_ia_solution> .
+
+    pro:pro19 a ex:Proposal ;
+        ns1:holds <http://example.org/node/iso_27001_certification> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    pro:pro20 a ex:Proposal ;
+        ns1:holds <http://example.org/node/iso_27701_certification> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    pro:pro21 a ex:Proposal ;
+        ns1:ensures <http://example.org/node/a_high_standard_of_information_security_management> ;
+        rdf:subject <http://example.org/node/faber_ia_solution> .
+
+    pro:pro22 a ex:Proposal ;
+        ns1:ensures <http://example.org/node/a_high_standard_of_privacy_information_management> ;
+        rdf:subject <http://example.org/node/faber_ia_solution> .
+}
+
+<http://example.org/extraction/tri/extraction68> {
+    tri:tri211 a ex:Triplet ;
+        ns1:has_experience_in <http://example.org/node/regulatory_information_assistants> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri212 a ex:Triplet ;
+        ns1:has_experience_in <http://example.org/node/claims_handling_solutions> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri213 a ex:Triplet ;
+        ns1:capable_of_meeting_requirements_in <http://example.org/node/accounting_and_audit_domain> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri214 a ex:Triplet ;
+        ns1:respects <http://example.org/node/auditor_independence> ;
+        rdf:subject <http://example.org/node/nexus_engineering_solution> .
+
+    tri:tri215 a ex:Triplet ;
+        ns1:respects <http://example.org/node/separation_of_duties> ;
+        rdf:subject <http://example.org/node/nexus_engineering_solution> .
+
+    tri:tri216 a ex:Triplet ;
+        ns1:complies_with <http://example.org/node/legal_retention_obligations_for_accounting_documents> ;
+        rdf:subject <http://example.org/node/nexus_engineering_solution> .
+
+    tri:tri217 a ex:Triplet ;
+        ns1:complies_with <http://example.org/node/archival_obligations_for_accounting_documents> ;
+        rdf:subject <http://example.org/node/nexus_engineering_solution> .
+}
+
+<http://example.org/extraction/tri/extraction24> {
+    tri:tri18 a ex:Triplet ;
+        ns1:has_budget <http://example.org/node/220_000> ;
+        rdf:subject <http://example.org/node/our> .
+
+    tri:tri19 a ex:Triplet ;
+        ns1:has_project_duration <http://example.org/node/3_years> ;
+        rdf:subject <http://example.org/node/our> .
+
+    tri:tri20 a ex:Triplet ;
+        ns1:is_product_type <http://example.org/node/sovereign_platform> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    tri:tri21 a ex:Triplet ;
+        ns1:has_functionality <http://example.org/node/forges_document_grounded_ai_assistants> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    tri:tri22 a ex:Triplet ;
+        ns1:has_team_member <http://example.org/node/project_director> ;
+        rdf:subject <http://example.org/node/our_atelier_team> .
+
+    tri:tri23 a ex:Triplet ;
+        ns1:has_team_member <http://example.org/node/solution_architect> ;
+        rdf:subject <http://example.org/node/our_atelier_team> .
+
+    tri:tri24 a ex:Triplet ;
+        ns1:has_team_member <http://example.org/node/engineers> ;
+        rdf:subject <http://example.org/node/our_atelier_team> .
+
+    tri:tri25 a ex:Triplet ;
+        ns1:has_team_member <http://example.org/node/data_scientist> ;
+        rdf:subject <http://example.org/node/our_atelier_team> .
+
+    tri:tri26 a ex:Triplet ;
+        ns1:has_team_member <http://example.org/node/security_compliance_lead> ;
+        rdf:subject <http://example.org/node/our_atelier_team> .
+}
+
+<http://example.org/extraction/tri/extraction42> {
+    tri:tri110 a ex:Triplet ;
+        ns1:uses_encryption_protocol <http://example.org/node/tls_1_3> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri111 a ex:Triplet ;
+        ns1:uses_encryption_algorithm <http://example.org/node/aes_256> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri112 a ex:Triplet ;
+        ns1:key_management_infrastructure_location <http://example.org/node/eu> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri113 a ex:Triplet ;
+        ns1:data_partitioning_method <http://example.org/node/logical_isolation> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri114 a ex:Triplet ;
+        ns1:data_circulation_policy <http://example.org/node/no_cross_client_circulation> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction69> {
+    tri:tri218 a ex:Triplet ;
+        ns1:leverages_platform <http://example.org/node/atelier> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri219 a ex:Triplet ;
+        ns1:utilizes_core_approach <http://example.org/node/rag> ;
+        rdf:subject <http://example.org/node/atelier_platform> .
+
+    tri:tri220 a ex:Triplet ;
+        ns1:focuses_on <http://example.org/node/explainability> ;
+        rdf:subject <http://example.org/node/atelier_platform> .
+
+    tri:tri221 a ex:Triplet ;
+        ns1:focuses_on <http://example.org/node/traceability> ;
+        rdf:subject <http://example.org/node/atelier_platform> .
+
+    tri:tri222 a ex:Triplet ;
+        ns1:focuses_on <http://example.org/node/reliability> ;
+        rdf:subject <http://example.org/node/atelier_platform> .
+
+    tri:tri223 a ex:Triplet ;
+        ns1:adopts_strategy <http://example.org/node/iterative_innovation> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/pro/extraction77> {
+    pro:pro1 a ex:Proposal ;
+        ns1:proposes <http://example.org/node/the_deployment_of_atelier_a_sovereign_platform> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    pro:pro2 a ex:Proposal ;
+        ns1:will_provide <http://example.org/node/intelligent_assistance_tools_to_cabinet_vauclair_associ_s_professionals> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    pro:pro3 a ex:Proposal ;
+        ns1:supports <http://example.org/node/cabinet_vauclair_associ_s_professionals_in_daily_activities_and_improving_productivity> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    pro:pro4 a ex:Proposal ;
+        ns1:ensures <http://example.org/node/reliability_of_figures> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    pro:pro5 a ex:Proposal ;
+        ns1:preserves <http://example.org/node/professional_secrecy> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    pro:pro6 a ex:Proposal ;
+        ns1:remains <http://example.org/node/a_non_decisional_support_tool_respecting_the_auditor_s_independence_and_separation_of_duties> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    pro:pro7 a ex:Proposal ;
+        ns1:guarantees <http://example.org/node/data_is_hosted_within_the_eu> ;
+        rdf:subject <http://example.org/node/faber_ia_partnership_with_ouranecloud> .
+
+    pro:pro8 a ex:Proposal ;
+        ns1:guarantees <http://example.org/node/gdpr_compliance> ;
+        rdf:subject <http://example.org/node/faber_ia_partnership_with_ouranecloud> .
+}
+
+<http://example.org/extraction/con/extraction18> {
+    con:con37 a ex:Constraint ;
+        ns1:must_integrate_with <http://example.org/node/cabinet_vauclair_associ_s_production_tools> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con38 a ex:Constraint ;
+        ns1:must_integrate_with <http://example.org/node/electronic_invoicing_dematerialisation_environment> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con39 a ex:Constraint ;
+        ns1:must_integrate_with <http://example.org/node/user_directory_via_sso> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con40 a ex:Constraint ;
+        ns1:is_preferred_to_be_on <http://example.org/node/secnumcloud_qualified_infrastructure_or_equivalent> ;
+        ex:constraintType ex:sovereignty ;
+        rdf:subject <http://example.org/node/hosting> .
+
+    con:con41 a ex:Constraint ;
+        ns1:will_be_paid_particular_attention_to <http://example.org/node/non_european_suppliers> ;
+        ex:constraintType ex:sovereignty ;
+        rdf:subject <http://example.org/node/dependency> .
+}
+
+<http://example.org/extraction/req/extraction8> {
+    req:req35 a ex:Requirement ;
+        ns1:provide <http://example.org/node/high_level_of_availability_during_business_hours> ;
+        ex:category ex:it_operations ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req36 a ex:Requirement ;
+        ns1:ensure <http://example.org/node/resilience_to_seasonal_peak_loads> ;
+        ex:category ex:it_operations ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req37 a ex:Requirement ;
+        ns1:integrate <http://example.org/node/cabinet_vauclair_associ_s_production_tools> ;
+        ex:category ex:integration ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req38 a ex:Requirement ;
+        ns1:integrate <http://example.org/node/electronic_invoicing_dematerialisation_environment> ;
+        ex:category ex:integration ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+
+    req:req39 a ex:Requirement ;
+        ns1:ensure <http://example.org/node/single_sign_on_access_through_user_directory_integration> ;
+        ex:category ex:security ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/solution> .
+}
+
+<http://example.org/extraction/tri/extraction43> {
+    tri:tri115 a ex:Triplet ;
+        ns1:has_data_protection_officer <http://example.org/node/appointed> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri116 a ex:Triplet ;
+        ns1:has_data_processing_register <http://example.org/node/maintained> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri117 a ex:Triplet ;
+        ns1:compliance_status <http://example.org/node/gdpr_article_28> ;
+        rdf:subject <http://example.org/node/nexus_engineering_dpas> .
+
+    tri:tri118 a ex:Triplet ;
+        ns1:data_processing_compliance <http://example.org/node/legally_compliant> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction29> {
+    tri:tri43 a ex:Triplet ;
+        ns1:has_capabilities <http://example.org/node/existing> ;
+        rdf:subject <http://example.org/node/our_company> .
+
+    tri:tri44 a ex:Triplet ;
+        ns1:prioritizes <http://example.org/node/client_needs> ;
+        rdf:subject <http://example.org/node/our_company> .
+
+    tri:tri45 a ex:Triplet ;
+        ns1:offers <http://example.org/node/productivity_improvement> ;
+        rdf:subject <http://example.org/node/our_company> .
+
+    tri:tri46 a ex:Triplet ;
+        ns1:offers <http://example.org/node/reliability_of_figures> ;
+        rdf:subject <http://example.org/node/our_company> .
+
+    tri:tri47 a ex:Triplet ;
+        ns1:offers <http://example.org/node/professional_secrecy_preservation> ;
+        rdf:subject <http://example.org/node/our_company> .
+
+    tri:tri48 a ex:Triplet ;
+        ns1:offers <http://example.org/node/intelligent_assistance_tools> ;
+        rdf:subject <http://example.org/node/our_company> .
+
+    tri:tri49 a ex:Triplet ;
+        ns1:ensures <http://example.org/node/gdpr_compliance> ;
+        rdf:subject <http://example.org/node/our_company> .
+
+    tri:tri50 a ex:Triplet ;
+        ns1:ensures <http://example.org/node/data_sovereignty> ;
+        rdf:subject <http://example.org/node/our_company> .
+
+    tri:tri51 a ex:Triplet ;
+        ns1:has_environmental_footprint <http://example.org/node/low> ;
+        rdf:subject <http://example.org/node/our_company> .
+}
+
+<http://example.org/extraction/pro/extraction78> {
+    pro:pro10 a ex:Proposal ;
+        ns1:involves_deploying <http://example.org/node/atelier_on_ouranecloud_a_french_sovereign_cloud_provider_secnumcloud_qualified_sovereign_tier> ;
+        rdf:subject <http://example.org/node/faber_ia_proposed_technical_architecture> .
+
+    pro:pro11 a ex:Proposal ;
+        ns1:ensures <http://example.org/node/response_times_compatible_with_daily_professional_use> ;
+        rdf:subject <http://example.org/node/the_proposed_solution> .
+
+    pro:pro9 a ex:Proposal ;
+        ns1:provides <http://example.org/node/a_median_latency_of_1_3_seconds_and_a_p95_latency_below_2_5_seconds_for_common_queries> ;
+        rdf:subject <http://example.org/node/atelier> .
+}
+
+<http://example.org/extraction/con/extraction16> {
+    con:con26 a ex:Constraint ;
+        ns1:must_be_grounded_in_and_traceable_to <http://example.org/node/a_source_document> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/figure_or_factual_statement_produced_by_the_solution> .
+
+    con:con27 a ex:Constraint ;
+        ns1:must_not_be <http://example.org/node/ungrounded> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/numeric_output> .
+
+    con:con28 a ex:Constraint ;
+        ns1:must_provide <http://example.org/node/a_complete_audit_trail> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con29 a ex:Constraint ;
+        ns1:must_provide <http://example.org/node/explainability> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con30 a ex:Constraint ;
+        ns1:must_respect <http://example.org/node/the_auditor_s_independence> ;
+        ex:constraintType ex:regulatory ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con31 a ex:Constraint ;
+        ns1:must_respect <http://example.org/node/the_separation_of_duties> ;
+        ex:constraintType ex:regulatory ;
+        rdf:subject <http://example.org/node/solution> .
+}
+
+<http://example.org/extraction/con/extraction15> {
+    con:con20 a ex:Constraint ;
+        ns1:must_ensure_strict_respect_of <http://example.org/node/professional_secrecy_and_confidentiality_of_client_data> ;
+        ex:constraintType ex:regulatory ;
+        rdf:subject <http://example.org/node/titleholder> .
+
+    con:con21 a ex:Constraint ;
+        ns1:must_be_strictly_partitioned <http://example.org/node/no_leakage_of_data_between_client_files> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/client_files> .
+
+    con:con22 a ex:Constraint ;
+        ns1:must_be_processed_in_compliance_with <http://example.org/node/personal_data_protection_gdpr> ;
+        ex:constraintType ex:regulatory ;
+        rdf:subject <http://example.org/node/client_and_employee_personal_and_financial_data> .
+
+    con:con23 a ex:Constraint ;
+        ns1:must_be_hosted <http://example.org/node/within_the_eu> ;
+        ex:constraintType ex:sovereignty ;
+        rdf:subject <http://example.org/node/data> .
+
+    con:con24 a ex:Constraint ;
+        ns1:must_not_be_transferred <http://example.org/node/outside_the_eu> ;
+        ex:constraintType ex:sovereignty ;
+        rdf:subject <http://example.org/node/data> .
+
+    con:con25 a ex:Constraint ;
+        ns1:must_be_protected <http://example.org/node/encryption_pseudonymisation_where_relevant> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/sensitive_data> .
+}
+
+<http://example.org/extraction/tri/extraction51> {
+    tri:tri150 a ex:Triplet ;
+        ns1:monitors_lcb_ft_obligations <http://example.org/node/yes> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri151 a ex:Triplet ;
+        ns1:has_regulatory_compliance_function <http://example.org/node/yes> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri152 a ex:Triplet ;
+        ns1:implements_anti_money_laundering_measures <http://example.org/node/yes> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction63> {
+    tri:tri185 a ex:Triplet ;
+        ns1:utilizes_approach <http://example.org/node/retrieval_augmented_generation> ;
+        rdf:subject <http://example.org/node/atelier_platform> .
+
+    tri:tri186 a ex:Triplet ;
+        ns1:enables_generation <http://example.org/node/grounded_in_validated_material> ;
+        rdf:subject <http://example.org/node/atelier_platform> .
+
+    tri:tri187 a ex:Triplet ;
+        ns1:focus_on <http://example.org/node/hybrid_retrieval> ;
+        rdf:subject <http://example.org/node/atelier_ai_components> .
+
+    tri:tri188 a ex:Triplet ;
+        ns1:focus_on <http://example.org/node/re_ranking> ;
+        rdf:subject <http://example.org/node/atelier_ai_components> .
+
+    tri:tri189 a ex:Triplet ;
+        ns1:focus_on <http://example.org/node/query_reformulation> ;
+        rdf:subject <http://example.org/node/atelier_ai_components> .
+
+    tri:tri190 a ex:Triplet ;
+        ns1:focus_on <http://example.org/node/multi_document_synthesis> ;
+        rdf:subject <http://example.org/node/atelier_ai_components> .
+
+    tri:tri191 a ex:Triplet ;
+        ns1:focus_on <http://example.org/node/structured_extraction_with_source_linking> ;
+        rdf:subject <http://example.org/node/atelier_ai_components> .
+
+    tri:tri192 a ex:Triplet ;
+        ns1:focus_on <http://example.org/node/template_guided_drafting> ;
+        rdf:subject <http://example.org/node/atelier_ai_components> .
+}
+
+<http://example.org/extraction/tri/extraction33> {
+    tri:tri63 a ex:Triplet ;
+        ns1:supports_design <http://example.org/node/api_first> ;
+        rdf:subject <http://example.org/node/atelier_platform> .
+
+    tri:tri64 a ex:Triplet ;
+        ns1:has_api_type <http://example.org/node/rest> ;
+        rdf:subject <http://example.org/node/atelier_platform> .
+
+    tri:tri65 a ex:Triplet ;
+        ns1:has_api_type <http://example.org/node/webhook> ;
+        rdf:subject <http://example.org/node/atelier_platform> .
+
+    tri:tri66 a ex:Triplet ;
+        ns1:has_connectors_for <http://example.org/node/accounting_production_software> ;
+        rdf:subject <http://example.org/node/atelier_platform> .
+
+    tri:tri67 a ex:Triplet ;
+        ns1:has_connectors_for <http://example.org/node/payroll_software> ;
+        rdf:subject <http://example.org/node/atelier_platform> .
+
+    tri:tri68 a ex:Triplet ;
+        ns1:has_connectors_for <http://example.org/node/document_management_systems> ;
+        rdf:subject <http://example.org/node/atelier_platform> .
+
+    tri:tri69 a ex:Triplet ;
+        ns1:has_connectors_for <http://example.org/node/electronic_invoicing_dematerialisation_environments> ;
+        rdf:subject <http://example.org/node/atelier_platform> .
+
+    tri:tri70 a ex:Triplet ;
+        ns1:has_partnership_with <http://example.org/node/ligeo_conseil> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction53> {
+    tri:tri160 a ex:Triplet ;
+        ns1:compliance_status_gdpr <http://example.org/node/compliant> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri161 a ex:Triplet ;
+        ns1:compliance_status_lcb_ft <http://example.org/node/compliant> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri162 a ex:Triplet ;
+        ns1:compliance_status_legal_retention <http://example.org/node/compliant> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri163 a ex:Triplet ;
+        ns1:compliance_status_accounting_archival <http://example.org/node/compliant> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction49> {
+    tri:tri138 a ex:Triplet ;
+        ns1:has_ip_model <http://example.org/node/proprietary_software> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri139 a ex:Triplet ;
+        ns1:licenses_to_client <http://example.org/node/under_subscription_usage_model> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri140 a ex:Triplet ;
+        ns1:has_ownership <http://example.org/node/faber_ia> ;
+        rdf:subject <http://example.org/node/faber_ia_platform> .
+
+    tri:tri141 a ex:Triplet ;
+        ns1:has_data_confidentiality <http://example.org/node/client_data> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri142 a ex:Triplet ;
+        ns1:maintains_professional_secrecy <http://example.org/node/yes> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+}
+
+<http://example.org/extraction/tri/extraction59> {
+    tri:tri178 a ex:Triplet ;
+        ns1:preferred_configuration <http://example.org/node/sovereign_tier> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri179 a ex:Triplet ;
+        ns1:expected_quality_of_service <http://example.org/node/maintained> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri180 a ex:Triplet ;
+        ns1:cost_control_status <http://example.org/node/under_control> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/con/extraction12> {
+    con:con4 a ex:Constraint ;
+        ns1:must_fit_into <http://example.org/node/existing_practices> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con5 a ex:Constraint ;
+        ns1:must_not_introduce <http://example.org/node/a_rupture_in_cabinet_vauclair_associ_s_working_methods> ;
+        ex:constraintType ex:technical ;
+        rdf:subject <http://example.org/node/solution> .
+
+    con:con6 a ex:Constraint ;
+        ns1:is_produced_or_signed_only_with <http://example.org/node/professional_validation_by_the_chartered_accountant_or_statutory_auditor> ;
+        ex:constraintType ex:regulatory ;
+        rdf:subject <http://example.org/node/deliverable> .
+}
+
+<http://example.org/extraction/tri/extraction28> {
+    tri:tri40 a ex:Triplet ;
+        ns1:type <http://example.org/node/flagship_product> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    tri:tri41 a ex:Triplet ;
+        ns1:function <http://example.org/node/forges_document_grounded_ai_assistants> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    tri:tri42 a ex:Triplet ;
+        ns1:input <http://example.org/node/organisation_s_own_documents> ;
+        rdf:subject <http://example.org/node/atelier> .
+}
+
+GRAPH <urn:x-arq:DefaultGraph> {
+    <http://example.org/extraction/con/extraction11> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk11> .
+
+    <http://example.org/extraction/con/extraction12> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk12> .
+
+    <http://example.org/extraction/con/extraction13> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk13> .
+
+    <http://example.org/extraction/con/extraction14> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk14> .
+
+    <http://example.org/extraction/con/extraction15> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk15> .
+
+    <http://example.org/extraction/con/extraction16> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk16> .
+
+    <http://example.org/extraction/con/extraction17> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk17> .
+
+    <http://example.org/extraction/con/extraction18> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk18> .
+
+    <http://example.org/extraction/con/extraction19> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk19> .
+
+    <http://example.org/extraction/con/extraction20> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk20> .
+
+    <http://example.org/extraction/pro/extraction77> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk77> .
+
+    <http://example.org/extraction/pro/extraction78> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk78> .
+
+    <http://example.org/extraction/pro/extraction79> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk79> .
+
+    <http://example.org/extraction/pro/extraction80> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk80> .
+
+    <http://example.org/extraction/pro/extraction81> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk81> .
+
+    <http://example.org/extraction/pro/extraction82> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk82> .
+
+    <http://example.org/extraction/pro/extraction83> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk83> .
+
+    <http://example.org/extraction/pro/extraction84> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk84> .
+
+    <http://example.org/extraction/pro/extraction85> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk85> .
+
+    <http://example.org/extraction/req/extraction1> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk1> .
+
+    <http://example.org/extraction/req/extraction10> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk10> .
+
+    <http://example.org/extraction/req/extraction2> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk2> .
+
+    <http://example.org/extraction/req/extraction3> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk3> .
+
+    <http://example.org/extraction/req/extraction4> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk4> .
+
+    <http://example.org/extraction/req/extraction5> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk5> .
+
+    <http://example.org/extraction/req/extraction6> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk6> .
+
+    <http://example.org/extraction/req/extraction7> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk7> .
+
+    <http://example.org/extraction/req/extraction8> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk8> .
+
+    <http://example.org/extraction/req/extraction9> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk9> .
+
+    <http://example.org/extraction/tri/extraction21> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk21> .
+
+    <http://example.org/extraction/tri/extraction22> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk22> .
+
+    <http://example.org/extraction/tri/extraction23> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk23> .
+
+    <http://example.org/extraction/tri/extraction24> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk24> .
+
+    <http://example.org/extraction/tri/extraction25> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk25> .
+
+    <http://example.org/extraction/tri/extraction26> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk26> .
+
+    <http://example.org/extraction/tri/extraction27> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk27> .
+
+    <http://example.org/extraction/tri/extraction28> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk28> .
+
+    <http://example.org/extraction/tri/extraction29> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk29> .
+
+    <http://example.org/extraction/tri/extraction30> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk30> .
+
+    <http://example.org/extraction/tri/extraction31> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk31> .
+
+    <http://example.org/extraction/tri/extraction32> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk32> .
+
+    <http://example.org/extraction/tri/extraction33> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk33> .
+
+    <http://example.org/extraction/tri/extraction34> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk34> .
+
+    <http://example.org/extraction/tri/extraction35> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk35> .
+
+    <http://example.org/extraction/tri/extraction36> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk36> .
+
+    <http://example.org/extraction/tri/extraction37> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk37> .
+
+    <http://example.org/extraction/tri/extraction38> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk38> .
+
+    <http://example.org/extraction/tri/extraction39> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk39> .
+
+    <http://example.org/extraction/tri/extraction40> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk40> .
+
+    <http://example.org/extraction/tri/extraction41> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk41> .
+
+    <http://example.org/extraction/tri/extraction42> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk42> .
+
+    <http://example.org/extraction/tri/extraction43> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk43> .
+
+    <http://example.org/extraction/tri/extraction44> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk44> .
+
+    <http://example.org/extraction/tri/extraction45> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk45> .
+
+    <http://example.org/extraction/tri/extraction46> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk46> .
+
+    <http://example.org/extraction/tri/extraction47> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk47> .
+
+    <http://example.org/extraction/tri/extraction48> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk48> .
+
+    <http://example.org/extraction/tri/extraction49> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk49> .
+
+    <http://example.org/extraction/tri/extraction50> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk50> .
+
+    <http://example.org/extraction/tri/extraction51> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk51> .
+
+    <http://example.org/extraction/tri/extraction52> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk52> .
+
+    <http://example.org/extraction/tri/extraction53> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk53> .
+
+    <http://example.org/extraction/tri/extraction54> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk54> .
+
+    <http://example.org/extraction/tri/extraction55> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk55> .
+
+    <http://example.org/extraction/tri/extraction56> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk56> .
+
+    <http://example.org/extraction/tri/extraction57> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk57> .
+
+    <http://example.org/extraction/tri/extraction58> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk58> .
+
+    <http://example.org/extraction/tri/extraction59> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk59> .
+
+    <http://example.org/extraction/tri/extraction60> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk60> .
+
+    <http://example.org/extraction/tri/extraction61> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk61> .
+
+    <http://example.org/extraction/tri/extraction62> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk62> .
+
+    <http://example.org/extraction/tri/extraction63> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk63> .
+
+    <http://example.org/extraction/tri/extraction64> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk64> .
+
+    <http://example.org/extraction/tri/extraction65> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk65> .
+
+    <http://example.org/extraction/tri/extraction66> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk66> .
+
+    <http://example.org/extraction/tri/extraction67> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk67> .
+
+    <http://example.org/extraction/tri/extraction68> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk68> .
+
+    <http://example.org/extraction/tri/extraction69> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk69> .
+
+    <http://example.org/extraction/tri/extraction70> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk70> .
+
+    <http://example.org/extraction/tri/extraction71> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk71> .
+
+    <http://example.org/extraction/tri/extraction72> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk72> .
+
+    <http://example.org/extraction/tri/extraction73> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk73> .
+
+    <http://example.org/extraction/tri/extraction74> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk74> .
+
+    <http://example.org/extraction/tri/extraction75> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk75> .
+
+    <http://example.org/extraction/tri/extraction76> a ex:Extraction ;
+        prov:wasDerivedFrom <http://example.org/node/chunk76> .
+
+    <http://example.org/node/message1> a prov:Entity ;
+        ex:sent_To <http://example.org/node/user> ;
+        prov:generatedAtTime "2026-07-15T14:34:13"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/orchestrator> ;
+        prov:wasDerivedFrom <http://example.org/node/message0> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity2> .
+
+    <http://example.org/activity/activity1> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:29:25"^^xsd:dateTime ;
+        prov:wasAssociatedWith <http://example.org/node/user> .
+
+    <http://example.org/activity/activity10> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:43:05"^^xsd:dateTime ;
+        prov:used <http://example.org/node/message8> ;
+        prov:wasAssociatedWith <http://example.org/node/legal_agent> .
+
+    <http://example.org/activity/activity11> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:44:02"^^xsd:dateTime ;
+        prov:wasAssociatedWith <http://example.org/node/orchestrator> .
+
+    <http://example.org/activity/activity12> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:44:45"^^xsd:dateTime ;
+        prov:used <http://example.org/node/message10> ;
+        prov:wasAssociatedWith <http://example.org/node/budget_agent> .
+
+    <http://example.org/activity/activity13> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:45:26"^^xsd:dateTime ;
+        prov:wasAssociatedWith <http://example.org/node/orchestrator> .
+
+    <http://example.org/activity/activity14> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:46:43"^^xsd:dateTime ;
+        prov:used <http://example.org/node/message12> ;
+        prov:wasAssociatedWith <http://example.org/node/aiinnovation_agent> .
+
+    <http://example.org/activity/activity15> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:48:01"^^xsd:dateTime ;
+        prov:wasAssociatedWith <http://example.org/node/orchestrator> .
+
+    <http://example.org/activity/activity16> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:48:55"^^xsd:dateTime ;
+        prov:used <http://example.org/node/message14> ;
+        prov:wasAssociatedWith <http://example.org/node/csrsustainability_agent> .
+
+    <http://example.org/activity/activity17> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:52:45"^^xsd:dateTime ;
+        prov:used <http://example.org/node/message0> ;
+        prov:wasAssociatedWith <http://example.org/node/orchestrator> .
+
+    <http://example.org/activity/activity2> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:34:13"^^xsd:dateTime ;
+        prov:used <http://example.org/node/message0> ;
+        prov:wasAssociatedWith <http://example.org/node/orchestrator> .
+
+    <http://example.org/activity/activity3> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:34:13"^^xsd:dateTime ;
+        prov:wasAssociatedWith <http://example.org/node/orchestrator> .
+
+    <http://example.org/activity/activity4> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:35:27"^^xsd:dateTime ;
+        prov:used <http://example.org/node/message2> ;
+        prov:wasAssociatedWith <http://example.org/node/projectcoordinator_agent> .
+
+    <http://example.org/activity/activity5> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:36:53"^^xsd:dateTime ;
+        prov:wasAssociatedWith <http://example.org/node/orchestrator> .
+
+    <http://example.org/activity/activity6> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:38:04"^^xsd:dateTime ;
+        prov:used <http://example.org/node/message4> ;
+        prov:wasAssociatedWith <http://example.org/node/technicalarchitect_agent> .
+
+    <http://example.org/activity/activity7> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:39:26"^^xsd:dateTime ;
+        prov:wasAssociatedWith <http://example.org/node/orchestrator> .
+
+    <http://example.org/activity/activity8> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:40:37"^^xsd:dateTime ;
+        prov:used <http://example.org/node/message6> ;
+        prov:wasAssociatedWith <http://example.org/node/securitycompliance_agent> .
+
+    <http://example.org/activity/activity9> a prov:Activity ;
+        prov:startedAtTime "2026-07-15T14:41:49"^^xsd:dateTime ;
+        prov:wasAssociatedWith <http://example.org/node/orchestrator> .
+
+    <http://example.org/node/chunk1> a prov:Entity ;
+        ex:hasText "1. Context and objectives  Cabinet Vauclair & Associés is a regional accounting and statutory-audit firm (cabinet d’expertise comptable et de commissariat aux comptes) operating several offices across the Belval region, with around 250 staff (chartered accountants, statutory auditors, accounting, payroll and legal collaborators). Cabinet Vauclair & Associés professionals work with a large volume of regulatory and methodological reference material (accounting standards, tax doctrine, the commercial code, collective-bargaining agreements for payroll, internal procedures and methodology guides), under strict confidentiality obligations, and with a strong seasonality of workload (closing periods, tax-return campaigns). As part of a consultation run with a small number of selected vendors, Cabinet Vauclair & Associés wishes to equip The firm’s professionals with an artificial-intelligence assistance solution that improves productivity and the quality and reliability of The firm’s professionals work, while preserving professional secrecy and the reliability of figures — and while remaining strictly a non-decisional support tool.  a consultation run with a small number of selected vendors covers the design, implementation and deployment of such a solution.  2." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk10> a prov:Entity ;
+        ex:hasText "Deployment terms  the project must be conducted progressively, with a pilot phase on one office or one mission line, followed by progressive generalisation. Change-management support and training are expected. Ideally, a pilot should be operational before the next closing / tax campaign.  10. Evaluation criteria  Offers will be evaluated against: quality and relevance of the solution; reliability and traceability of outputs; confidentiality and security; respect of professional secrecy and of auditor independence; data sovereignty; quality of integration with Cabinet Vauclair & Associés production tools; total cost; quality of support; environmental considerations; capacity for innovation." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk11> a prov:Entity ;
+        ex:hasText "1. Context and objectives  Cabinet Vauclair & Associés is a regional accounting and statutory-audit firm (cabinet d’expertise comptable et de commissariat aux comptes) operating several offices across the Belval region, with around 250 staff (chartered accountants, statutory auditors, accounting, payroll and legal collaborators). Cabinet Vauclair & Associés professionals work with a large volume of regulatory and methodological reference material (accounting standards, tax doctrine, the commercial code, collective-bargaining agreements for payroll, internal procedures and methodology guides), under strict confidentiality obligations, and with a strong seasonality of workload (closing periods, tax-return campaigns). As part of a consultation run with a small number of selected vendors, Cabinet Vauclair & Associés wishes to equip The firm’s professionals with an artificial-intelligence assistance solution that improves productivity and the quality and reliability of The firm’s professionals work, while preserving professional secrecy and the reliability of figures — and while remaining strictly a non-decisional support tool.  a consultation run with a small number of selected vendors covers the design, implementation and deployment of such a solution.  2." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk12> a prov:Entity ;
+        ex:hasText "General description of the need  The solution must provide The firm’s professionals with an intelligent assistance tool, accessible from The firm’s professionals work environment, supporting The firm’s professionals in The firm’s professionals daily activities. an intelligent assistance tool, accessible from their work environment, supporting them in their daily activities may notably cover:  -   retrieval of regulatory and methodological information; -   assistance in drafting professional documents; -   support in handling client files; -   support for the continuity of missions between collaborators. The solution must fit into existing practices and must not introduce a rupture in Cabinet Vauclair & Associés working methods. The chartered accountant or statutory auditor remains the sole validator: no deliverable is produced or signed without professional validation.  3. Functional scope  3.1 Information consultation assistance." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk13> a prov:Entity ;
+        ex:hasText "Quick access to reliable, up-to-date information drawn from accounting standards (PCG), tax doctrine and the tax code (CGI), the commercial code and applicable legal texts, collective-bargaining agreements for payroll/social, and Cabinet Vauclair & Associés internal procedures and methodology guides. Answers must be contextualised and grounded in cited sources.  3.2 Drafting assistance. Assistance in drafting client letters and correspondence, mission notes, file memos and syntheses. The solution does not autonomously produce binding or signed deliverables; the professional validates.  3.3 Client-file handling support." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk14> a prov:Entity ;
+        ex:hasText "During the handling and review of a client file, the solution must surface relevant information, recall applicable rules, propose a checklist of verifications and flag potential anomalies for human review (e.g. during the révision des comptes). the solution must support the preparation of recurring documents. No decision or sign-off may be automated.  3.4 Collaboration and mission continuity. The solution must facilitate the continuity of missions between collaborators by enabling relevant information sharing, an understanding of the context of an in-progress client file, and an efficient resumption by another collaborator.  4. Regulatory, professional and legal constraints  4.1 Professional secrecy and confidentiality." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk15> a prov:Entity ;
+        ex:hasText "The titleholder must ensure strict respect of professional secrecy and confidentiality of client data. Client files must be strictly partitioned; no leakage of data between client files is acceptable.  4.2 Personal-data protection (GDPR). Client and employee personal and financial data must be processed in compliance with Personal-data protection (GDPR). Data must be hosted within the EU, with no transfer outside the EU; sensitive data must be protected (encryption, pseudonymisation where relevant).  4.3 Reliability and traceability of outputs." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk16> a prov:Entity ;
+        ex:hasText "Any figure or factual statement produced by The solution must be grounded in, and traceable to, a source document; no ungrounded numeric output is acceptable. A complete audit trail and explainability are required, to support Cabinet Vauclair & Associés internal quality control and statutory-audit review.  4.4 Professional responsibility and independence. The solution is a non-decisional assistance tool; the chartered accountant or statutory auditor validates and signs. For statutory-audit (CAC) missions, The solution must respect the auditor’s independence and the separation of duties." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk17> a prov:Entity ;
+        ex:hasText "The solution must not undermine Cabinet Vauclair & Associés anti-money-laundering obligations (LCB-FT). The titleholder must comply with the legal retention and archival obligations for accounting documents.  5. Technical constraints  5.1 Performance. Response times compatible with daily professional use are expected — as an indication, below 2 seconds for common queries — and The solution must sustain The solution performance during seasonal peak loads (closing periods, tax campaigns).  5.2 Availability." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk18> a prov:Entity ;
+        ex:hasText "A high level of availability during business hours is required, with resilience to seasonal peak loads.  5.3 Integration and interoperability. The solution must integrate with Cabinet Vauclair & Associés production tools (accounting-production software, payroll software, document management / GED) and with the electronic-invoicing / dematerialisation environment. API-type interfaces are expected, as is integration with the user directory (SSO).  6. Sovereignty constraints  Given the confidential financial nature of the data, hosting on SecNumCloud-qualified infrastructure or equivalent is preferred, and particular attention will be paid to dependency on non-European suppliers.  7." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk19> a prov:Entity ;
+        ex:hasText "Budget constraints  The budget allocated to the project is, as an indication, €220,000 over 3 years. The annual operating cost must remain controlled. As Cabinet Vauclair & Associés is an SME, the titleholder must propose an approach that optimises costs while guaranteeing the expected quality of service.  8. Environmental constraints  Cabinet Vauclair & Associés wishes to limit the environmental footprint of the solution and to rely, as far as possible, on low-carbon infrastructure.  9." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk2> a prov:Entity ;
+        ex:hasText "General description of the need  The solution must provide The firm’s professionals with an intelligent assistance tool, accessible from The firm’s professionals work environment, supporting The firm’s professionals in The firm’s professionals daily activities. an intelligent assistance tool, accessible from their work environment, supporting them in their daily activities may notably cover:  -   retrieval of regulatory and methodological information; -   assistance in drafting professional documents; -   support in handling client files; -   support for the continuity of missions between collaborators. The solution must fit into existing practices and must not introduce a rupture in Cabinet Vauclair & Associés working methods. The chartered accountant or statutory auditor remains the sole validator: no deliverable is produced or signed without professional validation.  3. Functional scope  3.1 Information consultation assistance." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk20> a prov:Entity ;
+        ex:hasText "Deployment terms  the project must be conducted progressively, with a pilot phase on one office or one mission line, followed by progressive generalisation. Change-management support and training are expected. Ideally, a pilot should be operational before the next closing / tax campaign.  10. Evaluation criteria  Offers will be evaluated against: quality and relevance of the solution; reliability and traceability of outputs; confidentiality and security; respect of professional secrecy and of auditor independence; data sovereignty; quality of integration with Cabinet Vauclair & Associés production tools; total cost; quality of support; environmental considerations; capacity for innovation." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk21> a prov:Entity ;
+        ex:hasText "Given the requirements to improve productivity, ensure reliability of figures, preserve professional secrecy, and provide an intelligent assistance tool, what is our company's current capability to deliver such a solution within the constraints of a €220,000 budget over 3 years, while ensuring GDPR compliance, data sovereignty, and low environmental footprint? our company's, has a flagship product called Atelier, which is a sovereign platform that forges document-grounded AI assistants from an organisation's own documents. a flagship product called Atelier, which is a sovereign platform that forges document-grounded AI assistants from an organisation's own documents can help improve productivity by providing professionals with intelligent assistance tools that surface relevant information, recall applicable rules, and propose checklists of verifications, all while ensuring reliability of figures and preserving professional secrecy. a flagship product called Atelier, which is a sovereign platform that forges document-grounded AI assistants from an organisation's own documents design ensures that a flagship product called Atelier, which is a sovereign platform that forges document-grounded AI assistants from an organisation's own documents remains a non-decisional support tool, respecting the auditor's independence and separation of duties. a flagship product called Atelier, which is a sovereign platform that forges document-grounded AI assistants from an organisation's own documents also provides a complete audit trail, explainability, and transparency in a flagship product called Atelier, which is a sovereign platform that forges document-grounded AI assistants from an organisation's own documents outputs, which can be validated by professionals such as chartered accountants or statutory auditors." ;
+        prov:wasDerivedFrom <http://example.org/node/message3> .
+
+    <http://example.org/node/chunk22> a prov:Entity ;
+        ex:hasText "In terms of data protection, Our partnership with OuraneCloud, a French sovereign cloud provider (SecNumCloud-qualified), ensures that data is hosted within the EU and meets GDPR compliance requirements." ;
+        prov:wasDerivedFrom <http://example.org/node/message3> .
+
+    <http://example.org/node/chunk23> a prov:Entity ;
+        ex:hasText "Our also prioritize data sovereignty and low environmental footprint by relying on low-carbon infrastructure." ;
+        prov:wasDerivedFrom <http://example.org/node/message3> .
+
+    <http://example.org/node/chunk24> a prov:Entity ;
+        ex:hasText "Given the budget constraint of €220,000 over 3 years, Our have a dedicated team with the necessary skills to deliver a flagship product called Atelier, which is a sovereign platform that forges document-grounded AI assistants from an organisation's own documents, including a project director, solution architect, engineers, data scientist, and security compliance lead." ;
+        prov:wasDerivedFrom <http://example.org/node/message3> .
+
+    <http://example.org/node/chunk25> a prov:Entity ;
+        ex:hasText "Our available capacity includes change-management and training resources to support the deployment of a flagship product called Atelier, which is a sovereign platform that forges document-grounded AI assistants from an organisation's own documents." ;
+        prov:wasDerivedFrom <http://example.org/node/message3> .
+
+    <http://example.org/node/chunk26> a prov:Entity ;
+        ex:hasText "Our hybrid delivery model combines agile iterations with a phase-gate structure, ensuring that each phase ends with a formal review and a go/no-go decision." ;
+        prov:wasDerivedFrom <http://example.org/node/message3> .
+
+    <http://example.org/node/chunk27> a prov:Entity ;
+        ex:hasText "Our hybrid delivery model allows Our to conduct a pilot phase on one office or one mission line before generalizing the deployment of Atelier progressively, which aligns with the client's requirements for progressive deployment and a pilot phase." ;
+        prov:wasDerivedFrom <http://example.org/node/message3> .
+
+    <http://example.org/node/chunk28> a prov:Entity ;
+        ex:hasText "While Our have not explicitly detailed Our pricing structure in Our company context, Our ability to deliver a flagship product called Atelier, which is a sovereign platform that forges document-grounded AI assistants from an organisation's own documents within the given budget will depend on the specific scope and requirements of the project." ;
+        prov:wasDerivedFrom <http://example.org/node/message3> .
+
+    <http://example.org/node/chunk29> a prov:Entity ;
+        ex:hasText "However, with Our existing capabilities, partnerships, and dedication to meeting client needs, Our are confident that Our can provide a suitable solution that addresses the client's requirements for productivity improvement, reliability of figures, professional secrecy preservation, and intelligent assistance tools, all while ensuring GDPR compliance, data sovereignty, and low environmental footprint." ;
+        prov:wasDerivedFrom <http://example.org/node/message3> .
+
+    <http://example.org/node/chunk3> a prov:Entity ;
+        ex:hasText "Quick access to reliable, up-to-date information drawn from accounting standards (PCG), tax doctrine and the tax code (CGI), the commercial code and applicable legal texts, collective-bargaining agreements for payroll/social, and Cabinet Vauclair & Associés internal procedures and methodology guides. Answers must be contextualised and grounded in cited sources.  3.2 Drafting assistance. Assistance in drafting client letters and correspondence, mission notes, file memos and syntheses. The solution does not autonomously produce binding or signed deliverables; the professional validates.  3.3 Client-file handling support." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk30> a prov:Entity ;
+        ex:hasText "The client requires response times below 2 seconds for common queries, high availability during business hours, resilience to seasonal peak loads, integration with production tools, electronic invoicing environment, and user directory via SSO." ;
+        prov:wasDerivedFrom <http://example.org/node/message5> .
+
+    <http://example.org/node/chunk31> a prov:Entity ;
+        ex:hasText "Given our current technology stack, can our meet these requirements while ensuring the solution is hosted on SecNumCloud-qualified infrastructure or equivalent, and what technical architecture would our propose? our can meet The client requirements for response times, availability, and resilience using our Atelier platform, which is a Retrieval-augmented generation (RAG) platform. our Atelier platform, which is a Retrieval-augmented generation (RAG) platform performance metrics indicate a median latency of 1.3 seconds and a p95 latency below 2.5 seconds for common queries on comparable deployments, depending on the model option and hosting tier." ;
+        prov:wasDerivedFrom <http://example.org/node/message5> .
+
+    <http://example.org/node/chunk32> a prov:Entity ;
+        ex:hasText "To ensure high availability during business hours and resilience to seasonal peak loads, our can leverage our hosting options, specifically the Sovereign tier provided by OuraneCloud, which is SecNumCloud-qualified, EU-only, and renewable-powered. the Sovereign tier provided by OuraneCloud, which is SecNumCloud-qualified, EU-only, and renewable-powered aligns with The client preference for hosting on equivalent infrastructure." ;
+        prov:wasDerivedFrom <http://example.org/node/message5> .
+
+    <http://example.org/node/chunk33> a prov:Entity ;
+        ex:hasText "For integration requirements, our Atelier platform, which is a Retrieval-augmented generation (RAG) platform supports API-first design (REST + webhook) and has documented APIs that can be embedded in existing work environments. our also have connectors and adapters for accounting-production and payroll software, document-management systems, and electronic invoicing/dematerialisation environments through our partnership with Ligeo Conseil, which can facilitate the required integrations." ;
+        prov:wasDerivedFrom <http://example.org/node/message5> .
+
+    <http://example.org/node/chunk34> a prov:Entity ;
+        ex:hasText "Regarding single sign-on (SSO) access, our support SSO through SAML and OIDC, and user directories such as LDAP and Entra ID, ensuring seamless integration with the client's user directory via SSO. our proposed technical architecture would involve deploying our Atelier platform, which is a Retrieval-augmented generation (RAG) platform on OuraneCloud Sovereign tier to meet the hosting requirements. our would utilize our model-agnostic approach to select the most appropriate model option that balances performance and sovereignty requirements." ;
+        prov:wasDerivedFrom <http://example.org/node/message5> .
+
+    <http://example.org/node/chunk35> a prov:Entity ;
+        ex:hasText "The Document-ingestion pipeline, Vector store, Retrieval layer, Orchestration layer, and Answer layer of our Atelier platform, which is a Retrieval-augmented generation (RAG) platform would work together to provide the necessary functionalities for query handling, information retrieval, and document management while ensuring reliability, traceability, and explainability of outputs." ;
+        prov:wasDerivedFrom <http://example.org/node/message5> .
+
+    <http://example.org/node/chunk36> a prov:Entity ;
+        ex:hasText "By leveraging Kubernetes for containerization, our can ensure scalability and efficient resource utilization, further supporting the requirements for high availability and resilience during peak loads." ;
+        prov:wasDerivedFrom <http://example.org/node/message5> .
+
+    <http://example.org/node/chunk37> a prov:Entity ;
+        ex:hasText "Overall, our proposed solution aligns with The client technical and sovereignty constraints while providing a robust and performant artificial intelligence assistance tool tailored to The client needs." ;
+        prov:wasDerivedFrom <http://example.org/node/message5> .
+
+    <http://example.org/node/chunk38> a prov:Entity ;
+        ex:hasText "The tender requires strict GDPR compliance, professional secrecy, confidentiality of client data, and data sovereignty." ;
+        prov:wasDerivedFrom <http://example.org/node/message7> .
+
+    <http://example.org/node/chunk39> a prov:Entity ;
+        ex:hasText "What security controls and measures would we implement to ensure the protection of sensitive data, and how would we demonstrate compliance with regulatory requirements such as LCB-FT and legal retention and archival obligations for accounting documents?" ;
+        prov:wasDerivedFrom <http://example.org/node/message7> .
+
+    <http://example.org/node/chunk4> a prov:Entity ;
+        ex:hasText "During the handling and review of a client file, the solution must surface relevant information, recall applicable rules, propose a checklist of verifications and flag potential anomalies for human review (e.g. during the révision des comptes). the solution must support the preparation of recurring documents. No decision or sign-off may be automated.  3.4 Collaboration and mission continuity. The solution must facilitate the continuity of missions between collaborators by enabling relevant information sharing, an understanding of the context of an in-progress client file, and an efficient resumption by another collaborator.  4. Regulatory, professional and legal constraints  4.1 Professional secrecy and confidentiality." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk40> a prov:Entity ;
+        ex:hasText "To address The tender requirements for strict GDPR compliance, professional secrecy, confidentiality of client data, and data sovereignty, we implements robust security controls and measures.  we have achieved ISO 27001 certification since 2023, which covers the development, delivery, and operations of we services, ensuring a high standard of information security management." ;
+        prov:wasDerivedFrom <http://example.org/node/message7> .
+
+    <http://example.org/node/chunk41> a prov:Entity ;
+        ex:hasText "Additionally, we hold ISO 27701 certification, which extends we information security management system to include privacy information management." ;
+        prov:wasDerivedFrom <http://example.org/node/message7> .
+
+    <http://example.org/node/chunk42> a prov:Entity ;
+        ex:hasText "For data protection, we utilize encryption in transit with TLS 1.3 and encryption at rest with AES-256. we key management is based on EU-based infrastructure, ensuring that sensitive data is handled within EU. we also implement strict partitioning of client files with logical isolation per client and per mission, preventing any cross-client circulation of data." ;
+        prov:wasDerivedFrom <http://example.org/node/message7> .
+
+    <http://example.org/node/chunk43> a prov:Entity ;
+        ex:hasText "To ensure GDPR compliance, we have a Data Protection Officer (DPO) appointed and maintain a data processing register. we data protection agreements (DPAs) are aligned with GDPR Article 28, ensuring that all data processing activities are legally compliant." ;
+        prov:wasDerivedFrom <http://example.org/node/message7> .
+
+    <http://example.org/node/chunk44> a prov:Entity ;
+        ex:hasText "Regarding professional secrecy and confidentiality, we experience in delivering services to clients bound by professional secrecy, including national professional orders, ensures that we understand the importance of maintaining confidentiality and secrecy." ;
+        prov:wasDerivedFrom <http://example.org/node/message7> .
+
+    <http://example.org/node/chunk45> a prov:Entity ;
+        ex:hasText "To comply with LCB-FT (anti-money laundering) obligations, we are familiar with LCB-FT (anti-money laundering) and ensure that we solutions do not undermine a firm's reporting obligations. we control mapping links platform features to applicable obligations, allowing we to produce corresponding audit evidence." ;
+        prov:wasDerivedFrom <http://example.org/node/message7> .
+
+    <http://example.org/node/chunk46> a prov:Entity ;
+        ex:hasText "For legal retention and archival obligations for accounting documents, we configurable retention policies align with legal archival obligations. we also maintain an audit log of all system activities, ensuring traceability and compliance with regulatory requirements. we hosting partner, OuraneCloud, holds the SecNumCloud qualification at the hosting layer, supporting sovereign hosting of confidential data within EU. holds ensures that sensitive data is stored and processed in a secure environment that meets the highest standards of data sovereignty." ;
+        prov:wasDerivedFrom <http://example.org/node/message7> .
+
+    <http://example.org/node/chunk47> a prov:Entity ;
+        ex:hasText "By leveraging these security controls and measures, we demonstrate we commitment to protecting sensitive data and complying with regulatory requirements such as GDPR, LCB-FT, and legal retention and archival obligations for accounting documents." ;
+        prov:wasDerivedFrom <http://example.org/node/message7> .
+
+    <http://example.org/node/chunk48> a prov:Entity ;
+        ex:hasText "The client requires respect for professional secrecy, auditor independence, and separation of duties. What legal risks should we flag, and are we compliant with the necessary regulations, including GDPR, LCB-FT, and legal retention and archival obligations for accounting documents?" ;
+        prov:wasDerivedFrom <http://example.org/node/message9> .
+
+    <http://example.org/node/chunk49> a prov:Entity ;
+        ex:hasText "How would we ensure that we solution does not undermine the firm's anti-money-laundering obligations? Based on we company context, we have experience with contractual expectations of clients bound by professional secrecy. we are familiar with maintaining professional secrecy and confidentiality of client data. we platform IP model is proprietary software owned by Faber IA, licensed to the client under a subscription/usage model, which ensures that we do not compromise the firm's professional obligations." ;
+        prov:wasDerivedFrom <http://example.org/node/message9> .
+
+    <http://example.org/node/chunk5> a prov:Entity ;
+        ex:hasText "The titleholder must ensure strict respect of professional secrecy and confidentiality of client data. Client files must be strictly partitioned; no leakage of data between client files is acceptable.  4.2 Personal-data protection (GDPR). Client and employee personal and financial data must be processed in compliance with Personal-data protection (GDPR). Data must be hosted within the EU, with no transfer outside the EU; sensitive data must be protected (encryption, pseudonymisation where relevant).  4.3 Reliability and traceability of outputs." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk50> a prov:Entity ;
+        ex:hasText "Regarding auditor independence and separation of duties, our solution must respect auditor independence and separation of duties as per the regulatory compliance obligations we monitor, including auditor-independence and separation-of-duties rules for statutory audit. we ensure that we contractual framework does not place Faber IA or Faber IA tooling in a position that could compromise the firm's professional obligations. As for GDPR, we comply with GDPR requirements, including Article 28 processing agreements. we open-source components are licensed under permissive licenses, and we provide an SBOM to the client. we also ensure that client data ownership is respected, and we reversibility plan provides for the return and deletion of client data at the end of the contract." ;
+        prov:wasDerivedFrom <http://example.org/node/message9> .
+
+    <http://example.org/node/chunk51> a prov:Entity ;
+        ex:hasText "For LCB-FT (Anti-Money Laundering) obligations, we monitor LCB-FT (Anti-Money Laundering) obligations as part of we regulatory compliance function. To ensure that our solution does not undermine the firm's anti-money-laundering obligations, we would work closely with the client to understand the client specific requirements and implement measures that prevent any potential compromise of the firm's anti-money-laundering obligations." ;
+        prov:wasDerivedFrom <http://example.org/node/message9> .
+
+    <http://example.org/node/chunk52> a prov:Entity ;
+        ex:hasText "Regarding legal retention and archival obligations for accounting documents, we comply with legal retention and archival obligations for accounting documents as part of our regulatory compliance function. our solution would be designed to respect legal retention and archival obligations for accounting documents, and we would ensure that all necessary documents are retained and archived in accordance with applicable laws and regulations. In terms of flagging legal risks, we should highlight the importance of respecting professional secrecy, auditor independence, and separation of duties. we should also emphasize the need for close collaboration with the client to ensure that our solution meets the client specific requirements and does not compromise the client anti-money-laundering obligations or other regulatory compliance requirements." ;
+        prov:wasDerivedFrom <http://example.org/node/message9> .
+
+    <http://example.org/node/chunk53> a prov:Entity ;
+        ex:hasText "Overall, based on we company context, we are compliant with the necessary regulations, including GDPR, LCB-FT, and legal retention and archival obligations for accounting documents. However, we must continue to monitor the necessary regulations, including GDPR, LCB-FT, and legal retention and archival obligations for accounting documents and work closely with the client to ensure that our solution meets the client specific needs and respects all applicable regulatory requirements." ;
+        prov:wasDerivedFrom <http://example.org/node/message9> .
+
+    <http://example.org/node/chunk54> a prov:Entity ;
+        ex:hasText "The budget allocated to the project is €220,000 over 3 years, with an annual operating cost that must remain controlled." ;
+        prov:wasDerivedFrom <http://example.org/node/message11> .
+
+    <http://example.org/node/chunk55> a prov:Entity ;
+        ex:hasText "Given our pricing model and current financial position, what is our projected margin on this contract, and what cost-optimization strategies can our propose while ensuring the expected quality of service? our target gross margin range is between 25% and 35%." ;
+        prov:wasDerivedFrom <http://example.org/node/message11> .
+
+    <http://example.org/node/chunk56> a prov:Entity ;
+        ex:hasText "Considering The budget allocated to the project is €220,000 over 3 years, our can estimate our projected revenue." ;
+        prov:wasDerivedFrom <http://example.org/node/message11> .
+
+    <http://example.org/node/chunk57> a prov:Entity ;
+        ex:hasText "Given that one-off project costs are expected to be around 40% of the reference budget in the first year, and recurring run costs will account for approximately 60% of The budget allocated to the project over three years, our should aim to optimize our costs while preserving an acceptable margin." ;
+        prov:wasDerivedFrom <http://example.org/node/message11> .
+
+    <http://example.org/node/chunk58> a prov:Entity ;
+        ex:hasText "To achieve optimize, our can propose a cost-optimization strategy that favors cost-efficient tiers and models." ;
+        prov:wasDerivedFrom <http://example.org/node/message11> .
+
+    <http://example.org/node/chunk59> a prov:Entity ;
+        ex:hasText "For instance, selecting the sovereign tier with the sovereign European model would be the most cost-efficient configuration on the recurring side, as it is mentioned in our budget envelope notes. selecting would help keep costs under control while maintaining the expected quality of service." ;
+        prov:wasDerivedFrom <http://example.org/node/message11> .
+
+    <http://example.org/node/chunk6> a prov:Entity ;
+        ex:hasText "Any figure or factual statement produced by The solution must be grounded in, and traceable to, a source document; no ungrounded numeric output is acceptable. A complete audit trail and explainability are required, to support Cabinet Vauclair & Associés internal quality control and statutory-audit review.  4.4 Professional responsibility and independence. The solution is a non-decisional assistance tool; the chartered accountant or statutory auditor validates and signs. For statutory-audit (CAC) missions, The solution must respect the auditor’s independence and the separation of duties." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk60> a prov:Entity ;
+        ex:hasText "By choosing selecting, our can potentially achieve a gross margin within our target range of 25% to 35%, depending on how effectively our manage the project one-off and recurring costs. our finance role will work closely with the architect to ensure that the configuration stays within the budget envelope while preserving an acceptable margin." ;
+        prov:wasDerivedFrom <http://example.org/node/message11> .
+
+    <http://example.org/node/chunk61> a prov:Entity ;
+        ex:hasText "The client requires an artificial intelligence assistance solution that improves productivity and quality of work while preserving professional secrecy and reliability of figures." ;
+        prov:wasDerivedFrom <http://example.org/node/message13> .
+
+    <http://example.org/node/chunk62> a prov:Entity ;
+        ex:hasText "What AI components and innovation strategy would we design to meet these requirements, and how would we ensure explainability and traceability of outputs?" ;
+        prov:wasDerivedFrom <http://example.org/node/message13> .
+
+    <http://example.org/node/chunk63> a prov:Entity ;
+        ex:hasText "To meet The client requirements, we can leverage we Atelier platform, which utilizes a Retrieval-augmented generation (RAG) core approach. leverage enables we to generate answers grounded in validated material, ensuring reliability and limiting unsupported generation.  we AI components would focus on hybrid retrieval, re-ranking, query reformulation, multi-document synthesis, structured extraction with source linking, and template-guided drafting. hybrid retrieval, re-ranking, query reformulation, multi-document synthesis, structured extraction with source linking, and template-guided drafting are well-suited to improve productivity by assisting professionals in retrieving regulatory and methodological information, drafting professional documents, and handling client files." ;
+        prov:wasDerivedFrom <http://example.org/node/message13> .
+
+    <http://example.org/node/chunk64> a prov:Entity ;
+        ex:hasText "To ensure the reliability of figures, our Atelier platform, which utilizes a Retrieval-augmented generation (RAG) core approach can be configured to refrain from producing ungrounded numeric claims and to flag missing sources instead of guessing. configured aligns with we principle that the reliability of numeric outputs is a first-class requirement, grounding figure-bearing statements in source documents." ;
+        prov:wasDerivedFrom <http://example.org/node/message13> .
+
+    <http://example.org/node/chunk65> a prov:Entity ;
+        ex:hasText "For explainability and traceability, we provide features such as source citations, retrieved passages, retrieval trace, and logging of every interaction for posterior audit." ;
+        prov:wasDerivedFrom <http://example.org/node/message13> .
+
+    <http://example.org/node/chunk66> a prov:Entity ;
+        ex:hasText "Human oversight is built into the workflow, where the assistant proposes, and the professional validates and signs off on outputs. built not only ensures explainability but also respects the regulatory constraint that decisions or sign-offs may not be automated. we innovation strategy involves an iterative approach with corpus curation, retrieval tuning, prompt and template design per use case, and an evaluation loop. we measure answer quality using a labelled evaluation set built with the client, focusing on groundedness, relevance, factual support, and correctness of cited figures." ;
+        prov:wasDerivedFrom <http://example.org/node/message13> .
+
+    <http://example.org/node/chunk67> a prov:Entity ;
+        ex:hasText "By adapting we solution through corpus curation and retrieval/prompt configuration without requiring personal or client data for training, we respect professional secrecy and confidentiality requirements." ;
+        prov:wasDerivedFrom <http://example.org/node/message13> .
+
+    <http://example.org/node/chunk68> a prov:Entity ;
+        ex:hasText "Optional fine-tuning is available, but data use terms would be defined with the firm and compliance function before any such use. we experience in delivering regulatory-information assistants and claims-handling solutions demonstrates we capability to meet similar requirements in the accounting and audit domain. we can ensure that our solution respects auditor independence, separation of duties, and complies with legal retention and archival obligations for accounting documents." ;
+        prov:wasDerivedFrom <http://example.org/node/message13> .
+
+    <http://example.org/node/chunk69> a prov:Entity ;
+        ex:hasText "In summary, by leveraging our Atelier platform, which utilizes a Retrieval-augmented generation (RAG) core approach, focusing on explainability, traceability, and reliability, and adopting an iterative innovation strategy, we can design an AI assistance solution that improves productivity and quality of work while preserving professional secrecy and ensuring the reliability of figures." ;
+        prov:wasDerivedFrom <http://example.org/node/message13> .
+
+    <http://example.org/node/chunk7> a prov:Entity ;
+        ex:hasText "The solution must not undermine Cabinet Vauclair & Associés anti-money-laundering obligations (LCB-FT). The titleholder must comply with the legal retention and archival obligations for accounting documents.  5. Technical constraints  5.1 Performance. Response times compatible with daily professional use are expected — as an indication, below 2 seconds for common queries — and The solution must sustain The solution performance during seasonal peak loads (closing periods, tax campaigns).  5.2 Availability." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk70> a prov:Entity ;
+        ex:hasText "The firm wishes to limit the environmental footprint of the solution and rely on low-carbon infrastructure. What sustainability measures would The firm implement to reduce the environmental impact of the solution, and how would The firm demonstrate The firm commitment to social responsibility and environmental considerations?" ;
+        prov:wasDerivedFrom <http://example.org/node/message15> .
+
+    <http://example.org/node/chunk71> a prov:Entity ;
+        ex:hasText "As a CSR and Sustainability officer at The firm, I can assure that The firm has already taken significant steps towards reducing The firm environmental footprint. The firm have published a trajectory to reduce carbon intensity per managed assistant year on year, demonstrating The firm commitment to minimizing The firm environmental impact." ;
+        prov:wasDerivedFrom <http://example.org/node/message15> .
+
+    <http://example.org/node/chunk72> a prov:Entity ;
+        ex:hasText "To limit the environmental footprint of the solution and rely on low-carbon infrastructure, The firm would leverage The firm existing partnership with green hosting partners like OuraneCloud, which offers sovereign hosting in the EU region, renewable energy, and a power usage effectiveness (PUE) of 1.2. This partnership enables The firm to reduce The firm carbon footprint while ensuring data sovereignty." ;
+        prov:wasDerivedFrom <http://example.org/node/message15> .
+
+    <http://example.org/node/chunk73> a prov:Entity ;
+        ex:hasText "Additionally, The firm implement digital sobriety practices such as model right-sizing, caching, and batching to optimize The firm energy consumption. The firm inference efficiency also serves as an energy lever, allowing The firm to minimize the environmental impact of the solution." ;
+        prov:wasDerivedFrom <http://example.org/node/message15> .
+
+    <http://example.org/node/chunk74> a prov:Entity ;
+        ex:hasText "To demonstrate The firm commitment to social responsibility and environmental considerations, The firm would provide regular carbon reporting, showcasing The firm efforts to reduce our environmental footprint. The firm are also a signatory to the responsible tech charter, emphasizing The firm dedication to responsible and sustainable practices." ;
+        prov:wasDerivedFrom <http://example.org/node/message15> .
+
+    <http://example.org/node/chunk75> a prov:Entity ;
+        ex:hasText "The firm CSR governance structure, with a CSR lead reporting to the executive team, ensures that sustainability considerations are integrated into The firm decision-making processes. The firm also prioritize sustainability in The firm supplier selection, further reinforcing The firm commitment to environmental responsibility." ;
+        prov:wasDerivedFrom <http://example.org/node/message15> .
+
+    <http://example.org/node/chunk76> a prov:Entity ;
+        ex:hasText "By implementing these measures, The firm can assure The firm that the solution is designed with environmental considerations in mind, and The firm are dedicated to continuously improving The firm sustainability performance." ;
+        prov:wasDerivedFrom <http://example.org/node/message15> .
+
+    <http://example.org/node/chunk77> a prov:Entity ;
+        ex:hasText "Faber IA proposes the deployment of Faber IA flagship product, Atelier, a sovereign platform that forges document-grounded AI assistants from an organisation's own documents. forges will provide Cabinet Vauclair & Associés' professionals with intelligent assistance tools, supporting Cabinet Vauclair & Associés' professionals in Cabinet Vauclair & Associés' professionals daily activities and improving productivity. its flagship product, Atelier, a sovereign platform that forges document-grounded AI assistants from an organisation's own documents ensures reliability of figures, preserves professional secrecy, and remains a non-decisional support tool, respecting the auditor's independence and separation of duties. Faber IA partnership with OuraneCloud, a French sovereign cloud provider (SecNumCloud-qualified), guarantees that data is hosted within the EU and meets GDPR compliance requirements." ;
+        prov:wasDerivedFrom <http://example.org/node/message16> .
+
+    <http://example.org/node/chunk78> a prov:Entity ;
+        ex:hasText "To address its flagship product, Atelier, a sovereign platform that forges document-grounded AI assistants from an organisation's own documents technical constraints, its flagship product, Atelier, a sovereign platform that forges document-grounded AI assistants from an organisation's own documentsduct, Atelier, a sovereign platform that forges document-grounded AI assistants from an organisation's own documents platform utilizes a Retrieval-augmented generation (RAG) core approach, enabling the generation of answers grounded in validated material. its flagship product, Atelier, a sovereign platform that forges document-grounded AI assistants from an organisation's own documents provides a median latency of 1.3 seconds and a p95 latency below 2.5 seconds for common queries, ensuring response times compatible with daily professional use. Faber IA proposed technical architecture involves deploying its flagship product, Atelier, a sovereign platform that forges document-grounded AI assistants from an organisation's own documents on OuraneCloud, a French sovereign cloud provider (SecNumCloud-qualified) Sovereign tier, which aligns with the client's preference for hosting on equivalent infrastructure." ;
+        prov:wasDerivedFrom <http://example.org/node/message16> .
+
+    <http://example.org/node/chunk79> a prov:Entity ;
+        ex:hasText "Faber IA will utilize Faber IA model-agnostic approach to select the most appropriate model option that balances performance and sovereignty requirements. its flagship product, Atelier, a sovereign platform that forges document-grounded AI assistants from an organisation's own documents design ensures strict respect of professional secrecy and confidentiality of client data. Client files are strictly partitioned, preventing any leakage of data between client files. its flagship product, Atelier, a sovereign platform that forges document-grounded AI assistants from an organisation's own documents experience in delivering services to clients bound by professional secrecy ensures that its flagship product, Atelier, a sovereign platform that forges document-grounded AI assistants from an organisation's own documents understand the importance of maintaining confidentiality and secrecy." ;
+        prov:wasDerivedFrom <http://example.org/node/message16> .
+
+    <http://example.org/node/chunk8> a prov:Entity ;
+        ex:hasText "A high level of availability during business hours is required, with resilience to seasonal peak loads.  5.3 Integration and interoperability. The solution must integrate with Cabinet Vauclair & Associés production tools (accounting-production software, payroll software, document management / GED) and with the electronic-invoicing / dematerialisation environment. API-type interfaces are expected, as is integration with the user directory (SSO).  6. Sovereignty constraints  Given the confidential financial nature of the data, hosting on SecNumCloud-qualified infrastructure or equivalent is preferred, and particular attention will be paid to dependency on non-European suppliers.  7." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/chunk80> a prov:Entity ;
+        ex:hasText "In terms of regulatory compliance, Faber IA solution respects auditor independence, separation of duties, and complies with legal retention and archival obligations for accounting documents. Faber IA have achieved ISO 27001 certification since 2023 and hold ISO 27701 certification, ensuring a high standard of information security management and privacy information management." ;
+        prov:wasDerivedFrom <http://example.org/node/message16> .
+
+    <http://example.org/node/chunk81> a prov:Entity ;
+        ex:hasText "Faber IA budget approach aims to optimize costs while preserving an acceptable margin. Given the allocated budget of €220,000 over 3 years, Faber IA propose a cost-optimization strategy that favors cost-efficient tiers and models." ;
+        prov:wasDerivedFrom <http://example.org/node/message16> .
+
+    <http://example.org/node/chunk82> a prov:Entity ;
+        ex:hasText "Selecting OuraneCloud's Sovereign tier with the sovereign European model would be the most cost-efficient configuration on the recurring side. To limit the environmental footprint of our solution, Faber IA will leverage OuraneCloud, a French sovereign cloud provider (SecNumCloud-qualified) low-carbon infrastructure, which offers renewable energy and a power usage effectiveness (PUE) of 1.2." ;
+        prov:wasDerivedFrom <http://example.org/node/message16> .
+
+    <http://example.org/node/chunk83> a prov:Entity ;
+        ex:hasText "Faber IA implement digital sobriety practices such as model right-sizing, caching, and batching to optimize energy consumption. Faber IA project delivery model combines agile iterations with a phase-gate structure, ensuring that each phase ends with a formal review and a go/no-go decision." ;
+        prov:wasDerivedFrom <http://example.org/node/message16> .
+
+    <http://example.org/node/chunk84> a prov:Entity ;
+        ex:hasText "This approach allows Faber IA to conduct a pilot phase on one office or one mission line before generalizing the deployment progressively. Faber IA believe that its flagship product, Atelier, a sovereign platform that forges document-grounded AI assistants from an organisation's own documentsduct, Atelier, a sovereign platform that forges document-grounded AI assistants from an organisation's own documents platform, combined with Faber IA expertise in AI innovation and commitment to sustainability, makes Faber IA an ideal partner for Cabinet Vauclair & Associés'." ;
+        prov:wasDerivedFrom <http://example.org/node/message16> .
+
+    <http://example.org/node/chunk85> a prov:Entity ;
+        ex:hasText "Faber IA are confident that our solution will improve productivity, ensure reliability of figures, and preserve professional secrecy while respecting all applicable regulatory requirements." ;
+        prov:wasDerivedFrom <http://example.org/node/message16> .
+
+    <http://example.org/node/chunk9> a prov:Entity ;
+        ex:hasText "Budget constraints  The budget allocated to the project is, as an indication, €220,000 over 3 years. The annual operating cost must remain controlled. As Cabinet Vauclair & Associés is an SME, the titleholder must propose an approach that optimises costs while guaranteeing the expected quality of service.  8. Environmental constraints  Cabinet Vauclair & Associés wishes to limit the environmental footprint of the solution and to rely, as far as possible, on low-carbon infrastructure.  9." ;
+        prov:wasDerivedFrom <http://example.org/node/message0> .
+
+    <http://example.org/node/message10> a prov:Entity ;
+        ex:sent_To <http://example.org/node/budget_agent> ;
+        prov:generatedAtTime "2026-07-15T14:44:02"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/orchestrator> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity11> .
+
+    <http://example.org/node/message12> a prov:Entity ;
+        ex:sent_To <http://example.org/node/aiinnovation_agent> ;
+        prov:generatedAtTime "2026-07-15T14:45:26"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/orchestrator> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity13> .
+
+    <http://example.org/node/message14> a prov:Entity ;
+        ex:sent_To <http://example.org/node/csrsustainability_agent> ;
+        prov:generatedAtTime "2026-07-15T14:48:01"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/orchestrator> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity15> .
+
+    <http://example.org/node/message2> a prov:Entity ;
+        ex:sent_To <http://example.org/node/projectcoordinator_agent> ;
+        prov:generatedAtTime "2026-07-15T14:34:13"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/orchestrator> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity3> .
+
+    <http://example.org/node/message4> a prov:Entity ;
+        ex:sent_To <http://example.org/node/technicalarchitect_agent> ;
+        prov:generatedAtTime "2026-07-15T14:36:53"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/orchestrator> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity5> .
+
+    <http://example.org/node/message6> a prov:Entity ;
+        ex:sent_To <http://example.org/node/securitycompliance_agent> ;
+        prov:generatedAtTime "2026-07-15T14:39:26"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/orchestrator> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity7> .
+
+    <http://example.org/node/message8> a prov:Entity ;
+        ex:sent_To <http://example.org/node/legal_agent> ;
+        prov:generatedAtTime "2026-07-15T14:41:49"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/orchestrator> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity9> .
+
+    <http://example.org/node/aiinnovation_agent> a prov:Agent .
+
+    <http://example.org/node/budget_agent> a prov:Agent .
+
+    <http://example.org/node/legal_agent> a prov:Agent .
+
+    <http://example.org/node/projectcoordinator_agent> a prov:Agent .
+
+    <http://example.org/node/securitycompliance_agent> a prov:Agent .
+
+    <http://example.org/node/technicalarchitect_agent> a prov:Agent .
+
+    <http://example.org/node/user> a prov:Agent .
+
+    <http://example.org/node/csrsustainability_agent> a prov:Agent .
+
+    <http://example.org/node/message9> a prov:Entity ;
+        ex:does_answer "TRUE" ;
+        ex:is_coherent "TRUE" ;
+        ex:sent_To <http://example.org/node/orchestrator> ;
+        prov:generatedAtTime "2026-07-15T14:43:05"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/legal_agent> ;
+        prov:wasDerivedFrom <http://example.org/node/message8> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity10> .
+
+    <http://example.org/node/message11> a prov:Entity ;
+        ex:does_answer "TRUE" ;
+        ex:is_coherent "TRUE" ;
+        ex:sent_To <http://example.org/node/orchestrator> ;
+        prov:generatedAtTime "2026-07-15T14:44:45"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/budget_agent> ;
+        prov:wasDerivedFrom <http://example.org/node/message10> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity12> .
+
+    <http://example.org/node/message15> a prov:Entity ;
+        ex:does_answer "TRUE" ;
+        ex:is_coherent "TRUE" ;
+        ex:sent_To <http://example.org/node/orchestrator> ;
+        prov:generatedAtTime "2026-07-15T14:48:55"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/csrsustainability_agent> ;
+        prov:wasDerivedFrom <http://example.org/node/message14> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity16> .
+
+    <http://example.org/node/message5> a prov:Entity ;
+        ex:does_answer "TRUE" ;
+        ex:is_coherent "TRUE" ;
+        ex:sent_To <http://example.org/node/orchestrator> ;
+        prov:generatedAtTime "2026-07-15T14:38:04"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/technicalarchitect_agent> ;
+        prov:wasDerivedFrom <http://example.org/node/message4> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity6> .
+
+    <http://example.org/node/message13> a prov:Entity ;
+        ex:does_answer "TRUE" ;
+        ex:is_coherent "TRUE" ;
+        ex:sent_To <http://example.org/node/orchestrator> ;
+        prov:generatedAtTime "2026-07-15T14:46:43"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/aiinnovation_agent> ;
+        prov:wasDerivedFrom <http://example.org/node/message12> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity14> .
+
+    <http://example.org/node/message16> a prov:Entity ;
+        ex:sent_To <http://example.org/node/csrsustainability_agent> ;
+        prov:generatedAtTime "2026-07-15T14:52:45"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/orchestrator> ;
+        prov:wasDerivedFrom <http://example.org/node/message0> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity17> .
+
+    <http://example.org/node/message3> a prov:Entity ;
+        ex:does_answer "TRUE" ;
+        ex:is_coherent "TRUE" ;
+        ex:sent_To <http://example.org/node/orchestrator> ;
+        prov:generatedAtTime "2026-07-15T14:35:27"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/projectcoordinator_agent> ;
+        prov:wasDerivedFrom <http://example.org/node/message2> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity4> .
+
+    <http://example.org/node/message7> a prov:Entity ;
+        ex:does_answer "TRUE" ;
+        ex:is_coherent "TRUE" ;
+        ex:sent_To <http://example.org/node/orchestrator> ;
+        prov:generatedAtTime "2026-07-15T14:40:37"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/securitycompliance_agent> ;
+        prov:wasDerivedFrom <http://example.org/node/message6> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity8> .
+
+    <http://example.org/node/message0> a prov:Entity ;
+        ex:sent_To <http://example.org/node/orchestrator> ;
+        prov:generatedAtTime "2026-07-15T14:29:25"^^xsd:dateTime ;
+        prov:wasAttributedTo <http://example.org/node/user> ;
+        prov:wasGeneratedBy <http://example.org/activity/activity1> .
+
+    <http://example.org/node/orchestrator> a prov:Agent .
+}
+
+<http://example.org/extraction/tri/extraction55> {
+    tri:tri167 a ex:Triplet ;
+        ns1:target_gross_margin_min <http://example.org/node/25> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri168 a ex:Triplet ;
+        ns1:target_gross_margin_max <http://example.org/node/35> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction46> {
+    tri:tri125 a ex:Triplet ;
+        ns1:has_retention_policies <http://example.org/node/configurable> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri126 a ex:Triplet ;
+        ns1:has_secnumcloud_qualification <http://example.org/node/yes> ;
+        rdf:subject <http://example.org/node/ouranecloud> .
+
+    tri:tri127 a ex:Triplet ;
+        ns1:supports_data_sovereignty <http://example.org/node/within_eu> ;
+        rdf:subject <http://example.org/node/ouranecloud> .
+
+    tri:tri128 a ex:Triplet ;
+        ns1:ensures_data_security <http://example.org/node/high_standards> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri129 a ex:Triplet ;
+        ns1:has_hosting_layer_qualification <http://example.org/node/secnumcloud> ;
+        rdf:subject <http://example.org/node/ouranecloud> .
+}
+
+<http://example.org/extraction/req/extraction9> {
+    req:req40 a ex:Requirement ;
+        ns1:optimise <http://example.org/node/costs_while_guaranteeing_expected_quality_of_service> ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/cabinet_vauclair_associ_s> .
+
+    req:req41 a ex:Requirement ;
+        ns1:limit <http://example.org/node/environmental_footprint_of_the_solution> ;
+        rdf:subject <http://example.org/node/cabinet_vauclair_associ_s> .
+
+    req:req42 a ex:Requirement ;
+        ns1:rely_on <http://example.org/node/low_carbon_infrastructure> ;
+        ex:category ex:infrastructure ;
+        rdf:subject <http://example.org/node/cabinet_vauclair_associ_s> .
+}
+
+<http://example.org/extraction/tri/extraction31> {
+    tri:tri58 a ex:Triplet ;
+        ns1:has_median_latency <http://example.org/node/1_3_seconds> ;
+        rdf:subject <http://example.org/node/nexus_engineering_atelier_platform> .
+
+    tri:tri59 a ex:Triplet ;
+        ns1:has_p95_latency <http://example.org/node/2_5_seconds> ;
+        rdf:subject <http://example.org/node/nexus_engineering_atelier_platform> .
+}
+
+<http://example.org/extraction/tri/extraction27> {
+    tri:tri35 a ex:Triplet ;
+        ns1:uses_delivery_model <http://example.org/node/hybrid> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri36 a ex:Triplet ;
+        ns1:has_pilot_phase_scope <http://example.org/node/one_office_or_one_mission_line> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri37 a ex:Triplet ;
+        ns1:has_deployment_approach <http://example.org/node/progressive> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri38 a ex:Triplet ;
+        ns1:has_deployment_requirement <http://example.org/node/progressive_deployment> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    tri:tri39 a ex:Triplet ;
+        ns1:has_deployment_requirement <http://example.org/node/pilot_phase> ;
+        rdf:subject <http://example.org/node/atelier> .
+}
+
+<http://example.org/extraction/tri/extraction45> {
+    tri:tri122 a ex:Triplet ;
+        ns1:has_compliance_obligation <http://example.org/node/lcb_ft> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri123 a ex:Triplet ;
+        ns1:compliance_status <http://example.org/node/up_to_date> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri124 a ex:Triplet ;
+        ns1:has_reporting_capability <http://example.org/node/audit_evidence> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction41> {
+    tri:tri107 a ex:Triplet ;
+        ns1:has_certification <http://example.org/node/iso_27701> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri108 a ex:Triplet ;
+        ns1:certifications_status <http://example.org/node/up_to_date> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri109 a ex:Triplet ;
+        ns1:information_security_management_system <http://example.org/node/extended_to_privacy> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction50> {
+    tri:tri143 a ex:Triplet ;
+        ns1:respects_regulatory_obligation <http://example.org/node/auditor_independence> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri144 a ex:Triplet ;
+        ns1:respects_regulatory_obligation <http://example.org/node/separation_of_duties> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri145 a ex:Triplet ;
+        ns1:complies_with_gdpr <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri146 a ex:Triplet ;
+        ns1:provides_sbom <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri147 a ex:Triplet ;
+        ns1:licenses_open_source_components_under <http://example.org/node/permissive_licenses> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri148 a ex:Triplet ;
+        ns1:ensures_client_data_ownership <http://example.org/node/respected> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+
+    tri:tri149 a ex:Triplet ;
+        ns1:has_reversibility_plan <http://example.org/node/true> ;
+        rdf:subject <http://example.org/node/faber_ia> .
+}
+
+<http://example.org/extraction/tri/extraction58> {
+    tri:tri174 a ex:Triplet ;
+        ns1:proposed_strategy <http://example.org/node/cost_optimization> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri175 a ex:Triplet ;
+        ns1:strategy_focus <http://example.org/node/cost_efficiency> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri176 a ex:Triplet ;
+        ns1:recommended_tiers <http://example.org/node/cost_efficient> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri177 a ex:Triplet ;
+        ns1:recommended_models <http://example.org/node/cost_efficient> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/req/extraction7> {
+    req:req33 a ex:Requirement ;
+        ns1:comply_with <http://example.org/node/anti_money_laundering_obligations_lcb_ft> ;
+        ex:category ex:compliance ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/cabinet_vauclair_associ_s> .
+
+    req:req34 a ex:Requirement ;
+        ns1:comply_with <http://example.org/node/legal_retention_and_archival_obligations_for_accounting_documents> ;
+        ex:category ex:compliance ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/titleholder> .
+}
+
+<http://example.org/extraction/tri/extraction66> {
+    tri:tri201 a ex:Triplet ;
+        ns1:has_oversight_process <http://example.org/node/human> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri202 a ex:Triplet ;
+        ns1:involves_approach <http://example.org/node/iterative> ;
+        rdf:subject <http://example.org/node/nexus_engineering_innovation_strategy> .
+
+    tri:tri203 a ex:Triplet ;
+        ns1:measures_quality <http://example.org/node/answer> ;
+        rdf:subject <http://example.org/node/nexus_engineering_evaluation_loop> .
+
+    tri:tri204 a ex:Triplet ;
+        ns1:focuses_on <http://example.org/node/groundedness> ;
+        rdf:subject <http://example.org/node/nexus_engineering_labelled_evaluation_set> .
+
+    tri:tri205 a ex:Triplet ;
+        ns1:focuses_on <http://example.org/node/relevance> ;
+        rdf:subject <http://example.org/node/nexus_engineering_labelled_evaluation_set> .
+
+    tri:tri206 a ex:Triplet ;
+        ns1:focuses_on <http://example.org/node/factual_support> ;
+        rdf:subject <http://example.org/node/nexus_engineering_labelled_evaluation_set> .
+
+    tri:tri207 a ex:Triplet ;
+        ns1:focuses_on <http://example.org/node/correctness> ;
+        rdf:subject <http://example.org/node/nexus_engineering_labelled_evaluation_set> .
+}
+
+<http://example.org/extraction/tri/extraction75> {
+    tri:tri242 a ex:Triplet ;
+        ns1:has_governance_structure <http://example.org/node/csr> ;
+        rdf:subject <http://example.org/node/the_firm> .
+
+    tri:tri243 a ex:Triplet ;
+        ns1:has_csr_lead_reporting_to <http://example.org/node/executive_team> ;
+        rdf:subject <http://example.org/node/the_firm> .
+
+    tri:tri244 a ex:Triplet ;
+        ns1:integrates_sustainability_into <http://example.org/node/decision_making_processes> ;
+        rdf:subject <http://example.org/node/the_firm> .
+
+    tri:tri245 a ex:Triplet ;
+        ns1:prioritizes_in_supplier_selection <http://example.org/node/sustainability> ;
+        rdf:subject <http://example.org/node/the_firm> .
+
+    tri:tri246 a ex:Triplet ;
+        ns1:has_commitment_to <http://example.org/node/environmental_responsibility> ;
+        rdf:subject <http://example.org/node/the_firm> .
+}
+
+<http://example.org/extraction/tri/extraction48> {
+    tri:tri132 a ex:Triplet ;
+        ns1:must_respect <http://example.org/node/professional_secrecy> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri133 a ex:Triplet ;
+        ns1:must_ensure <http://example.org/node/auditor_independence> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri134 a ex:Triplet ;
+        ns1:must_maintain <http://example.org/node/separation_of_duties> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri135 a ex:Triplet ;
+        ns1:compliant_with <http://example.org/node/gdpr> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri136 a ex:Triplet ;
+        ns1:compliant_with <http://example.org/node/lcb_ft> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri137 a ex:Triplet ;
+        ns1:has_obligations <http://example.org/node/legal_retention_and_archival> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
+<http://example.org/extraction/tri/extraction25> {
+    tri:tri27 a ex:Triplet ;
+        ns1:has_available_resource <http://example.org/node/change_management> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri28 a ex:Triplet ;
+        ns1:has_available_resource <http://example.org/node/training> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri29 a ex:Triplet ;
+        ns1:develops_product <http://example.org/node/atelier> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri30 a ex:Triplet ;
+        ns1:is_type <http://example.org/node/sovereign_platform> ;
+        rdf:subject <http://example.org/node/atelier> .
+
+    tri:tri31 a ex:Triplet ;
+        ns1:has_functionality <http://example.org/node/forges_document_grounded_ai_assistants> ;
+        rdf:subject <http://example.org/node/atelier> .
+}
+
+<http://example.org/extraction/req/extraction10> {
+    req:req43 a ex:Requirement ;
+        ns1:conduct <http://example.org/node/change_management_support_and_training> ;
+        ex:category ex:change_management ;
+        ex:priority ex:should ;
+        rdf:subject <http://example.org/node/project_team> .
+
+    req:req44 a ex:Requirement ;
+        ns1:conduct <http://example.org/node/pilot_phase_on_one_office_or_one_mission_line> ;
+        ex:category ex:project_deployment ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/project> .
+
+    req:req45 a ex:Requirement ;
+        ns1:generalise <http://example.org/node/deployment_progressively> ;
+        ex:category ex:project_deployment ;
+        ex:priority ex:must ;
+        rdf:subject <http://example.org/node/project> .
+
+    req:req46 a ex:Requirement ;
+        ns1:be_operational <http://example.org/node/before_the_next_closing_tax_campaign> ;
+        ex:category ex:project_timeline ;
+        ex:priority ex:should ;
+        rdf:subject <http://example.org/node/pilot> .
+}
+
+<http://example.org/extraction/tri/extraction34> {
+    tri:tri71 a ex:Triplet ;
+        ns1:supports_sso_protocol <http://example.org/node/saml> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri72 a ex:Triplet ;
+        ns1:supports_sso_protocol <http://example.org/node/oidc> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri73 a ex:Triplet ;
+        ns1:supports_user_directory <http://example.org/node/ldap> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri74 a ex:Triplet ;
+        ns1:supports_user_directory <http://example.org/node/entra_id> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri75 a ex:Triplet ;
+        ns1:proposed_platform <http://example.org/node/atelier> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri76 a ex:Triplet ;
+        ns1:platform_type <http://example.org/node/rag> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri77 a ex:Triplet ;
+        ns1:deployment_cloud <http://example.org/node/ouranecloud> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+
+    tri:tri78 a ex:Triplet ;
+        ns1:cloud_tier <http://example.org/node/sovereign> ;
+        rdf:subject <http://example.org/node/nexus_engineering> .
+}
+
